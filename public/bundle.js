@@ -125,9 +125,17 @@
 	
 	var _sampleCtrl2 = _interopRequireDefault(_sampleCtrl);
 	
+	var _mainSvc = __webpack_require__(/*! ./services/mainSvc */ 23);
+	
+	var _mainSvc2 = _interopRequireDefault(_mainSvc);
+	
+	var _stopwatch = __webpack_require__(/*! ./directives/stopwatch */ 24);
+	
+	var _stopwatch2 = _interopRequireDefault(_stopwatch);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	_angular2.default.module("myApp", [_angularUiRouter2.default]).config(function ($stateProvider, $urlRouterProvider) {
+	_angular2.default.module("myApp", [_angularUiRouter2.default]).service("mainSvc", _mainSvc2.default).directive("stopwatch", _stopwatch2.default).config(function ($stateProvider, $urlRouterProvider) {
 	  $stateProvider.state('login', {
 	    controller: _loginCtrl2.default,
 	    url: '/',
@@ -138,23 +146,25 @@
 	    template: _home2.default
 	  }).state('workout', {
 	    controller: _workoutCtrl2.default,
-	    url: '/home/workout',
+	    url: '/workout',
+	    params: { _id: null },
 	    template: _workout2.default
 	  }).state('routine', {
 	    controller: _routineCtrl2.default,
-	    url: '/home/routine',
+	    url: '/routine',
+	    params: { _id: null },
 	    template: _routine2.default
 	  }).state('schedule', {
 	    controller: _scheduleCtrl2.default,
-	    url: '/home/schedule',
+	    url: '/schedule',
 	    template: _schedule2.default
 	  }).state('wingIt', {
 	    controller: _wingItCtrl2.default,
-	    url: '/home/wingIt',
+	    url: '/wingIt',
 	    template: _wingIt2.default
 	  }).state('sample', {
 	    controller: _sampleCtrl2.default,
-	    url: '/home/sample',
+	    url: '/sample',
 	    template: _sample2.default
 	  });
 	
@@ -36573,7 +36583,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".card-image-wrapper {\n  display: inline-block;\n  width: 125px;\n}\n\n.card-image {\n  width: 100%;\n}\n\n.gold-possession {\n  display: inline-block;\n}\n\n.gold-bar-image-wrapper {\n  display: inline-block;\n  width: 150px;\n}\n\n.gold-bar-image {\n  width: 100%;\n}\n", ""]);
+	exports.push([module.id, "", ""]);
 	
 	// exports
 
@@ -36924,7 +36934,7 @@
   \*********************************/
 /***/ function(module, exports) {
 
-	module.exports = "<main>\n  <section>\n    <div ng-click=\"workout()\">Just Do It</div>\n  </section>\n\n  <section>\n    <div ng-click=\"routine()\">Setup Routine</div>\n  </section>\n\n  <section>\n    <div ng-click=\"schedule()\">Setup Schedule</div>\n  </section>\n\n  <section>\n    <div ng-click=\"wingIt()\">Just Wing It</div>\n  </section>\n\n  <section>\n    <div ng-click=\"sample()\">Sample Routines</div>\n  </section>\n</main>\n";
+	module.exports = "<main>\n  {{user}}\n\n  <section>\n    <div ng-click=\"workout()\">Just Do It</div>\n  </section>\n\n  <section>\n    <div ng-click=\"routine()\">Setup Routine</div>\n  </section>\n\n  <section>\n    <div ng-click=\"schedule()\">Setup Schedule</div>\n  </section>\n\n  <section>\n    <div ng-click=\"wingIt()\">Just Wing It</div>\n  </section>\n\n  <section>\n    <div ng-click=\"sample()\">Sample Routines</div>\n  </section>\n</main>\n";
 
 /***/ },
 /* 12 */
@@ -36938,13 +36948,25 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	function homeCtrl($scope, $state) {
+	function homeCtrl($scope, $state, mainSvc) {
+	  $scope.getUser = function () {
+	    mainSvc.getUser().then(function (response) {
+	      $scope.user = response.data;
+	
+	      if (response.data.length === 0) mainSvc.postUser().then(function (response) {
+	        $scope.user = response.data;
+	      });
+	    });
+	  };
+	
+	  $scope.getUser();
+	
 	  $scope.workout = function () {
-	    $state.go('workout');
+	    $state.go('workout', { _id: $scope.user._id });
 	  };
 	
 	  $scope.routine = function () {
-	    $state.go('routine');
+	    $state.go('routine', { _id: $scope.user._id });
 	  };
 	
 	  $scope.schedule = function () {
@@ -36969,7 +36991,7 @@
   \*****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "workout\n\n<sectin>\n  <h3>You do not have available routines.</h3>\n  <button ng-click=\"routine()\">Set Routine</button>\n  <button ng-click=\"wingIt()\">Just Wing It</button>\n</sectin>\n";
+	module.exports = "<h1>workout</h1>\n\n<section>\n  <div>\n    <stopwatch set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n  </div>\n  <button ng-click=\"startRoutine();\" ng-hide=\"setTimer\">Just Do It!</button>\n  <ul ng-repeat=\"set in selectedRoutine.sets\">\n    Name: {{set.name}}\n    Type: {{set.type}}\n    Weight: {{set.weight}}\n    Reps: {{set.numOfReps}}\n    Workout Duration: {{set.duration}}\n    Resting Period: {{set.restPeriod}}\n  </ul>\n</section>\n\n<section ng-show=\"selectedProgram\">\n  <h3>Today's Workout {{selectedProgram.date}}</h3>\n\n  <ul ng-repeat=\"routine in selectedProgram.routines\" ng-click=\"selectRoutine( routine )\">\n    {{routine.name}}\n    {{routine.sets}}\n  </ul>\n</section>\n\n<sectin>\n  <h3>Available Routines</h3>\n  <div ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n    <p>{{program.date}}</p>\n  </div>\n</sectin>\n\n<button ng-click=\"back2Home()\">Back to Home</button>\n";
 
 /***/ },
 /* 14 */
@@ -36978,18 +37000,93 @@
   \*********************************************/
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	function workoutCtrl($scope, $state) {
-	  $scope.routine = function () {
-	    $state.go('routine');
+	function workoutCtrl($scope, $state, $stateParams, mainSvc) {
+	  $scope.getPrograms = function () {
+	    mainSvc.getPrograms($stateParams._id).then(function (response) {
+	      $scope.programs = response.data;
+	
+	      for (var i = 0; i < $scope.programs.length; i++) {
+	        if (new Date($scope.programs[i].date).setHours(0, 0, 0, 0) === new Date().setHours(0, 0, 0, 0)) {
+	          $scope.selectedProgram = $scope.programs[i];
+	          $scope.selectedRoutine = $scope.selectedProgram.routines[$scope.ongoingRoutineIndex];
+	          break;
+	        }
+	      }
+	    });
 	  };
 	
-	  $scope.wingIt = function () {
-	    $state.go('wingIt');
+	  $scope.ongoingSetIndex = 0;
+	  $scope.ongoingRoutineIndex = 0;
+	  $scope.getPrograms();
+	
+	  $scope.startRoutine = function () {
+	    console.log($scope.ongoingSetIndex);
+	    $scope.setTimer = {
+	      duration: $scope.selectedRoutine.sets[$scope.ongoingSetIndex].duration,
+	      restPeriod: $scope.selectedRoutine.sets[$scope.ongoingSetIndex].restPeriod
+	    };
+	    console.log($scope.setTimer);
+	  };
+	
+	  $scope.$on('exerciseCompleted', function (event, data) {
+	    console.log(data);
+	  });
+	
+	  $scope.programCompleted = function () {
+	    console.log("Program is completed!");
+	  };
+	
+	  $scope.routineCompleted = function () {
+	    $scope.setTimer = undefined;
+	    $scope.ongoingSetIndex = 0;
+	    $scope.selectedRoutine.complete = true;
+	    console.log("Routine is completed!", $scope.selectedRoutine.completed);
+	
+	    for (var i = 0; i < $scope.selectedProgram.routines.length; i++) {
+	      if (!$scope.selectedProgram.routines[i].complete) {
+	        $scope.ongoingRoutineIndex = i;
+	        break;
+	      }
+	    }
+	
+	    if (i < $scope.selectedProgram.routines.length) {
+	      $scope.selectedRoutine = $scope.selectedProgram.routines[$scope.ongoingRoutineIndex];
+	      $scope.startRoutine();
+	    } else {
+	      delete $scope.ongoingRoutineIndex;
+	      $scope.programCompleted();
+	    }
+	  };
+	
+	  $scope.$on('setCompleted', function (event, data) {
+	    console.log(data);
+	
+	    if (++$scope.ongoingSetIndex < $scope.selectedRoutine.sets.length) $scope.startRoutine();else {
+	      $scope.routineCompleted();
+	    }
+	  });
+	
+	  $scope.selectRoutine = function (routine) {
+	    $scope.setTimer = undefined;
+	    $scope.selectedRoutine = routine;
+	    $scope.ongoingSetIndex = 0;
+	  };
+	
+	  $scope.selectProgram = function (program) {
+	    $scope.setTimer = undefined;
+	    $scope.selectedProgram = program;
+	    $scope.selectedRoutine = $scope.selectedProgram.routines[0];
+	    $scope.ongoingSetIndex = 0;
+	  };
+	  // complete first routine, change program, come back to the first program > will trigger already completed routine.
+	
+	  $scope.back2Home = function () {
+	    $state.go('home');
 	  };
 	}
 	
@@ -37002,7 +37099,7 @@
   \*****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "routine\n";
+	module.exports = "<h1>Routine</h1>\n\n<button ng-click=\"addRoutine()\">Build New Routine</button>\n\n<section ng-show=\"newRoutine\">\n  <input type=\"text\" ng-model=\"newRoutine.name\">\n\n  <div ng-repeat=\"set in newRoutine.sets\" ng-click=\"editSet( set )\">\n    <p>{{set.name}}</p>\n    <p>{{set.type}}</p>\n    <p>{{set.weight}}</p>\n    <p>{{set.numOfReps}}</p>\n    <p>{{set.duration}}</p>\n    <p>{{set.restPeriod}}</p>\n  </div>\n\n  <div>\n    <input type=\"text\" placeholder=\"Set Name\" ng-model=\"name\">\n    <input type=\"text\" placeholder=\"Type\" ng-model=\"type\">\n    <input type=\"text\" placeholder=\"Weight\" ng-model=\"weight\">\n    <input type=\"text\" placeholder=\"Reps\" ng-model=\"numOfReps\">\n    <input type=\"text\" placeholder=\"Workout Duration\" ng-model=\"duration\">\n    <input type=\"text\" placeholder=\"Rest Duration\" ng-model=\"restPeriod\">\n\n    <button ng-click=\"addSet()\">Add Set</button>\n    <button ng-click=\"addSet( setIndex )\" ng-show=\"setIndex > -1\">Update</button>\n    <button ng-click=\"clearSet()\">Clear</button>\n  </div>\n\n  <button ng-click=\"postRoutine()\" ng-show=\"!newRoutine._id\">Add Routine</button>\n  <button ng-click=\"putRoutine()\" ng-show=\"newRoutine._id\">Update Routine</button>\n  <button ng-click=\"cancelPost()\">Cancel</button>\n</section>\n\n<section>\n  <ul ng-repeat=\"routine in routines\">\n    <li>\n      <h3>Name of Routine: {{ routine.name }}</h3>\n      <ul ng-repeat=\"set in routine.sets\">\n        <li>Set Name: {{ set.name }}</li>\n        <li>Number of Reps: {{ set.numOfReps }}</li>\n        <li>Rest Timer: {{ set.restPeriod }}</li>\n        <li>Type of Workout: {{ set.type }}</li>\n        <li>Weight: {{ set.weight }}</li>\n        <br>\n      </ul>\n    </li>\n    <button ng-click=\"editRoutine( routine )\">Edit</button>\n    <button ng-click=\"deleteRoutine( routine._id )\">Delete</button>\n  </ul>\n</section>\n\n<button ng-click=\"back2Home()\">Back to Home</button>\n";
 
 /***/ },
 /* 16 */
@@ -37016,7 +37113,95 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	function routineCtrl($scope, $state) {}
+	function routineCtrl($scope, $state, $stateParams, mainSvc) {
+	  $scope.getRoutines = function () {
+	    mainSvc.getRoutines($stateParams._id).then(function (response) {
+	      $scope.routines = response.data;
+	    });
+	  };
+	
+	  $scope.getRoutines();
+	
+	  $scope.addRoutine = function () {
+	    $scope.newRoutine = {
+	      name: "Routine Name",
+	      sets: []
+	    };
+	  };
+	
+	  $scope.editSet = function (set) {
+	    $scope.name = set.name;
+	    $scope.type = set.type;
+	    $scope.weight = set.weight;
+	    $scope.numOfReps = set.numOfReps;
+	    $scope.duration = set.duration;
+	    $scope.restPeriod = set.restPeriod;
+	
+	    $scope.setIndex = $scope.newRoutine.sets.indexOf(set);
+	  };
+	
+	  $scope.addSet = function (setIndex) {
+	    $scope.newRoutine.sets[setIndex === undefined ? $scope.newRoutine.sets.length : setIndex] = {
+	      name: $scope.name,
+	      type: $scope.type,
+	      weight: $scope.weight,
+	      numOfReps: $scope.numOfReps,
+	      duration: $scope.duration,
+	      restPeriod: $scope.restPeriod
+	    };
+	
+	    deleteInput();
+	  };
+	
+	  $scope.clearSet = function () {
+	    deleteInput();
+	  };
+	
+	  $scope.postRoutine = function () {
+	    mainSvc.postRoutine($stateParams._id, $scope.newRoutine).then(function (response) {
+	      $scope.getRoutines();
+	    });
+	
+	    delete $scope.newRoutine;
+	  };
+	
+	  $scope.putRoutine = function () {
+	    mainSvc.putRoutine($stateParams._id, $scope.newRoutine._id, $scope.newRoutine).then(function (response) {
+	      $scope.getRoutines();
+	    });
+	
+	    delete $scope.newRoutine;
+	  };
+	
+	  $scope.cancelPost = function () {
+	    deleteInput();
+	    delete $scope.newRoutine;
+	  };
+	
+	  $scope.editRoutine = function (routine) {
+	    $scope.newRoutine = routine;
+	  };
+	
+	  $scope.deleteRoutine = function (_routineId) {
+	    mainSvc.deleteRoutine($stateParams._id, _routineId).then(function (response) {
+	      $scope.getRoutines();
+	    });
+	  };
+	
+	  $scope.back2Home = function () {
+	    $state.go('home');
+	  };
+	
+	  function deleteInput() {
+	    delete $scope.name;
+	    delete $scope.type;
+	    delete $scope.weight;
+	    delete $scope.numOfReps;
+	    delete $scope.duration;
+	    delete $scope.restPeriod;
+	    $scope.setIndex = -1;
+	  }
+	}
 	
 	exports.default = routineCtrl;
 
@@ -37094,6 +37279,212 @@
 	function sampleCtrl($scope, $state) {}
 	
 	exports.default = sampleCtrl;
+
+/***/ },
+/* 23 */
+/*!*********************************!*\
+  !*** ./src/services/mainSvc.js ***!
+  \*********************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	function mainSvc($http, $rootScope) {
+	  this.getUser = function () {
+	    return $http.get('api/user');
+	  };
+	
+	  this.postUser = function () {
+	    return $http.post('/api/user');
+	  };
+	
+	  this.getRoutines = function (_id) {
+	    return $http.get('/api/user/' + _id + '/routine');
+	  };
+	
+	  this.postRoutine = function (_id, routine) {
+	    return $http.post('/api/user/' + _id + '/routine', routine);
+	  };
+	
+	  this.putRoutine = function (_id, _routineId, routine) {
+	    return $http.put('/api/user/' + _id + '/routine/' + _routineId, routine);
+	  };
+	
+	  this.deleteRoutine = function (_id, _routineId) {
+	    return $http.delete('/api/user/' + _id + '/routine/' + _routineId);
+	  };
+	
+	  this.getPrograms = function (_id) {
+	    return $http.get('/api/user/' + _id + '/program');
+	  };
+	
+	  this.exerciseCompleted = function (str) {
+	    $rootScope.$broadcast('exerciseCompleted', str);
+	  };
+	
+	  this.setCompleted = function (str) {
+	    $rootScope.$broadcast('setCompleted', str);
+	  };
+	}
+	
+	exports.default = mainSvc;
+
+/***/ },
+/* 24 */
+/*!*************************************!*\
+  !*** ./src/directives/stopwatch.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _stopwatch = __webpack_require__(/*! ./stopwatch.html */ 25);
+	
+	var _stopwatch2 = _interopRequireDefault(_stopwatch);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function stopWatch() {
+	    return {
+	        scope: {
+	            setTimer: '=setTimer'
+	        },
+	        template: _stopwatch2.default,
+	        controller: function controller($scope, mainSvc) {
+	            $scope.stopwatch = new Stopwatch(document.querySelector('.stopwatch'));
+	
+	            $scope.$watch('setTimer', function (setTimer) {
+	                console.log(setTimer.duration, setTimer.restPeriod);
+	                $scope.stopwatch.timeLimit = setTimer.duration;
+	                setTimer.duration = -1;
+	            });
+	
+	            $scope.stopwatch.complete = function () {
+	                if ($scope.setTimer.restPeriod < 0) {
+	                    $scope.stopwatch.reset();
+	                    mainSvc.setCompleted("Set is completed!");
+	                } else {
+	                    $scope.stopwatch.reset();
+	                    $scope.stopwatch.timeLimit = $scope.setTimer.restPeriod;
+	                    $scope.setTimer.restPeriod = -1;
+	                    mainSvc.exerciseCompleted("Exercise is completed!");
+	                }
+	            };
+	        }
+	    };
+	}
+	
+	var Stopwatch = function () {
+	    function Stopwatch(display) {
+	        _classCallCheck(this, Stopwatch);
+	
+	        this.running = false;
+	        this.display = display;
+	        this.laps = [];
+	        this.reset();
+	        this.print(this.times);
+	    }
+	
+	    _createClass(Stopwatch, [{
+	        key: 'start',
+	        value: function start() {
+	            if (!this.time) this.time = performance.now();
+	            if (!this.running) {
+	                this.running = true;
+	                requestAnimationFrame(this.step.bind(this));
+	            }
+	        }
+	    }, {
+	        key: 'stop',
+	        value: function stop() {
+	            this.running = false;
+	            this.time = null;
+	        }
+	    }, {
+	        key: 'reset',
+	        value: function reset() {
+	            this.running = false;
+	            this.times = [0, 0, 0];
+	            this.time = null;
+	            this.print();
+	        }
+	    }, {
+	        key: 'step',
+	        value: function step(timestamp) {
+	            if (!this.running) return;
+	            this.calculate(timestamp);
+	            this.time = timestamp;
+	            this.print();
+	            requestAnimationFrame(this.step.bind(this));
+	
+	            if (this.times[0] === Math.floor(this.timeLimit) && this.times[1] === this.timeLimit % 1 * 60) {
+	                this.stop();
+	                this.times[2] = 0;
+	                this.times[1] = this.timeLimit % 1 * 60;
+	                this.times[0] = Math.floor(this.timeLimit);
+	                this.print();
+	            }
+	        }
+	    }, {
+	        key: 'calculate',
+	        value: function calculate(timestamp) {
+	            var diff = timestamp - this.time;
+	            // Hundredths of a second are 100 ms
+	            this.times[2] += diff / 10;
+	            // Seconds are 100 hundredths of a second
+	            if (this.times[2] >= 100) {
+	                this.times[1] += 1;
+	                this.times[2] -= 100;
+	            }
+	            // Minutes are 60 seconds
+	            if (this.times[1] >= 60) {
+	                this.times[0] += 1;
+	                this.times[1] -= 60;
+	            }
+	        }
+	    }, {
+	        key: 'print',
+	        value: function print() {
+	            this.display.innerText = this.format(this.times);
+	        }
+	    }, {
+	        key: 'format',
+	        value: function format(times) {
+	            return pad0(times[0], 2) + ':' + pad0(times[1], 2) + ':' + pad0(Math.floor(times[2]), 2);
+	        }
+	    }]);
+	
+	    return Stopwatch;
+	}();
+	
+	function pad0(value, count) {
+	    var result = value.toString();
+	    for (; result.length < count; --count) {
+	        result = '0' + result;
+	    }return result;
+	}
+	
+	exports.default = stopWatch;
+
+/***/ },
+/* 25 */
+/*!***************************************!*\
+  !*** ./src/directives/stopwatch.html ***!
+  \***************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<nav class=\"controls\">\n  <a class=\"button\" ng-click=\"stopwatch.start();\">Start</a>\n  <a class=\"button\" ng-click=\"stopwatch.stop();\">Stop</a>\n  <a class=\"button\" ng-click=\"stopwatch.reset();\">Reset</a>\n  <a class=\"button\" ng-click=\"stopwatch.complete();\">Complete</a>\n</nav>\n<div class=\"stopwatch\"></div>\n";
 
 /***/ }
 /******/ ]);

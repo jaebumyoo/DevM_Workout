@@ -23,7 +23,12 @@ import wingItCtrl from "./controllers/home/wingItCtrl";
 import sampleHtml from "./templates/home/sample.html";
 import sampleCtrl from "./controllers/home/sampleCtrl";
 
+import mainSvc from "./services/mainSvc";
+import stopwatch from "./directives/stopwatch";
+
 angular.module( "myApp", [ uiRouter ] )
+  .service( "mainSvc", mainSvc )
+  .directive( "stopwatch", stopwatch )
   .config( function( $stateProvider, $urlRouterProvider ) {
     $stateProvider
       .state( 'login', {
@@ -36,30 +41,31 @@ angular.module( "myApp", [ uiRouter ] )
         url: '/home',
         template: homeHtml
       } )
-
       .state( 'workout', {
         controller: workoutCtrl,
-        url: '/home/workout',
+        url: '/workout',
+        params: { _id: null },
         template: workoutHtml
       } )
       .state( 'routine', {
         controller: routineCtrl,
-        url: '/home/routine',
+        url: '/routine',
+        params: { _id: null },
         template: routineHtml
       } )
       .state( 'schedule', {
         controller: scheduleCtrl,
-        url: '/home/schedule',
+        url: '/schedule',
         template: scheduleHtml
       } )
       .state( 'wingIt', {
         controller: wingItCtrl,
-        url: '/home/wingIt',
+        url: '/wingIt',
         template: wingItHtml
       } )
       .state( 'sample', {
         controller: sampleCtrl,
-        url: '/home/sample',
+        url: '/sample',
         template: sampleHtml
       } )
 

@@ -13,7 +13,6 @@ mongoose.connect( mongoUri );
 mongoose.connection.once( 'open', () => console.log( `Connected to MongoDB at ${ mongoUri }.` ) );
 
 require( './server/features/googleLogin' )( app );
-
 require( './server/masterRoutes' )( app );
 
 app.listen( port, () => `Listening on port ${ port }.`  );

@@ -9,7 +9,9 @@ const Set = new mongoose.Schema( {
   restPeriod: { type: Number }
 } );
 
-module.exports = new mongoose.Schema( {
+ const Routine = new mongoose.Schema( {
   name: { type: String, required: true, trim: true },
   sets: [ Set ]
 } );
+
+module.exports = mongoose.model( "Routine", Routine );

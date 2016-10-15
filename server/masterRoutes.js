@@ -1,7 +1,7 @@
 const userRoutes = require( './features/user/userRoutes' );
-const programRoutes = require( './features/program/programRoutes' );
+const routineRoutes = require( './features/routine/routineRoutes' );
 
 module.exports = ( app ) => {
   userRoutes( app );
-  programRoutes( app );
+  routineRoutes( app );
 };
