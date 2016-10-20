@@ -1,53 +1,95 @@
-<h1>Routine</h1>
+<main class="routine">
+  <nav class="routine-nav">
+    <h1>Routines</h1>
+    <img class="exit" src="../../assets/images/exit.png" ng-click="back2Home()">
+  </nav>
 
-<button ng-click="addRoutine()">Build New Routine</button>
+  <section class="routine-body">
+    <div class="routine-routines">
+      <ul ng-repeat="routine in routines">
+        <li>
+          <div ng-click="selectRoutine( routine )">
+            <h1 class="routine-routines-title">{{ routine.name }}</h3>
+            <hr>
+            <span class="routine-routines-content">
+              Sets: {{ routine.sets.length }}
 
-<section ng-show="newRoutine">
-  <input type="text" ng-model="newRoutine.name">
+            </span>
+          </div>
+        </li>
+      </ul>
+        <li>
+          <div ng-hide="newRoutine" ng-click="addRoutine()">
+            <img src="../../assets/images/add_sign.png" alt="Add">
+          </div>
+        </li>
+    </div>
 
-  <div ng-repeat="set in newRoutine.sets" ng-click="editSet( set )">
-    <p>{{set.name}}</p>
-    <p>{{set.type}}</p>
-    <p>{{set.weight}}</p>
-    <p>{{set.numOfReps}}</p>
-    <p>{{set.duration}}</p>
-    <p>{{set.restPeriod}}</p>
-  </div>
-
-  <div>
-    <input type="text" placeholder="Set Name" ng-model="name">
-    <input type="text" placeholder="Type" ng-model="type">
-    <input type="text" placeholder="Weight" ng-model="weight">
-    <input type="text" placeholder="Reps" ng-model="numOfReps">
-    <input type="text" placeholder="Workout Duration" ng-model="duration">
-    <input type="text" placeholder="Rest Duration" ng-model="restPeriod">
-
-    <button ng-click="addSet()">Add Set</button>
-    <button ng-click="addSet( setIndex )" ng-show="setIndex > -1">Update</button>
-    <button ng-click="clearSet()">Clear</button>
-  </div>
-
-  <button ng-click="postRoutine()" ng-show="!newRoutine._id">Add Routine</button>
-  <button ng-click="putRoutine()" ng-show="newRoutine._id">Update Routine</button>
-  <button ng-click="cancelPost()">Cancel</button>
-</section>
-
-<section>
-  <ul ng-repeat="routine in routines">
-    <li>
-      <h3>Name of Routine: {{ routine.name }}</h3>
-      <ul ng-repeat="set in routine.sets">
-        <li>Set Name: {{ set.name }}</li>
-        <li>Number of Reps: {{ set.numOfReps }}</li>
-        <li>Rest Timer: {{ set.restPeriod }}</li>
-        <li>Type of Workout: {{ set.type }}</li>
-        <li>Weight: {{ set.weight }}</li>
+    <section class="modal" id="selected-routine" ng-show="selectedRoutine">
+      <h2>{{ selectedRoutine.name }}</h3>
+      <ul ng-repeat="set in selectedRoutine.sets">
+        <li>Set: {{ set.name }}</li>
+        <li>Reps: {{ set.numOfReps }}</li>
+        <li>Rest Timer: {{ set.restPeriod }}min</li>
+        <li>{{ set.type }}</li>
+        <li>Weight: {{ set.weight }}lb</li>
         <br>
       </ul>
-    </li>
-    <button ng-click="editRoutine( routine )">Edit</button>
-    <button ng-click="deleteRoutine( routine._id )">Delete</button>
-  </ul>
-</section>
+      <button ng-click="editRoutine( selectedRoutine )">Edit</button>
+      <button ng-click="deleteRoutine( selectedRoutine._id )">Delete</button>
+    </section>
 
-<button ng-click="back2Home()">Back to Home</button>
+    <section class="modal" id="new-routine" ng-show="newRoutine">
+      <input type="text" ng-model="newRoutine.name">
+
+      <div ng-repeat="set in newRoutine.sets" ng-click="editSet( set )">
+        <p>{{set.name}}</p>
+        <p>{{set.type}}</p>
+        <p>{{set.weight}}</p>
+        <p>{{set.numOfReps}}</p>
+        <p>{{set.duration}}</p>
+        <p>{{set.restPeriod}}</p>
+      </div>
+
+      <div>
+        <input type="text" placeholder="Set Name" ng-model="name">
+        <input type="text" placeholder="Type" ng-model="type">
+        <input type="text" placeholder="Weight" ng-model="weight">
+        <input type="text" placeholder="Reps" ng-model="numOfReps">
+        <input type="text" placeholder="Workout Duration" ng-model="duration">
+        <input type="text" placeholder="Rest Duration" ng-model="restPeriod">
+
+        <button ng-click="addSet()">Add Set</button>
+        <button ng-click="addSet( setIndex )" ng-show="setIndex > -1">Update</button>
+        <button ng-click="clearSet()">Clear</button>
+      </div>
+
+      <button ng-click="postRoutine()">Add Routine</button>
+      <button ng-click="putRoutine()" ng-show="newRoutine._id">Update Routine</button>
+      <button ng-click="cancelPost()">Cancel</button>
+    </section>
+
+    <!-- <button ng-hide="newRoutine" ng-click="addRoutine()">Build New Routine</button> -->
+
+  </section>
+
+  <!-- <section>
+    <h3>Available Routines</h3>
+    <ul ng-repeat="routine in routines">
+      <li>
+        <h3>Name of Routine: {{ routine.name }}</h3>
+        <ul ng-repeat="set in routine.sets">
+          <li>Set Name: {{ set.name }}</li>
+          <li>Number of Reps: {{ set.numOfReps }}</li>
+          <li>Rest Timer: {{ set.restPeriod }}</li>
+          <li>Type of Workout: {{ set.type }}</li>
+          <li>Weight: {{ set.weight }}</li>
+          <br>
+        </ul>
+      </li>
+      <button ng-click="editRoutine( routine )">Edit</button>
+      <button ng-click="deleteRoutine( routine._id )">Delete</button>
+    </ul>
+  </section> -->
+
+</main>

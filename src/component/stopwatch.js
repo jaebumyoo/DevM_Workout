@@ -2,7 +2,7 @@ import template from "./stopwatch.html"
 
 export default {
   bindings:{
-    timeLimit "=setTime"
+    timeLimit "=setTimer"
   },
   template,
   controller(){

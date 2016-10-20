@@ -3,9 +3,17 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
     mainSvc.getRoutines( $stateParams._id ).then( response => {
       $scope.routines = response.data;
     } );
+
+    if ( $stateParams.routine !== null ) {
+      $scope.newRoutine = $stateParams.routine;
+    }
   };
 
   $scope.getRoutines();
+
+  $scope.selectRoutine = routine => {
+    $scope.selectedRoutine = routine;
+  }
 
   $scope.addRoutine = () => {
     $scope.newRoutine = {
@@ -43,11 +51,14 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
   }
 
   $scope.postRoutine = () => {
+    delete $scope.newRoutine._id;
+
     mainSvc.postRoutine( $stateParams._id, $scope.newRoutine ).then( response => {
       $scope.getRoutines();
     } );
 
     delete $scope.newRoutine;
+    delete $stateParams.routine;
   };
 
   $scope.putRoutine = () => {
@@ -56,6 +67,7 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
     } );
 
     delete $scope.newRoutine;
+    delete $stateParams.routine;
   }
 
   $scope.cancelPost = () => {
@@ -64,7 +76,11 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
   }
 
   $scope.editRoutine = ( routine ) => {
-    $scope.newRoutine = routine;
+    $scope.newRoutine = {
+      _id: routine._id,
+      name: routine.name,
+      sets: routine.sets.slice()
+    }
   }
 
   $scope.deleteRoutine = ( _routineId ) => {
@@ -86,6 +102,7 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
     delete $scope.restPeriod;
     $scope.setIndex = -1;
   }
+
 }
 
 export default routineCtrl;

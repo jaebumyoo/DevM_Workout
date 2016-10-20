@@ -103,6 +103,7 @@ module.exports = {
   },
 
   postProgram( req, res ) {
+    console.log( req.body );
     User.findByIdAndUpdate(
       req.params._id,
       { $push: { programs: req.body } },
@@ -114,6 +115,7 @@ module.exports = {
   },
 
   putProgram( req, res ) {
+    console.log(req.body);
     User.findById( req.params._id, ( err, user ) => {
       if ( err ) return res.status( 500 ).json( err );
 

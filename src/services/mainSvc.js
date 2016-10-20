@@ -27,6 +27,18 @@ function mainSvc( $http, $rootScope ) {
     return $http.get( `/api/user/${ _id }/program` );
   };
 
+  this.putProgram = ( _id, _programId, program ) => {
+    return $http.put( `/api/user/${ _id }/program/${ _programId }`, program );
+  };
+
+  this.postProgram = ( _id, program ) => {
+    return $http.post( `/api/user/${ _id }/program`, program );
+  }
+
+  this.deleteProgram = ( _id, _programId ) => {
+    return $http.delete( `/api/user/${ _id }/program/${ _programId }` );
+  };
+
   this.exerciseCompleted = ( str ) => {
     $rootScope.$broadcast( 'exerciseCompleted', str );
   };

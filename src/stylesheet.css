@@ -1,0 +1,496 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-page {
+  position:fixed;
+    top:0px;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+
+  color: white;
+  background-color: black;
+  background-image: url( './assets/images/login_background.jpg' );
+  background-position: -30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .login-page {
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+
+.login-page-right-half {
+  position:fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+
+  width: 40%;
+  background-color: black;
+}
+
+.login-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login-wrapper > a > img {
+  position:absolute;
+    top:45%;
+    right: 10%;
+
+  width: 300px;
+}
+
+@media (max-width: 937px) {
+  .login-page-right-half {
+    width: 376px;
+  }
+}
+
+/*                                     Home                                   */
+
+.home {
+  background-color: #333333;
+  position: absolute;
+}
+
+.front-door {
+  position: relative;
+  margin: 15px;
+}
+
+.front-door-image {
+  width: 100%;
+}
+
+.front-door-message-wrapper {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  color: #F2EDD8;
+  text-align: center;
+  white-space: nowrap;
+
+  display: block;
+
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 45%;
+
+  padding: 0 10px;
+}
+
+.front-door-message {
+  display: inline-block;
+  overflow: hidden;
+  animation: type 4s steps(60, end);
+}
+
+.front-door-message2 {
+  display: inline-block;
+  overflow: hidden;
+  animation: type2 8s steps(60, end);
+}
+
+.front-door-message2 > span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+  100%{ width: 100%; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.row {
+  margin: 0 15px;
+  margin-bottom: -4.5px;
+}
+
+.row2 {
+  margin: 0 15px;
+  margin-bottom: 10px;
+}
+
+.selection {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.selection-hover {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.selection-image {
+  width: 100%;
+}
+
+.selection-image-hover {
+  width: 20%;
+}
+
+.selection-message-wrapper {
+  font-size: 5vw;
+  text-align: center;
+
+  display: block;
+
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+
+  padding: 0 10px;
+}
+
+.selection-message-wrapper-hover {
+  font-family: Sans-serif;
+  color: white;
+  text-align: center;
+
+  display: block;
+
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+
+  padding: 0 10px;
+}
+
+.selection-message-wrapper-hover > h4 {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.selection-message-wrapper-hover > p {
+  font-size: 1.5vw;
+}
+
+/*                                   Workout                                  */
+.workout {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #333333;
+
+  position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.workout-timer {
+  height: 16vh;
+  padding-top: 15px;
+
+  text-align: center;
+}
+
+.workout-timer-watch {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5em;
+  color: white;
+}
+
+.workout-timer > .exit {
+  position:  absolute;
+    top: 1vw;
+    right: 2vw;
+
+  opacity: 0.2;
+
+  width: 4vw;
+}
+
+.workout-selected-program-routines {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+
+  width: 85vw;
+  height: 84vh;
+
+  margin: 0 auto;
+}
+
+.workout-selected-program-routine {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+
+  padding: 40px 40px;
+
+  overflow: scroll;
+}
+
+.workout-selected-program-routine-info {
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+}
+
+.workout-selected-program-routine-name {
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-size: 3em;
+}
+
+.workout-selected-program-routine-set-number {
+  font-size: 1.5em;
+}
+
+.workout-selected-program-routine-sets {
+  display: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid;
+}
+
+.workout-selected-program-routine-set-wrapper {
+  
+}
+
+.workout-selected-program-routine-sets:last-child {
+  border-bottom: none;
+}
+
+.workout-selected-program-routine-set-name{
+  font-size: 1.5em;
+}
+
+.workout-selected-program-routine:hover .workout-selected-program-routine-sets {
+  display:block;
+}
+
+.available-programs {
+  position: absolute;
+    top: 11vh;
+    left: 0;
+
+  width: 7vw;
+}
+
+.available-program-tag {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.available-program-tag-image {
+  width: 100%;
+  max-width: 79px;
+}
+
+.available-programs-list {
+  width: 320%;
+  max-width: 300px;
+  max-height: 650px;
+
+  overflow: scroll;
+
+  display: inline-block;
+  background-color: white;
+
+  position: absolute;
+    left: -320%;
+
+  animation: slide 0.5s forwards;
+}
+
+.available-programs-list-item {
+  margin: 0px 10px;
+  padding: 10px 20px;
+
+  border-bottom: 1px solid;
+}
+
+.available-programs-list-item span {
+  padding-left: 5px;
+  color: #787878;
+}
+
+@keyframes slide {
+    100% { left: 10px; }
+}
+
+/*                                   Routine                                  */
+.routine {
+  font-family: Sans-serif;
+
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+  background-image: url( './assets/images/routine_page.jpg' );
+  background-repeat: no-repeate;
+  background-attachment: fixed;
+}
+
+.routine-nav {
+  color: rgba( 165, 91, 27, 0.7 );
+  font-size: 7vh;
+
+  padding: 3vh 3vw;
+  position: fixed;
+
+  width: 100vw;
+}
+
+.routine-nav h1 {
+  display: inline-block;
+}
+
+.routine-nav > img {
+  position:  absolute;
+    top: 1vw;
+    right: 2vw;
+
+  opacity: 0.2;
+
+  width: 4vw;
+}
+
+.exit:hover {
+  opacity: 0.8;
+}
+
+.routine-body {
+  overflow: scroll;
+
+  position: fixed;
+    bottom: 0;
+
+  padding: 10px 40px;
+
+  height: calc(100vh - 15vh);
+  width: 100%;
+}
+
+.modal {
+  color: white;
+
+  margin: 0 auto;
+  background-color: rgba( 0, 0, 0, 0.8 );
+
+  width: 900px;
+
+  position: fixed;
+    top: 30%;
+}
+
+.routine-routines {
+  width: 90vw;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.routine-routines ul {
+  list-style-type: none;
+}
+
+.routine-routines > li {
+  list-style-type: none;
+}
+
+.routine-routines li div {
+  color: #a55b1b;
+  word-wrap: break-word;
+
+  position: relative;
+  float: left;
+  margin: 0.5vw;
+  border: 1px solid #a55b1b;
+
+  padding: 0.5vw;
+
+  background-color: rgba( 255, 197, 146, 0.6 );
+
+  width: 17vw;
+  height: 17vw;
+
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+
+.routine-routines li div img {
+  position: absolute;
+    top: 35%;
+    left: 35%;
+
+  width: 30%;
+
+  opacity: 0.5;
+}
+
+.routine-routines-title {
+  font-size: 1.5vw;
+}
+
+.routine-routines li div hr {
+  border: 1px solid #a55b1b;
+  margin-bottom: 0.5vw;
+}
+
+.routine-routines-content {
+  font-size: 1.5vw;
+}
+
+.routine-routines li div:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.9);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.9);
+}
+
+@media (min-width: 1350px) {
+  .routine-routines li div {
+    margin: 6.75px;
+    width: 229.5px;
+    height: 229.5px;
+  }
+  .routine-routines {
+    width: 1215px;
+  }
+
+  .routine-routines-title {
+    font-size: 20px;
+  }
+
+  .routine-routines li div hr {
+    margin-bottom: 10px;
+  }
+
+  .routine-routines-content {
+    font-size: 20px;
+  }
+}

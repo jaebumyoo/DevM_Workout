@@ -1,23 +1,91 @@
-<main>
-  {{user}}
-
-  <section>
-    <div ng-click="workout()">Just Do It</div>
+<main class="home">
+  <section class="front-door">
+    <img src="../assets/images/front_door.jpg" alt="Front Door" class="front-door-image">
+    <div class="front-door-message-wrapper">
+      <p class="front-door-message">
+        It's not what we do once in a while that shapes our lives.
+      </p>
+      <br>
+      <p class="front-door-message2">
+        It's what we do consistently.
+        <span>|</span>
+      </p>
+    </div>
   </section>
 
-  <section>
-    <div ng-click="routine()">Setup Routine</div>
+  <section class="row">
+    <div class="selection" ng-mouseover="hoverIn('workout')" ng-mouseleave="hoverOut('workout')">
+      <img src="../assets/images/just_wing_it.jpg" class="selection-image">
+      <div class="selection-message-wrapper">
+        <p style="font-family: 'Luckiest Guy', cursive; color: #8ED2C9;">
+          Start Workout
+        </p>
+      </div>
+
+      <div id="workout" class="selection-hover" ng-click="workout()">
+        <div class="selection-message-wrapper-hover">
+          <img src="../assets/images/workout_icon.png" alt="Start Workout" class="selection-image-hover">
+          <h4>Start Workout</h4>
+          <p>Determination, Patience, Consistency</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="selection" ng-mouseover="hoverIn('routines')" ng-mouseleave="hoverOut('routines')">
+      <img src="../assets/images/setup_routine.jpg" class="selection-image">
+      <div class="selection-message-wrapper">
+        <p style="font-family: 'Bubblegum Sans', cursive; color: #525564;">
+          Routines
+        </p>
+      </div>
+
+      <div id="routines" class="selection-hover" ng-click="routine()">
+        <div class="selection-message-wrapper-hover">
+          <img src="../assets/images/routines_icon.png" alt="Routines" class="selection-image-hover">
+          <h4>Routines</h4>
+          <p>Make, Follow, Stick With It</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <div ng-click="schedule()">Setup Schedule</div>
+  <section class="row2">
+    <div class="selection" ng-mouseover="hoverIn('schedule')" ng-mouseleave="hoverOut('schedule')">
+      <img src="../assets/images/setup_schedule.jpg" alt="Setup Schedule" class="selection-image">
+      <div class="selection-message-wrapper">
+        <p style="font-family: 'Chela One', cursive; color: #FF7A5A;">
+          Schedule
+        </p>
+      </div>
+
+      <div id="schedule" class="selection-hover" ng-click="schedule()">
+        <div class="selection-message-wrapper-hover">
+          <img src="../assets/images/schedule_icon.png" alt="Schedule" class="selection-image-hover">
+          <h4>Schedule</h4>
+          <p>What A Difference A Day Makes!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="selection" ng-mouseover="hoverIn('wingIt')" ng-mouseleave="hoverOut('wingIt')">
+      <img src="../assets/images/start_workout.jpg" alt="Just Wing It" class="selection-image">
+      <div class="selection-message-wrapper">
+        <p style="font-family: 'Flavors', cursive; color: #FFB85F;">
+          Just Wing It
+        </p>
+      </div>
+
+      <div id="wingIt" class="selection-hover" ng-click="wingIt()">
+        <div class="selection-message-wrapper-hover">
+          <img src="../assets/images/wingIt_icon.png" alt="Setup Routine" class="selection-image-hover">
+          <h4>Just Wing It</h4>
+          <p>Ah What The Heck, I'll Workout Anyway</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <div ng-click="wingIt()">Just Wing It</div>
-  </section>
-
-  <section>
+  <!-- <section>
     <div ng-click="sample()">Sample Routines</div>
-  </section>
+  </section> -->
 </main>

@@ -1,1 +1,47 @@
-wing it
+<h1>wing it</h1>
+
+<section ng-show="selectedRoutine">
+  <div>
+    <stopwatch set-timer="setTimer" ng-show="setTimer"></stopwatch>
+  </div>
+  <button ng-click="startRoutine();" ng-hide="setTimer">Just Do It!</button>
+  <ul ng-repeat="set in selectedRoutine.sets">
+    Name: {{set.name}}
+    Type: {{set.type}}
+    Weight: {{set.weight}}
+    Reps: {{set.numOfReps}}
+    Workout Duration: {{set.duration}}
+    Resting Period: {{set.restPeriod}}
+  </ul>
+</section>
+
+<section>
+  <h3 ng-show="program.date">Today's Workout {{program.date}}</h3>
+
+  <ul ng-repeat="routine in program.routines" ng-click="selectRoutine( routine )">
+    {{routine.name}}
+    {{routine.sets}}
+    <button ng-click="removeRoutine( $index )">Remove Routine</button>
+  </ul>
+</section>
+
+<section>
+  <h3>Available Routines</h3>
+  <ul ng-repeat="routine in routines">
+    <li>
+      <h3>Name of Routine: {{ routine.name }}</h3>
+      <ul ng-repeat="set in routine.sets">
+        <li>Set Name: {{ set.name }}</li>
+        <li>Number of Reps: {{ set.numOfReps }}</li>
+        <li>Rest Timer: {{ set.restPeriod }}</li>
+        <li>Type of Workout: {{ set.type }}</li>
+        <li>Weight: {{ set.weight }}</li>
+        <br>
+      </ul>
+    </li>
+
+    <button ng-click="add2program( routine )">Add To Workout</button>
+  </ul>
+</section>
+
+<button ng-click="back2Home()">Back to Home</button>

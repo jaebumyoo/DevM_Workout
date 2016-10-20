@@ -2,10 +2,11 @@ import stopwatchHtml from "./stopwatch.html";
 
 function stopWatch() {
   return {
+    restrict: "E",
+    template: stopwatchHtml,
     scope: {
       setTimer: '=setTimer'
     },
-		template: stopwatchHtml,
 		controller: function ( $scope, mainSvc ) {
       $scope.stopwatch = new Stopwatch(
         document.querySelector('.stopwatch')
@@ -28,7 +29,7 @@ function stopWatch() {
           $scope.setTimer.restPeriod = -1;
           mainSvc.exerciseCompleted( "Exercise is completed!" );
         }
-      }
+      };
 		}
 	};
 }

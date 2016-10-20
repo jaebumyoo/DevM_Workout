@@ -10,6 +10,10 @@ module.exports = {
 				, loader: "babel"
 			}
 			, {
+				test: /\.(png|jpg|jpeg)$/
+				, loader: "file-loader?name=./assets/images/[name].[ext]"
+			}
+			, {
 				test: /\.css/
 				, exclude: /node_modules/
 				, loader: "style!css"

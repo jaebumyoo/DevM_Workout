@@ -1,6 +1,7 @@
 import angular from "angular";
 import uiRouter from "angular-ui-router";
 import "./stylesheet.css";
+import "./calendar.css";
 
 import loginHtml from "./templates/login.html";
 import loginCtrl from "./controllers/loginCtrl";
@@ -24,11 +25,14 @@ import sampleHtml from "./templates/home/sample.html";
 import sampleCtrl from "./controllers/home/sampleCtrl";
 
 import mainSvc from "./services/mainSvc";
+
 import stopwatch from "./directives/stopwatch";
+import calendar from "./directives/calendar";
 
 angular.module( "myApp", [ uiRouter ] )
   .service( "mainSvc", mainSvc )
   .directive( "stopwatch", stopwatch )
+  .directive( "calendar", calendar )
   .config( function( $stateProvider, $urlRouterProvider ) {
     $stateProvider
       .state( 'login', {
@@ -50,24 +54,26 @@ angular.module( "myApp", [ uiRouter ] )
       .state( 'routine', {
         controller: routineCtrl,
         url: '/routine',
-        params: { _id: null },
+        params: { _id: null, routine: null },
         template: routineHtml
       } )
       .state( 'schedule', {
         controller: scheduleCtrl,
         url: '/schedule',
+        params: { _id: null },
         template: scheduleHtml
       } )
       .state( 'wingIt', {
         controller: wingItCtrl,
         url: '/wingIt',
+        params: { _id: null },
         template: wingItHtml
       } )
-      .state( 'sample', {
-        controller: sampleCtrl,
-        url: '/sample',
-        template: sampleHtml
-      } )
+      // .state( 'sample', {
+      //   controller: sampleCtrl,
+      //   url: '/sample',
+      //   template: sampleHtml
+      // } )
 
     $urlRouterProvider.otherwise( '/' );
   }
