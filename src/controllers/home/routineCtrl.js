@@ -89,6 +89,22 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
     } );
   }
 
+  $scope.showSets = ( index, inOut ) => {
+    if ( !inOut ) {
+      document.getElementsByClassName( "routine-routines" )[ index ].style.paddingTop = "0px";
+      document.getElementsByClassName( "routine-routines" )[ index ].children[ 1 ].style.display = "block";
+    }
+    else {
+      document.getElementsByClassName( "routine-routines" )[ index ].style.paddingTop = "18%";
+      document.getElementsByClassName( "routine-routines" )[ index ].children[ 1 ].style.display = "none";
+    }
+  }
+
+  $scope.setInfoPrinter = ( input ) => {
+    if ( input ) return input;
+    return "N/A";
+  };
+
   $scope.back2Home = () => {
     $state.go( 'home' );
   }

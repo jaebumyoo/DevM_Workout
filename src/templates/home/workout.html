@@ -3,12 +3,15 @@
     <div>
       <stopwatch class="workout-timer-watch" set-timer="setTimer" ng-show="setTimer"></stopwatch>
     </div>
-    <img class="workout-timer-justdoit" src="../../assets/images/just_do_it_timer.png" ng-click="startRoutine()" ng-hide="setTimer||!selectedRoutine">
+    <div ng-click="startRoutine()" ng-hide="setTimer||!selectedRoutine">
+      <img class="workout-timer-justdoit" src="../../assets/images/just_do_it_timer.png">
+      Click To Start!
+    </div>
     <img class="exit" src="../../assets/images/exit.png" ng-click="back2Home()">
   </div>
 
   <div class="workout-selected-program-routines" ng-show="selectedProgram">
-    <div class="workout-selected-program-routine" ng-repeat="routine in selectedProgram.routines" ng-style="{'background-color': onColors[$index % onColors.length]}" ng-click="selectRoutine( routine, this )">
+    <div class="workout-selected-program-routine" ng-repeat="routine in selectedProgram.routines" ng-style="{'background-color': onColors[$index % onColors.length]}" ng-click="selectRoutine( routine, $index )" ng-mouseover="colorChange($index, 0)" ng-mouseleave="colorChange($index, 1)">
       <div class="workout-selected-program-routine-info">
         <h1 class="workout-selected-program-routine-name">{{routine.name}}</h1>
         <p class="workout-selected-program-routine-set-number"> Sets: {{routine.sets.length}}</p>
@@ -19,8 +22,8 @@
           Type: {{setInfoPrinter(set.type)}}<br>
           Weight: {{setInfoPrinter(set.weight)}}<br>
           Reps: {{setInfoPrinter(set.numOfReps)}}<br>
-          Workout Duration: {{setInfoPrinter(set.duration)}}<br>
-          Resting Period: {{setInfoPrinter(set.restPeriod)}}min
+          <span class="workout-selected-program-routine-set-workout-duration">Workout Timer: {{setInfoPrinter(set.duration)}}</span><br>
+          <span class="workout-selected-program-routine-set-resting-period">Rest Timer: {{setInfoPrinter(set.restPeriod)}}min</span>
         </div>
       </div>
     </div>
@@ -33,7 +36,7 @@
     <div class="available-programs-list" ng-show="showList">
       <div class="available-programs-list-item" ng-repeat="program in programs" ng-click="selectProgram( program )">
         <h2>{{convertDate(program.date) | date:'MMM dd, yyyy'}}</h2>
-        <span>Programs: {{program.routines.length}}</span>
+        <span>Routines: {{program.routines.length}}</span>
       </div>
     </div>
   </div>

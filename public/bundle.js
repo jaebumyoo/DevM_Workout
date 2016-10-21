@@ -91,51 +91,51 @@
 	
 	var _workout2 = _interopRequireDefault(_workout);
 	
-	var _workoutCtrl = __webpack_require__(/*! ./controllers/home/workoutCtrl */ 29);
+	var _workoutCtrl = __webpack_require__(/*! ./controllers/home/workoutCtrl */ 30);
 	
 	var _workoutCtrl2 = _interopRequireDefault(_workoutCtrl);
 	
-	var _routine = __webpack_require__(/*! ./templates/home/routine.html */ 30);
+	var _routine = __webpack_require__(/*! ./templates/home/routine.html */ 31);
 	
 	var _routine2 = _interopRequireDefault(_routine);
 	
-	var _routineCtrl = __webpack_require__(/*! ./controllers/home/routineCtrl */ 32);
+	var _routineCtrl = __webpack_require__(/*! ./controllers/home/routineCtrl */ 33);
 	
 	var _routineCtrl2 = _interopRequireDefault(_routineCtrl);
 	
-	var _schedule = __webpack_require__(/*! ./templates/home/schedule.html */ 33);
+	var _schedule = __webpack_require__(/*! ./templates/home/schedule.html */ 34);
 	
 	var _schedule2 = _interopRequireDefault(_schedule);
 	
-	var _scheduleCtrl = __webpack_require__(/*! ./controllers/home/scheduleCtrl */ 34);
+	var _scheduleCtrl = __webpack_require__(/*! ./controllers/home/scheduleCtrl */ 35);
 	
 	var _scheduleCtrl2 = _interopRequireDefault(_scheduleCtrl);
 	
-	var _wingIt = __webpack_require__(/*! ./templates/home/wingIt.html */ 35);
+	var _wingIt = __webpack_require__(/*! ./templates/home/wingIt.html */ 36);
 	
 	var _wingIt2 = _interopRequireDefault(_wingIt);
 	
-	var _wingItCtrl = __webpack_require__(/*! ./controllers/home/wingItCtrl */ 36);
+	var _wingItCtrl = __webpack_require__(/*! ./controllers/home/wingItCtrl */ 37);
 	
 	var _wingItCtrl2 = _interopRequireDefault(_wingItCtrl);
 	
-	var _sample = __webpack_require__(/*! ./templates/home/sample.html */ 37);
+	var _sample = __webpack_require__(/*! ./templates/home/sample.html */ 38);
 	
 	var _sample2 = _interopRequireDefault(_sample);
 	
-	var _sampleCtrl = __webpack_require__(/*! ./controllers/home/sampleCtrl */ 38);
+	var _sampleCtrl = __webpack_require__(/*! ./controllers/home/sampleCtrl */ 39);
 	
 	var _sampleCtrl2 = _interopRequireDefault(_sampleCtrl);
 	
-	var _mainSvc = __webpack_require__(/*! ./services/mainSvc */ 39);
+	var _mainSvc = __webpack_require__(/*! ./services/mainSvc */ 40);
 	
 	var _mainSvc2 = _interopRequireDefault(_mainSvc);
 	
-	var _stopwatch = __webpack_require__(/*! ./directives/stopwatch */ 40);
+	var _stopwatch = __webpack_require__(/*! ./directives/stopwatch */ 41);
 	
 	var _stopwatch2 = _interopRequireDefault(_stopwatch);
 	
-	var _calendar = __webpack_require__(/*! ./directives/calendar */ 42);
+	var _calendar = __webpack_require__(/*! ./directives/calendar */ 43);
 	
 	var _calendar2 = _interopRequireDefault(_calendar);
 	
@@ -36592,7 +36592,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.login-page {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    left: 0px;\n    right: 0px;\n\n  color: white;\n  background-color: black;\n  background-image: url(" + __webpack_require__(/*! ./assets/images/login_background.jpg */ 8) + ");\n  background-position: -30%;\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 100%;\n}\n\n@media (max-width: 1440px) {\n  .login-page {\n    background-position: 50%;\n    background-size: cover;\n  }\n}\n\n.login-page-right-half {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    right:0px;\n\n  width: 40%;\n  background-color: black;\n}\n\n.login-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n\n.login-wrapper > a > img {\n  position:absolute;\n    top:45%;\n    right: 10%;\n\n  width: 300px;\n}\n\n@media (max-width: 937px) {\n  .login-page-right-half {\n    width: 376px;\n  }\n}\n\n/*                                     Home                                   */\n\n.home {\n  background-color: #333333;\n  position: absolute;\n}\n\n.front-door {\n  position: relative;\n  margin: 15px;\n}\n\n.front-door-image {\n  width: 100%;\n}\n\n.front-door-message-wrapper {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 3vw;\n  color: #F2EDD8;\n  text-align: center;\n  white-space: nowrap;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 45%;\n\n  padding: 0 10px;\n}\n\n.front-door-message {\n  display: inline-block;\n  overflow: hidden;\n  animation: type 4s steps(60, end);\n}\n\n.front-door-message2 {\n  display: inline-block;\n  overflow: hidden;\n  animation: type2 8s steps(60, end);\n}\n\n.front-door-message2 > span {\n  animation: blink 1s infinite;\n}\n\n@keyframes type{\n  from { width: 0; }\n  100%{ width: 100%; }\n}\n\n@keyframes type2{\n  0%{width: 0;}\n  50%{width: 0;}\n  100%{ width: 100%; }\n}\n\n@keyframes blink{\n  to{opacity: .0;}\n}\n\n.row {\n  margin: 0 15px;\n  margin-bottom: -4.5px;\n}\n\n.row2 {\n  margin: 0 15px;\n  margin-bottom: 10px;\n}\n\n.selection {\n  position: relative;\n  width: 50%;\n  display: inline-block;\n  margin-right: -4px;\n}\n\n.selection-hover {\n  display: none;\n  background-color: rgba(0, 0, 0, 0.7);\n\n  position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n}\n\n.selection-image {\n  width: 100%;\n}\n\n.selection-image-hover {\n  width: 20%;\n}\n\n.selection-message-wrapper {\n  font-size: 5vw;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover {\n  font-family: Sans-serif;\n  color: white;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 40%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover > h4 {\n  font-weight: bold;\n  font-size: 2vw;\n}\n\n.selection-message-wrapper-hover > p {\n  font-size: 1.5vw;\n}\n\n/*                                   Workout                                  */\n.workout {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.workout-timer {\n  height: 16vh;\n  padding-top: 15px;\n\n  text-align: center;\n}\n\n.workout-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n  color: white;\n}\n\n.workout-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.workout-selected-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.workout-selected-program-routine {\n  display: inline-block;\n  width: 100%;\n  max-width: 300px;\n\n  padding: 40px 40px;\n\n  overflow: scroll;\n}\n\n.workout-selected-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n}\n\n.workout-selected-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.workout-selected-program-routine-set-number {\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine-sets {\n  display: none;\n  padding: 15px 20px;\n  border-bottom: 1px solid;\n}\n\n.workout-selected-program-routine-set-wrapper {\n  \n}\n\n.workout-selected-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.workout-selected-program-routine-set-name{\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine:hover .workout-selected-program-routine-sets {\n  display:block;\n}\n\n.available-programs {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-program-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-program-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-programs-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-programs-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-programs-list-item span {\n  padding-left: 5px;\n  color: #787878;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Routine                                  */\n.routine {\n  font-family: Sans-serif;\n\n  position: absolute;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n    bottom: 0px;\n\n  background-image: url(" + __webpack_require__(/*! ./assets/images/routine_page.jpg */ 9) + ");\n  background-repeat: no-repeate;\n  background-attachment: fixed;\n}\n\n.routine-nav {\n  color: rgba( 165, 91, 27, 0.7 );\n  font-size: 7vh;\n\n  padding: 3vh 3vw;\n  position: fixed;\n\n  width: 100vw;\n}\n\n.routine-nav h1 {\n  display: inline-block;\n}\n\n.routine-nav > img {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.exit:hover {\n  opacity: 0.8;\n}\n\n.routine-body {\n  overflow: scroll;\n\n  position: fixed;\n    bottom: 0;\n\n  padding: 10px 40px;\n\n  height: calc(100vh - 15vh);\n  width: 100%;\n}\n\n.modal {\n  color: white;\n\n  margin: 0 auto;\n  background-color: rgba( 0, 0, 0, 0.8 );\n\n  width: 900px;\n\n  position: fixed;\n    top: 30%;\n}\n\n.routine-routines {\n  width: 90vw;\n  margin: 0 auto;\n  overflow: auto;\n}\n\n.routine-routines ul {\n  list-style-type: none;\n}\n\n.routine-routines > li {\n  list-style-type: none;\n}\n\n.routine-routines li div {\n  color: #a55b1b;\n  word-wrap: break-word;\n\n  position: relative;\n  float: left;\n  margin: 0.5vw;\n  border: 1px solid #a55b1b;\n\n  padding: 0.5vw;\n\n  background-color: rgba( 255, 197, 146, 0.6 );\n\n  width: 17vw;\n  height: 17vw;\n\n  -webkit-transition: box-shadow 0.5s ease;\n  -moz-transition: box-shadow 0.5s ease;\n  -o-transition: box-shadow 0.5s ease;\n  -ms-transition: box-shadow 0.5s ease;\n  transition: box-shadow 0.5s ease;\n}\n\n.routine-routines li div img {\n  position: absolute;\n    top: 35%;\n    left: 35%;\n\n  width: 30%;\n\n  opacity: 0.5;\n}\n\n.routine-routines-title {\n  font-size: 1.5vw;\n}\n\n.routine-routines li div hr {\n  border: 1px solid #a55b1b;\n  margin-bottom: 0.5vw;\n}\n\n.routine-routines-content {\n  font-size: 1.5vw;\n}\n\n.routine-routines li div:hover {\n  -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.9);\n  box-shadow: 0px 0px 20px rgba(0,0,0,0.9);\n}\n\n@media (min-width: 1350px) {\n  .routine-routines li div {\n    margin: 6.75px;\n    width: 229.5px;\n    height: 229.5px;\n  }\n  .routine-routines {\n    width: 1215px;\n  }\n\n  .routine-routines-title {\n    font-size: 20px;\n  }\n\n  .routine-routines li div hr {\n    margin-bottom: 10px;\n  }\n\n  .routine-routines-content {\n    font-size: 20px;\n  }\n}\n", ""]);
+	exports.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.login-page {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    left: 0px;\n    right: 0px;\n\n  color: white;\n  background-color: black;\n  background-image: url(" + __webpack_require__(/*! ./assets/images/login_background.jpg */ 8) + ");\n  background-position: -30%;\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 100%;\n}\n\n@media (max-width: 1440px) {\n  .login-page {\n    background-position: 50%;\n    background-size: cover;\n  }\n}\n\n.login-page-right-half {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    right:0px;\n\n  width: 40%;\n  background-color: black;\n}\n\n.login-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n\n.login-wrapper > a > img {\n  position:absolute;\n    top:45%;\n    right: 10%;\n\n  width: 300px;\n}\n\n@media (max-width: 937px) {\n  .login-page-right-half {\n    width: 376px;\n  }\n}\n\n/*                                     Home                                   */\n\n.home {\n  background-color: #333333;\n  position: absolute;\n}\n\n.front-door {\n  position: relative;\n  margin: 15px;\n}\n\n.front-door-image {\n  width: 100%;\n}\n\n.front-door-message-wrapper {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 3vw;\n  color: #F2EDD8;\n  text-align: center;\n  white-space: nowrap;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 45%;\n\n  padding: 0 10px;\n}\n\n.front-door-message {\n  display: inline-block;\n  overflow: hidden;\n  animation: type 4s steps(60, end);\n}\n\n.front-door-message2 {\n  display: inline-block;\n  overflow: hidden;\n  animation: type2 8s steps(60, end);\n}\n\n.front-door-message2 > span {\n  animation: blink 1s infinite;\n}\n\n@keyframes type{\n  from { width: 0; }\n  100%{ width: 100%; }\n}\n\n@keyframes type2{\n  0%{width: 0;}\n  50%{width: 0;}\n  100%{ width: 100%; }\n}\n\n@keyframes blink{\n  to{opacity: .0;}\n}\n\n.row {\n  margin: 0 15px;\n  margin-bottom: -4.5px;\n}\n\n.row2 {\n  margin: 0 15px;\n  margin-bottom: 10px;\n}\n\n.selection {\n  position: relative;\n  width: 50%;\n  display: inline-block;\n  margin-right: -4px;\n}\n\n.selection-hover {\n  display: none;\n  background-color: rgba(0, 0, 0, 0.7);\n\n  position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n}\n\n.selection-image {\n  width: 100%;\n}\n\n.selection-image-hover {\n  width: 20%;\n}\n\n.selection-message-wrapper {\n  font-size: 5vw;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover {\n  font-family: Sans-serif;\n  color: white;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 40%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover > h4 {\n  font-weight: bold;\n  font-size: 2vw;\n}\n\n.selection-message-wrapper-hover > p {\n  font-size: 1.5vw;\n}\n\n/*                                   Workout                                  */\n.workout {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.workout-timer {\n  color: white;\n\n  text-align: center;\n\n  height: 16vh;\n  padding-top: 15px;\n}\n\n.workout-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n}\n\n.workout-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.workout-selected-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.workout-selected-program-routine {\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  max-width: 300px;\n\n  overflow: scroll;\n}\n\n.workout-selected-program-routine:hover {\n  width: 110%;\n  max-width: 330px;\n}\n\n.workout-selected-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n\n  margin: 40px 40px 0 40px;\n}\n\n.workout-selected-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.workout-selected-program-routine-set-number {\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine-sets {\n  display: none;\n}\n\n.workout-selected-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.workout-selected-program-routine-set-wrapper {\n  border-bottom: 1px solid;\n  margin: 0 40px 0 40px;\n  padding: 15px 8px 15px 8px;\n}\n\n.workout-selected-program-routine-set-name{\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine:hover .workout-selected-program-routine-sets {\n  display:block;\n}\n\n.available-programs {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-program-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-program-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-programs-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-programs-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-programs-list-item:hover {\n  background-color: #F2F2F2;\n}\n\n.available-programs-list-item span {\n  padding-left: 5px;\n  color: #787878;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Wint It                                  */\n\n.wingit {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.wingit-timer {\n  height: 16vh;\n  padding-top: 15px;\n\n  text-align: center;\n\n  color: white;\n}\n\n.wingit-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n}\n\n.wingit-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.wingit-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.wingit-program-routine {\n  display: inline-block;\n  width: 100%;\n  max-width: 300px;\n\n  overflow: scroll;\n}\n\n.wingit-program-routine:hover {\n  width: 110%;\n  max-width: 330px;\n}\n\n.wingit-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n\n  margin: 40px 40px 0 40px;\n}\n\n.wingit-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.wingit-program-routine-set-number {\n  font-size: 1.5em;\n  display: inline-block;\n}\n\n.wingit-program-routine-sets {\n  display: none;\n}\n\n.wingit-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.wingit-program-routine-set-wrapper {\n  border-bottom: 1px solid;\n  margin: 0 40px 0 40px;\n  padding: 15px 8px 15px 8px;\n}\n\n.wingit-program-routine-set-name {\n  font-size: 1.5em;\n}\n\n.wingit-program-routine-set-remove {\n  width: 35px;\n  float: right;\n}\n\n.wingit-program-routine-set-remove>img {\n  width: 100%;\n}\n\n.wingit-program-routine-set-remove>img:hover {\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n\n.wingit-program-routine:hover .wingit-program-routine-sets {\n  display:block;\n}\n\n.available-routines {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-routine-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-routine-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-routines-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-routines-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-routines-list-item-title {\n  display: inline-block;\n  width: calc(100% - 25px);\n}\n\n.available-routines-list-item-add {\n  float: right;\n  width: 25px;\n  margin-top: 5px;\n}\n\n.available-routines-list-item-add>img {\n  width: 100%;\n}\n\n.available-routines-list-item-add>img:hover {\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}\n\n.available-routines-set-info {\n  display: none;\n  padding: 10px;\n}\n\n.available-routines-list-item:hover {\n  background-color: #F2F2F2;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Routine                                  */\n.routine {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n    bottom: 0px;\n}\n\n.routine-nav {\n  color: white;\n  font-size: 4vh;\n\n  padding: 10px 20px;\n\n  height: 14vh;\n  width: 100%;\n}\n\n.routine-nav h1 {\n  display: inline-block;\n  text-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-nav > img {\n  position:  absolute;\n    top: 10px;\n    right: 10px;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.exit:hover {\n  opacity: 0.8;\n}\n\n.routine-body {\n  display: flex;\n  flex-flow: row wrap;\n\n  width: 85%;\n\n  margin: 0 auto;\n}\n\n.routine-routines {\n  width: 18%;\n  height: 1%;\n  padding-top: 18%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n}\n\n.routine-routines:hover {\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-routine {\n  padding: 10px;\n  position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-routine > h1 {\n  font-size: 1.8vw;\n\n  padding: 0 8px;\n}\n\n.routine-routine > span {\n  font-size: 1.3vw;\n\n  padding: 0px 15px 5px 15px;\n}\n\n.routine-routine-sets {\n  display: none;\n\n  font-size: 1vw;\n  float:left;\n\n  margin: calc( 5vw ) 30px 15px 30px;\n}\n\n.routine-routines-add {\n  width: 18%;\n  height: 0px;\n  padding-top: 18%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n}\n\n.routine-routines-add > img{\n  width: 30%;\n\n  position: absolute;\n    top: 35%;\n    left: 35%;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-routines-add:hover{\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}*/\n\n/*                                  Stop Watch                                */\n.button:hover {\n  text-shadow: 0 0 7px #FFF;\n}\n", ""]);
 	
 	// exports
 
@@ -36666,15 +36666,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/login_background.jpg";
 
 /***/ },
-/* 9 */
-/*!********************************************!*\
-  !*** ./src/assets/images/routine_page.jpg ***!
-  \********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "./assets/images/routine_page.jpg";
-
-/***/ },
+/* 9 */,
 /* 10 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
@@ -37162,7 +37154,7 @@
   \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"workout\">\n  <div class=\"workout-timer\">\n    <div>\n      <stopwatch class=\"workout-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <img class=\"workout-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 28) + "\" ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 151) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"workout-selected-program-routines\" ng-show=\"selectedProgram\">\n    <div class=\"workout-selected-program-routine\" ng-repeat=\"routine in selectedProgram.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, this )\">\n      <div class=\"workout-selected-program-routine-info\">\n        <h1 class=\"workout-selected-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"workout-selected-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n      </div>\n      <div class=\"workout-selected-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"workout-selected-program-routine-set-wrapper\">\n          <span class=\"workout-selected-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          Workout Duration: {{setInfoPrinter(set.duration)}}<br>\n          Resting Period: {{setInfoPrinter(set.restPeriod)}}min\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-programs\">\n    <div class=\"available-program-tag\" ng-click=\"showPrograms()\">\n      <img class=\"available-program-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/schedule_icon.png */ 23) + "\" alt=\"Programs\">\n    </div>\n    <div class=\"available-programs-list\" ng-show=\"showList\">\n      <div class=\"available-programs-list-item\" ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n        <h2>{{convertDate(program.date) | date:'MMM dd, yyyy'}}</h2>\n        <span>Programs: {{program.routines.length}}</span>\n      </div>\n    </div>\n  </div>\n</div>\n";
+	module.exports = "<div class=\"workout\">\n  <div class=\"workout-timer\">\n    <div>\n      <stopwatch class=\"workout-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <div ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n      <img class=\"workout-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 28) + "\">\n      Click To Start!\n    </div>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 29) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"workout-selected-program-routines\" ng-show=\"selectedProgram\">\n    <div class=\"workout-selected-program-routine\" ng-repeat=\"routine in selectedProgram.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, $index )\" ng-mouseover=\"colorChange($index, 0)\" ng-mouseleave=\"colorChange($index, 1)\">\n      <div class=\"workout-selected-program-routine-info\">\n        <h1 class=\"workout-selected-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"workout-selected-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n      </div>\n      <div class=\"workout-selected-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"workout-selected-program-routine-set-wrapper\">\n          <span class=\"workout-selected-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          <span class=\"workout-selected-program-routine-set-workout-duration\">Workout Timer: {{setInfoPrinter(set.duration)}}</span><br>\n          <span class=\"workout-selected-program-routine-set-resting-period\">Rest Timer: {{setInfoPrinter(set.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-programs\">\n    <div class=\"available-program-tag\" ng-click=\"showPrograms()\">\n      <img class=\"available-program-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/schedule_icon.png */ 23) + "\" alt=\"Programs\">\n    </div>\n    <div class=\"available-programs-list\" ng-show=\"showList\">\n      <div class=\"available-programs-list-item\" ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n        <h2>{{convertDate(program.date) | date:'MMM dd, yyyy'}}</h2>\n        <span>Routines: {{program.routines.length}}</span>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
 /* 28 */
@@ -37175,6 +37167,15 @@
 
 /***/ },
 /* 29 */
+/*!************************************!*\
+  !*** ./src/assets/images/exit.png ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "./assets/images/exit.png";
+
+/***/ },
+/* 30 */
 /*!*********************************************!*\
   !*** ./src/controllers/home/workoutCtrl.js ***!
   \*********************************************/
@@ -37201,33 +37202,26 @@
 	  };
 	
 	  $scope.onColors = ['#0082C8', '#73616F', '#E8846C', '#16528E', '#E54B4B', '#A2C5BF', '#167C80'];
-	  $scope.offColors = ['#003451', '#322A2F', '#754336', '#142C43', '#5C1E1E', '#42504E', '#083233'];
 	  $scope.showList = false;
 	  $scope.ongoingSetIndex = 0;
-	  $scope.ongoingRoutineIndex = 0;
 	  $scope.getPrograms();
 	
 	  $scope.startRoutine = function () {
-	    console.log($scope.ongoingSetIndex);
 	    $scope.setTimer = {
 	      duration: $scope.selectedRoutine.sets[$scope.ongoingSetIndex].duration,
 	      restPeriod: $scope.selectedRoutine.sets[$scope.ongoingSetIndex].restPeriod
 	    };
-	    console.log($scope.setTimer);
 	  };
 	
-	  $scope.programCompleted = function () {
-	    console.log("Program is completed!");
-	  };
+	  $scope.programCompleted = function () {};
 	
 	  $scope.routineCompleted = function () {
 	    $scope.setTimer = undefined;
 	    $scope.ongoingSetIndex = 0;
 	    $scope.selectedRoutine.complete = true;
-	    console.log("Routine is completed!", $scope.selectedRoutine.completed);
 	
-	    var routinesInSelectedProgram = document.getElementsByClassName("workout-selected-program-routine");
-	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].style.color = "black";
+	    document.getElementsByClassName("workout-selected-program-routine")[$scope.ongoingRoutineIndex].style.opacity = 0.5;
+	    document.getElementsByClassName("workout-selected-program-routine")[$scope.ongoingRoutineIndex].style.textShadow = "none";
 	
 	    for (var i = 0; i < $scope.selectedProgram.routines.length; i++) {
 	      if (!$scope.selectedProgram.routines[i].complete) {
@@ -37237,6 +37231,8 @@
 	    }
 	
 	    if (i < $scope.selectedProgram.routines.length) {
+	      document.getElementsByClassName("workout-selected-program-routine")[$scope.ongoingRoutineIndex].style.textShadow = "0 0 7px #000";
+	
 	      $scope.selectedRoutine = $scope.selectedProgram.routines[$scope.ongoingRoutineIndex];
 	      $scope.startRoutine();
 	    } else {
@@ -37246,31 +37242,40 @@
 	  };
 	
 	  $scope.$on('exerciseCompleted', function (event, data) {
-	    console.log(data);
+	    var routinesInSelectedProgram = document.getElementsByClassName("workout-selected-program-routine");
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[5].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[5].style.textDecoration = "line-through";
 	  });
 	
 	  $scope.$on('setCompleted', function (event, data) {
 	    var routinesInSelectedProgram = document.getElementsByClassName("workout-selected-program-routine");
-	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[0].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[0].style.textDecoration = "line-through";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[7].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[7].style.textDecoration = "line-through";
 	
-	    console.log(data);
 	    if (++$scope.ongoingSetIndex < $scope.selectedRoutine.sets.length) $scope.startRoutine();else {
 	      $scope.routineCompleted();
 	    }
 	  });
 	
-	  $scope.selectRoutine = function (routine, context) {
+	  $scope.selectRoutine = function (routine, index) {
+	    if ($scope.ongoingRoutineIndex !== undefined) document.getElementsByClassName("workout-selected-program-routine")[$scope.ongoingRoutineIndex].style.textShadow = "none";
+	
 	    $scope.showList = false;
 	    $scope.setTimer = undefined;
 	    $scope.selectedRoutine = routine;
 	    $scope.ongoingSetIndex = 0;
-	    $scope.ongoingRoutineIndex = context.$index;
+	    $scope.ongoingRoutineIndex = index;
+	
+	    document.getElementsByClassName("workout-selected-program-routine")[index].style.textShadow = "0 0 7px #000";
 	  };
 	
 	  $scope.selectProgram = function (program) {
 	    $scope.setTimer = undefined;
 	    $scope.selectedProgram = program;
 	    $scope.ongoingSetIndex = 0;
+	    delete $scope.ongoingRoutineIndex;
 	  };
 	  // complete first routine, change program, come back to the first program > will trigger already completed routine.
 	
@@ -37295,25 +37300,17 @@
 	exports.default = workoutCtrl;
 
 /***/ },
-/* 30 */
+/* 31 */
 /*!*****************************************!*\
   !*** ./src/templates/home/routine.html ***!
   \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<main class=\"routine\">\n  <nav class=\"routine-nav\">\n    <h1>Routines</h1>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 151) + "\" ng-click=\"back2Home()\">\n  </nav>\n\n  <section class=\"routine-body\">\n    <div class=\"routine-routines\">\n      <ul ng-repeat=\"routine in routines\">\n        <li>\n          <div ng-click=\"selectRoutine( routine )\">\n            <h1 class=\"routine-routines-title\">{{ routine.name }}</h3>\n            <hr>\n            <span class=\"routine-routines-content\">\n              Sets: {{ routine.sets.length }}\n\n            </span>\n          </div>\n        </li>\n      </ul>\n        <li>\n          <div ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">\n            <img src=\"" + __webpack_require__(/*! ../../assets/images/add_sign.png */ 31) + "\" alt=\"Add\">\n          </div>\n        </li>\n    </div>\n\n    <section class=\"modal\" id=\"selected-routine\" ng-show=\"selectedRoutine\">\n      <h2>{{ selectedRoutine.name }}</h3>\n      <ul ng-repeat=\"set in selectedRoutine.sets\">\n        <li>Set: {{ set.name }}</li>\n        <li>Reps: {{ set.numOfReps }}</li>\n        <li>Rest Timer: {{ set.restPeriod }}min</li>\n        <li>{{ set.type }}</li>\n        <li>Weight: {{ set.weight }}lb</li>\n        <br>\n      </ul>\n      <button ng-click=\"editRoutine( selectedRoutine )\">Edit</button>\n      <button ng-click=\"deleteRoutine( selectedRoutine._id )\">Delete</button>\n    </section>\n\n    <section class=\"modal\" id=\"new-routine\" ng-show=\"newRoutine\">\n      <input type=\"text\" ng-model=\"newRoutine.name\">\n\n      <div ng-repeat=\"set in newRoutine.sets\" ng-click=\"editSet( set )\">\n        <p>{{set.name}}</p>\n        <p>{{set.type}}</p>\n        <p>{{set.weight}}</p>\n        <p>{{set.numOfReps}}</p>\n        <p>{{set.duration}}</p>\n        <p>{{set.restPeriod}}</p>\n      </div>\n\n      <div>\n        <input type=\"text\" placeholder=\"Set Name\" ng-model=\"name\">\n        <input type=\"text\" placeholder=\"Type\" ng-model=\"type\">\n        <input type=\"text\" placeholder=\"Weight\" ng-model=\"weight\">\n        <input type=\"text\" placeholder=\"Reps\" ng-model=\"numOfReps\">\n        <input type=\"text\" placeholder=\"Workout Duration\" ng-model=\"duration\">\n        <input type=\"text\" placeholder=\"Rest Duration\" ng-model=\"restPeriod\">\n\n        <button ng-click=\"addSet()\">Add Set</button>\n        <button ng-click=\"addSet( setIndex )\" ng-show=\"setIndex > -1\">Update</button>\n        <button ng-click=\"clearSet()\">Clear</button>\n      </div>\n\n      <button ng-click=\"postRoutine()\">Add Routine</button>\n      <button ng-click=\"putRoutine()\" ng-show=\"newRoutine._id\">Update Routine</button>\n      <button ng-click=\"cancelPost()\">Cancel</button>\n    </section>\n\n    <!-- <button ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">Build New Routine</button> -->\n\n  </section>\n\n  <!-- <section>\n    <h3>Available Routines</h3>\n    <ul ng-repeat=\"routine in routines\">\n      <li>\n        <h3>Name of Routine: {{ routine.name }}</h3>\n        <ul ng-repeat=\"set in routine.sets\">\n          <li>Set Name: {{ set.name }}</li>\n          <li>Number of Reps: {{ set.numOfReps }}</li>\n          <li>Rest Timer: {{ set.restPeriod }}</li>\n          <li>Type of Workout: {{ set.type }}</li>\n          <li>Weight: {{ set.weight }}</li>\n          <br>\n        </ul>\n      </li>\n      <button ng-click=\"editRoutine( routine )\">Edit</button>\n      <button ng-click=\"deleteRoutine( routine._id )\">Delete</button>\n    </ul>\n  </section> -->\n\n</main>\n";
+	module.exports = "<main class=\"routine\">\n  <div class=\"routine-nav\">\n    <h1>Routines</h1>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 29) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"routine-body\">\n    <div class=\"routine-routines\" ng-repeat=\"routine in routines\" ng-click=\"selectRoutine( routine )\" ng-mouseover=\"showSets($index, 0)\" ng-mouseleave=\"showSets($index, 1)\">\n      <div class=\"routine-routine\">\n        <h1 class=\"routine-routines-title\">{{ routine.name }}</h3>\n        <span class=\"routine-routines-content\">Sets: {{ routine.sets.length }}</span>\n      </div>\n      <div class=\"routine-routine-sets\">\n        <div ng-repeat=\"set in routine.sets\">\n          Set: {{ set.name }}<br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}lb<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          Workout Timer: {{setInfoPrinter(set.duration)}}<br>\n          Rest Timer: {{setInfoPrinter(set.restPeriod)}}min<br>\n        </div>\n      </div>\n    </div>\n    <div class=\"routine-routines-add\" ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">\n      <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 153) + "\" alt=\"Add\">\n    </div>\n  </div>\n\n  <!-- <section class=\"routine-body\">\n    <div class=\"routine-routines\">\n      <ul ng-repeat=\"routine in routines\">\n        <li>\n          <div ng-click=\"selectRoutine( routine )\">\n            <h1 class=\"routine-routines-title\">{{ routine.name }}</h3>\n            <hr>\n            <span class=\"routine-routines-content\">Sets: {{ routine.sets.length }}</span>\n          </div>\n        </li>\n      </ul>\n        <li>\n          <div ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">\n            <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 153) + "\" alt=\"Add\">\n          </div>\n        </li>\n    </div> -->\n\n    <section class=\"modal\" id=\"selected-routine\" ng-show=\"selectedRoutine\">\n      <h2>{{ selectedRoutine.name }}</h3>\n      <ul ng-repeat=\"set in selectedRoutine.sets\">\n        <li>Set: {{ set.name }}</li>\n        <li>Reps: {{ set.numOfReps }}</li>\n        <li>Rest Timer: {{ set.restPeriod }}min</li>\n        <li>{{ set.type }}</li>\n        <li>Weight: {{ set.weight }}lb</li>\n        <br>\n      </ul>\n      <button ng-click=\"editRoutine( selectedRoutine )\">Edit</button>\n      <button ng-click=\"deleteRoutine( selectedRoutine._id )\">Delete</button>\n    </section>\n\n    <section class=\"modal\" id=\"new-routine\" ng-show=\"newRoutine\">\n      <input type=\"text\" ng-model=\"newRoutine.name\">\n\n      <div ng-repeat=\"set in newRoutine.sets\" ng-click=\"editSet( set )\">\n        <p>{{set.name}}</p>\n        <p>{{set.type}}</p>\n        <p>{{set.weight}}</p>\n        <p>{{set.numOfReps}}</p>\n        <p>{{set.duration}}</p>\n        <p>{{set.restPeriod}}</p>\n      </div>\n\n      <div>\n        <input type=\"text\" placeholder=\"Set Name\" ng-model=\"name\">\n        <input type=\"text\" placeholder=\"Type\" ng-model=\"type\">\n        <input type=\"text\" placeholder=\"Weight\" ng-model=\"weight\">\n        <input type=\"text\" placeholder=\"Reps\" ng-model=\"numOfReps\">\n        <input type=\"text\" placeholder=\"Workout Duration\" ng-model=\"duration\">\n        <input type=\"text\" placeholder=\"Rest Duration\" ng-model=\"restPeriod\">\n\n        <button ng-click=\"addSet()\">Add Set</button>\n        <button ng-click=\"addSet( setIndex )\" ng-show=\"setIndex > -1\">Update</button>\n        <button ng-click=\"clearSet()\">Clear</button>\n      </div>\n\n      <button ng-click=\"postRoutine()\">Add Routine</button>\n      <button ng-click=\"putRoutine()\" ng-show=\"newRoutine._id\">Update Routine</button>\n      <button ng-click=\"cancelPost()\">Cancel</button>\n    </section>\n\n    <!-- <button ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">Build New Routine</button> -->\n\n  </section>\n\n  <!-- <section>\n    <h3>Available Routines</h3>\n    <ul ng-repeat=\"routine in routines\">\n      <li>\n        <h3>Name of Routine: {{ routine.name }}</h3>\n        <ul ng-repeat=\"set in routine.sets\">\n          <li>Set Name: {{ set.name }}</li>\n          <li>Number of Reps: {{ set.numOfReps }}</li>\n          <li>Rest Timer: {{ set.restPeriod }}</li>\n          <li>Type of Workout: {{ set.type }}</li>\n          <li>Weight: {{ set.weight }}</li>\n          <br>\n        </ul>\n      </li>\n      <button ng-click=\"editRoutine( routine )\">Edit</button>\n      <button ng-click=\"deleteRoutine( routine._id )\">Delete</button>\n    </ul>\n  </section> -->\n\n</main>\n";
 
 /***/ },
-/* 31 */
-/*!****************************************!*\
-  !*** ./src/assets/images/add_sign.png ***!
-  \****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "./assets/images/add_sign.png";
-
-/***/ },
-/* 32 */
+/* 32 */,
+/* 33 */
 /*!*********************************************!*\
   !*** ./src/controllers/home/routineCtrl.js ***!
   \*********************************************/
@@ -37415,6 +37412,21 @@
 	    });
 	  };
 	
+	  $scope.showSets = function (index, inOut) {
+	    if (!inOut) {
+	      document.getElementsByClassName("routine-routines")[index].style.paddingTop = "0px";
+	      document.getElementsByClassName("routine-routines")[index].children[1].style.display = "block";
+	    } else {
+	      document.getElementsByClassName("routine-routines")[index].style.paddingTop = "18%";
+	      document.getElementsByClassName("routine-routines")[index].children[1].style.display = "none";
+	    }
+	  };
+	
+	  $scope.setInfoPrinter = function (input) {
+	    if (input) return input;
+	    return "N/A";
+	  };
+	
 	  $scope.back2Home = function () {
 	    $state.go('home');
 	  };
@@ -37433,7 +37445,7 @@
 	exports.default = routineCtrl;
 
 /***/ },
-/* 33 */
+/* 34 */
 /*!******************************************!*\
   !*** ./src/templates/home/schedule.html ***!
   \******************************************/
@@ -37442,7 +37454,7 @@
 	module.exports = "<h1>Schedule</h1>\n\n<calendar selected=\"day\"></calendar>\n\n<section ng-hide=\"programToEdit\">\n  <h3>Available Programs</h3>\n  <div ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n    {{program.date}}\n  </div>\n\n  <button ng-click=\"addProgram()\">Add Program</button>\n</section>\n\n<section ng-show=\"programToEdit\">\n  <h3>Available Routines</h3>\n  <div ng-repeat=\"routine in routines\">\n    {{routine.name}}\n    <button ng-click=\"addRoutine( routine )\">Add To Program</button>\n    <button ng-click=\"editRoutine( routine )\">Edit</button>\n  </div>\n</section>\n\n<section ng-show=\"selectedProgram && !programToEdit\">\n  <h3>Selected Program {{selectedProgram.date}}</h3>\n\n  <ul ng-repeat=\"routine in selectedProgram.routines\">\n    {{routine.name}}\n    <ul ng-repeat=\"set in routine.sets\" ng-click=\"selectSet( this )\">\n      {{set.name}}\n      {{set.weight}}\n      {{set.numOfReps}}\n    </ul>\n    {{selectedSet}}\n  </ul>\n\n  <button ng-click=\"editProgram()\">Edit Program</button>\n  <button ng-click=\"deleteProgram()\">Remove Program</button>\n</section>\n\n<section ng-show=\"programToEdit\">\n  <h3>Program To Edit {{programToEdit.date}}</h3>\n\n  <ul ng-repeat=\"routine in programToEdit.routines\">\n    {{routine.name}}\n    <ul ng-repeat=\"set in routine.sets\" ng-click=\"selectSet( this )\">\n      {{set.name}}\n      {{set.weight}}\n      {{set.numOfReps}}\n    </ul>\n    {{selectedSet}}\n    <button ng-show=\"programToEdit\" ng-click=\"removeRoutine( $index )\">Remove Routine</button>\n  </ul>\n\n  <button ng-show=\"selectedProgram && programToEdit\" ng-click=\"putProgram()\">Update</button>\n  <button ng-hide=\"selectedProgram\" ng-click=\"postProgram()\">Add</button>\n  <button ng-show=\"programToEdit\" ng-click=\"cancelEdit()\">Cancel</button>\n</section>\n\n<button ng-click=\"back2Home()\">Back to Home</button>\n";
 
 /***/ },
-/* 34 */
+/* 35 */
 /*!**********************************************!*\
   !*** ./src/controllers/home/scheduleCtrl.js ***!
   \**********************************************/
@@ -37570,22 +37582,22 @@
 	exports.default = scheduleCtrl;
 
 /***/ },
-/* 35 */
+/* 36 */
 /*!****************************************!*\
   !*** ./src/templates/home/wingIt.html ***!
   \****************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h1>wing it</h1>\n\n<section ng-show=\"selectedRoutine\">\n  <div>\n    <stopwatch set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n  </div>\n  <button ng-click=\"startRoutine();\" ng-hide=\"setTimer\">Just Do It!</button>\n  <ul ng-repeat=\"set in selectedRoutine.sets\">\n    Name: {{set.name}}\n    Type: {{set.type}}\n    Weight: {{set.weight}}\n    Reps: {{set.numOfReps}}\n    Workout Duration: {{set.duration}}\n    Resting Period: {{set.restPeriod}}\n  </ul>\n</section>\n\n<section>\n  <h3 ng-show=\"program.date\">Today's Workout {{program.date}}</h3>\n\n  <ul ng-repeat=\"routine in program.routines\" ng-click=\"selectRoutine( routine )\">\n    {{routine.name}}\n    {{routine.sets}}\n    <button ng-click=\"removeRoutine( $index )\">Remove Routine</button>\n  </ul>\n</section>\n\n<section>\n  <h3>Available Routines</h3>\n  <ul ng-repeat=\"routine in routines\">\n    <li>\n      <h3>Name of Routine: {{ routine.name }}</h3>\n      <ul ng-repeat=\"set in routine.sets\">\n        <li>Set Name: {{ set.name }}</li>\n        <li>Number of Reps: {{ set.numOfReps }}</li>\n        <li>Rest Timer: {{ set.restPeriod }}</li>\n        <li>Type of Workout: {{ set.type }}</li>\n        <li>Weight: {{ set.weight }}</li>\n        <br>\n      </ul>\n    </li>\n\n    <button ng-click=\"add2program( routine )\">Add To Workout</button>\n  </ul>\n</section>\n\n<button ng-click=\"back2Home()\">Back to Home</button>\n";
+	module.exports = "<div class=\"wingit\">\n  <div class=\"wingit-timer\">\n    <div>\n      <stopwatch class=\"wingit-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <div ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n      <img class=\"wingit-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 28) + "\">\n      Click To Start!\n    </div>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 29) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"wingit-program-routines\">\n    <div class=\"wingit-program-routine\" ng-repeat=\"routine in program.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, $index );\">\n      <div class=\"wingit-program-routine-info\">\n        <h1 class=\"wingit-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"wingit-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n        <div class=\"wingit-program-routine-set-remove\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/minus_sign.png */ 152) + "\" alt=\"OutOfWorkout\" ng-click=\"removeRoutine( $index )\">\n        </div>\n      </div>\n      <div class=\"wingit-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"wingit-program-routine-set-wrapper\">\n          <span class=\"wingit-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          <span class=\"wingit-program-routine-set-workout-duration\">Workout Duration: {{setInfoPrinter(set.duration)}}</span><br>\n          <span class=\"wingit-program-routine-set-resting-period\">Resting Period: {{setInfoPrinter(set.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-routines\">\n    <div class=\"available-routine-tag\" ng-click=\"showRoutines()\">\n      <img class=\"available-routine-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/routines_icon.png */ 21) + "\" alt=\"Routines\">\n    </div>\n    <div class=\"available-routines-list\" ng-show=\"showList\">\n      <div class=\"available-routines-list-item\" ng-repeat=\"routine in routines\">\n        <h2 class=\"available-routines-list-item-title\" ng-click=\"selectViewRoutine(routine)\">{{routine.name}}</h2>\n        <div class=\"available-routines-list-item-add\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 153) + "\" alt=\"Add2Workout\" ng-click=\"add2program( routine )\">\n        </div>\n        <div class=\"available-routines-set-info\" ng-repeat=\"viewSet in routine.sets\" ng-style=\"{'display': routine === viewRoutine ? 'block' : null}\">\n          <span class=\"available-routines-set-name\">{{viewSet.name}}</span><br>\n          Type: {{setInfoPrinter(viewSet.type)}}<br>\n          Weight: {{setInfoPrinter(viewSet.weight)}}<br>\n          Reps: {{setInfoPrinter(viewSet.numOfReps)}}<br>\n          <span class=\"available-routines-set-workout-duration\">Workout Duration: {{setInfoPrinter(viewSet.duration)}}</span><br>\n          <span class=\"available-routines-set-resting-period\">Resting Period: {{setInfoPrinter(viewSet.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 36 */
+/* 37 */
 /*!********************************************!*\
   !*** ./src/controllers/home/wingItCtrl.js ***!
   \********************************************/
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -37602,6 +37614,8 @@
 	    });
 	  };
 	
+	  $scope.onColors = ['#0082C8', '#73616F', '#E8846C', '#16528E', '#E54B4B', '#A2C5BF', '#167C80'];
+	  $scope.showList = false;
 	  $scope.ongoingSetIndex = 0;
 	  $scope.ongoingRoutineIndex = 0;
 	  $scope.getRoutines();
@@ -37612,6 +37626,7 @@
 	        if (!$scope.program.routines[i].complete) {
 	          console.log("$scope.program.routines[ i ]: ", i, $scope.program.routines[i]);
 	          $scope.ongoingRoutineIndex = i;
+	          document.getElementsByClassName("wingit-program-routine")[$scope.ongoingRoutineIndex].style.textShadow = "0 0 7px #000";
 	          break;
 	        }
 	      }
@@ -37638,6 +37653,9 @@
 	  };
 	
 	  $scope.routineCompleted = function () {
+	    document.getElementsByClassName("wingit-program-routine")[$scope.ongoingRoutineIndex].style.opacity = 0.5;
+	    document.getElementsByClassName("wingit-program-routine")[$scope.ongoingRoutineIndex].style.textShadow = "none";
+	
 	    $scope.setTimer = undefined;
 	    $scope.ongoingSetIndex = 0;
 	    $scope.selectedRoutine.complete = true;
@@ -37647,11 +37665,18 @@
 	  };
 	
 	  $scope.$on('exerciseCompleted', function (event, data) {
-	    console.log(data);
+	    var routinesInSelectedProgram = document.getElementsByClassName("wingit-program-routine");
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[5].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[5].style.textDecoration = "line-through";
 	  });
 	
 	  $scope.$on('setCompleted', function (event, data) {
-	    console.log(data);
+	    var routinesInSelectedProgram = document.getElementsByClassName("wingit-program-routine");
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[0].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[0].style.textDecoration = "line-through";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[7].style.color = "black";
+	    routinesInSelectedProgram[$scope.ongoingRoutineIndex].children[$scope.ongoingSetIndex + 1].children[0].children[7].style.textDecoration = "line-through";
+	
 	    if (++$scope.ongoingSetIndex < $scope.selectedRoutine.sets.length) $scope.startRoutine();else {
 	      $scope.routineCompleted();
 	    }
@@ -37662,14 +37687,34 @@
 	    $scope.program.routines.splice(index, 1);
 	  };
 	
-	  $scope.selectRoutine = function (routine) {
+	  $scope.selectRoutine = function (routine, index) {
+	    console.log(document.getElementsByClassName("wingit-program-routine"), $scope.ongoingRoutineIndex);
+	
+	    if ($scope.ongoingRoutineIndex !== undefined) document.getElementsByClassName("wingit-program-routine")[$scope.ongoingRoutineIndex].style.textShadow = "none";
+	
 	    $scope.setTimer = undefined;
 	    $scope.selectedRoutine = routine;
 	    $scope.ongoingSetIndex = 0;
+	    $scope.ongoingRoutineIndex = index;
+	    console.log($scope.selectedRoutine);
+	    document.getElementsByClassName("wingit-program-routine")[index].style.textShadow = "0 0 7px #000";
+	  };
+	
+	  $scope.selectViewRoutine = function (routine) {
+	    if ($scope.viewRoutine == routine) delete $scope.viewRoutine;else $scope.viewRoutine = routine;
 	  };
 	
 	  $scope.add2program = function (routine) {
 	    $scope.program.routines.push(routine);
+	  };
+	
+	  $scope.setInfoPrinter = function (input) {
+	    if (input) return input;
+	    return "N/A";
+	  };
+	
+	  $scope.showRoutines = function () {
+	    $scope.showList = !$scope.showList;
 	  };
 	
 	  $scope.back2Home = function () {
@@ -37680,7 +37725,7 @@
 	exports.default = wingItCtrl;
 
 /***/ },
-/* 37 */
+/* 38 */
 /*!****************************************!*\
   !*** ./src/templates/home/sample.html ***!
   \****************************************/
@@ -37689,7 +37734,7 @@
 	module.exports = "sample\n";
 
 /***/ },
-/* 38 */
+/* 39 */
 /*!********************************************!*\
   !*** ./src/controllers/home/sampleCtrl.js ***!
   \********************************************/
@@ -37705,7 +37750,7 @@
 	exports.default = sampleCtrl;
 
 /***/ },
-/* 39 */
+/* 40 */
 /*!*********************************!*\
   !*** ./src/services/mainSvc.js ***!
   \*********************************/
@@ -37769,7 +37814,7 @@
 	exports.default = mainSvc;
 
 /***/ },
-/* 40 */
+/* 41 */
 /*!*************************************!*\
   !*** ./src/directives/stopwatch.js ***!
   \*************************************/
@@ -37783,7 +37828,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _stopwatch = __webpack_require__(/*! ./stopwatch.html */ 41);
+	var _stopwatch = __webpack_require__(/*! ./stopwatch.html */ 42);
 	
 	var _stopwatch2 = _interopRequireDefault(_stopwatch);
 	
@@ -37915,7 +37960,7 @@
 	exports.default = stopWatch;
 
 /***/ },
-/* 41 */
+/* 42 */
 /*!***************************************!*\
   !*** ./src/directives/stopwatch.html ***!
   \***************************************/
@@ -37924,7 +37969,7 @@
 	module.exports = "<nav class=\"controls\">\n  <a class=\"button\" ng-click=\"stopwatch.start();\">Start</a>\n  <a class=\"button\" ng-click=\"stopwatch.stop();\">Stop</a>\n  <a class=\"button\" ng-click=\"stopwatch.reset();\">Reset</a>\n  <a class=\"button\" ng-click=\"stopwatch.complete();\">Complete</a>\n</nav>\n<div class=\"stopwatch\"></div>\n";
 
 /***/ },
-/* 42 */
+/* 43 */
 /*!************************************!*\
   !*** ./src/directives/calendar.js ***!
   \************************************/
@@ -37936,13 +37981,13 @@
 	  value: true
 	});
 	
-	var _calendar = __webpack_require__(/*! ./calendar.html */ 43);
+	var _calendar = __webpack_require__(/*! ./calendar.html */ 44);
 	
 	var _calendar2 = _interopRequireDefault(_calendar);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var moment = __webpack_require__(/*! moment */ 44);
+	var moment = __webpack_require__(/*! moment */ 45);
 	
 	function calendar() {
 	  return {
@@ -38020,7 +38065,7 @@
 	exports.default = calendar;
 
 /***/ },
-/* 43 */
+/* 44 */
 /*!**************************************!*\
   !*** ./src/directives/calendar.html ***!
   \**************************************/
@@ -38029,7 +38074,7 @@
 	module.exports = "<div class=\"header\">\n  <i class=\"fa fa-angle-left\" ng-click=\"previous()\"><</i>\n  <span>{{month.format(\"MMMM, YYYY\")}}</span>\n  <i class=\"fa fa-angle-right\" ng-click=\"next()\">></i>\n</div>\n<div class=\"week names\">\n  <span class=\"day\">Sun</span>\n  <span class=\"day\">Mon</span>\n  <span class=\"day\">Tue</span>\n  <span class=\"day\">Wed</span>\n  <span class=\"day\">Thu</span>\n  <span class=\"day\">Fri</span>\n  <span class=\"day\">Sat</span>\n</div>\n<div class=\"week\" ng-repeat=\"week in weeks\">\n  <span class=\"day\" ng-class=\"{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }\" ng-click=\"select(day)\" ng-repeat=\"day in week.days\">{{day.number}}</span>\n</div>\n";
 
 /***/ },
-/* 44 */
+/* 45 */
 /*!****************************!*\
   !*** ./~/moment/moment.js ***!
   \****************************/
@@ -39831,7 +39876,7 @@
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(/*! ./locale */ 46)("./" + name);
+	                __webpack_require__(/*! ./locale */ 47)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -42269,10 +42314,10 @@
 	    return _moment;
 	
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 45)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 46)(module)))
 
 /***/ },
-/* 45 */
+/* 46 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -42291,221 +42336,221 @@
 
 
 /***/ },
-/* 46 */
+/* 47 */
 /*!**********************************!*\
   !*** ./~/moment/locale ^\.\/.*$ ***!
   \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 47,
-		"./af.js": 47,
-		"./ar": 48,
-		"./ar-ly": 49,
-		"./ar-ly.js": 49,
-		"./ar-ma": 50,
-		"./ar-ma.js": 50,
-		"./ar-sa": 51,
-		"./ar-sa.js": 51,
-		"./ar-tn": 52,
-		"./ar-tn.js": 52,
-		"./ar.js": 48,
-		"./az": 53,
-		"./az.js": 53,
-		"./be": 54,
-		"./be.js": 54,
-		"./bg": 55,
-		"./bg.js": 55,
-		"./bn": 56,
-		"./bn.js": 56,
-		"./bo": 57,
-		"./bo.js": 57,
-		"./br": 58,
-		"./br.js": 58,
-		"./bs": 59,
-		"./bs.js": 59,
-		"./ca": 60,
-		"./ca.js": 60,
-		"./cs": 61,
-		"./cs.js": 61,
-		"./cv": 62,
-		"./cv.js": 62,
-		"./cy": 63,
-		"./cy.js": 63,
-		"./da": 64,
-		"./da.js": 64,
-		"./de": 65,
-		"./de-at": 66,
-		"./de-at.js": 66,
-		"./de.js": 65,
-		"./dv": 67,
-		"./dv.js": 67,
-		"./el": 68,
-		"./el.js": 68,
-		"./en-au": 69,
-		"./en-au.js": 69,
-		"./en-ca": 70,
-		"./en-ca.js": 70,
-		"./en-gb": 71,
-		"./en-gb.js": 71,
-		"./en-ie": 72,
-		"./en-ie.js": 72,
-		"./en-nz": 73,
-		"./en-nz.js": 73,
-		"./eo": 74,
-		"./eo.js": 74,
-		"./es": 75,
-		"./es-do": 76,
-		"./es-do.js": 76,
-		"./es.js": 75,
-		"./et": 77,
-		"./et.js": 77,
-		"./eu": 78,
-		"./eu.js": 78,
-		"./fa": 79,
-		"./fa.js": 79,
-		"./fi": 80,
-		"./fi.js": 80,
-		"./fo": 81,
-		"./fo.js": 81,
-		"./fr": 82,
-		"./fr-ca": 83,
-		"./fr-ca.js": 83,
-		"./fr-ch": 84,
-		"./fr-ch.js": 84,
-		"./fr.js": 82,
-		"./fy": 85,
-		"./fy.js": 85,
-		"./gd": 86,
-		"./gd.js": 86,
-		"./gl": 87,
-		"./gl.js": 87,
-		"./he": 88,
-		"./he.js": 88,
-		"./hi": 89,
-		"./hi.js": 89,
-		"./hr": 90,
-		"./hr.js": 90,
-		"./hu": 91,
-		"./hu.js": 91,
-		"./hy-am": 92,
-		"./hy-am.js": 92,
-		"./id": 93,
-		"./id.js": 93,
-		"./is": 94,
-		"./is.js": 94,
-		"./it": 95,
-		"./it.js": 95,
-		"./ja": 96,
-		"./ja.js": 96,
-		"./jv": 97,
-		"./jv.js": 97,
-		"./ka": 98,
-		"./ka.js": 98,
-		"./kk": 99,
-		"./kk.js": 99,
-		"./km": 100,
-		"./km.js": 100,
-		"./ko": 101,
-		"./ko.js": 101,
-		"./ky": 102,
-		"./ky.js": 102,
-		"./lb": 103,
-		"./lb.js": 103,
-		"./lo": 104,
-		"./lo.js": 104,
-		"./lt": 105,
-		"./lt.js": 105,
-		"./lv": 106,
-		"./lv.js": 106,
-		"./me": 107,
-		"./me.js": 107,
-		"./mi": 108,
-		"./mi.js": 108,
-		"./mk": 109,
-		"./mk.js": 109,
-		"./ml": 110,
-		"./ml.js": 110,
-		"./mr": 111,
-		"./mr.js": 111,
-		"./ms": 112,
-		"./ms-my": 113,
-		"./ms-my.js": 113,
-		"./ms.js": 112,
-		"./my": 114,
-		"./my.js": 114,
-		"./nb": 115,
-		"./nb.js": 115,
-		"./ne": 116,
-		"./ne.js": 116,
-		"./nl": 117,
-		"./nl.js": 117,
-		"./nn": 118,
-		"./nn.js": 118,
-		"./pa-in": 119,
-		"./pa-in.js": 119,
-		"./pl": 120,
-		"./pl.js": 120,
-		"./pt": 121,
-		"./pt-br": 122,
-		"./pt-br.js": 122,
-		"./pt.js": 121,
-		"./ro": 123,
-		"./ro.js": 123,
-		"./ru": 124,
-		"./ru.js": 124,
-		"./se": 125,
-		"./se.js": 125,
-		"./si": 126,
-		"./si.js": 126,
-		"./sk": 127,
-		"./sk.js": 127,
-		"./sl": 128,
-		"./sl.js": 128,
-		"./sq": 129,
-		"./sq.js": 129,
-		"./sr": 130,
-		"./sr-cyrl": 131,
-		"./sr-cyrl.js": 131,
-		"./sr.js": 130,
-		"./ss": 132,
-		"./ss.js": 132,
-		"./sv": 133,
-		"./sv.js": 133,
-		"./sw": 134,
-		"./sw.js": 134,
-		"./ta": 135,
-		"./ta.js": 135,
-		"./te": 136,
-		"./te.js": 136,
-		"./th": 137,
-		"./th.js": 137,
-		"./tl-ph": 138,
-		"./tl-ph.js": 138,
-		"./tlh": 139,
-		"./tlh.js": 139,
-		"./tr": 140,
-		"./tr.js": 140,
-		"./tzl": 141,
-		"./tzl.js": 141,
-		"./tzm": 142,
-		"./tzm-latn": 143,
-		"./tzm-latn.js": 143,
-		"./tzm.js": 142,
-		"./uk": 144,
-		"./uk.js": 144,
-		"./uz": 145,
-		"./uz.js": 145,
-		"./vi": 146,
-		"./vi.js": 146,
-		"./x-pseudo": 147,
-		"./x-pseudo.js": 147,
-		"./zh-cn": 148,
-		"./zh-cn.js": 148,
-		"./zh-hk": 149,
-		"./zh-hk.js": 149,
-		"./zh-tw": 150,
-		"./zh-tw.js": 150
+		"./af": 48,
+		"./af.js": 48,
+		"./ar": 49,
+		"./ar-ly": 50,
+		"./ar-ly.js": 50,
+		"./ar-ma": 51,
+		"./ar-ma.js": 51,
+		"./ar-sa": 52,
+		"./ar-sa.js": 52,
+		"./ar-tn": 53,
+		"./ar-tn.js": 53,
+		"./ar.js": 49,
+		"./az": 54,
+		"./az.js": 54,
+		"./be": 55,
+		"./be.js": 55,
+		"./bg": 56,
+		"./bg.js": 56,
+		"./bn": 57,
+		"./bn.js": 57,
+		"./bo": 58,
+		"./bo.js": 58,
+		"./br": 59,
+		"./br.js": 59,
+		"./bs": 60,
+		"./bs.js": 60,
+		"./ca": 61,
+		"./ca.js": 61,
+		"./cs": 62,
+		"./cs.js": 62,
+		"./cv": 63,
+		"./cv.js": 63,
+		"./cy": 64,
+		"./cy.js": 64,
+		"./da": 65,
+		"./da.js": 65,
+		"./de": 66,
+		"./de-at": 67,
+		"./de-at.js": 67,
+		"./de.js": 66,
+		"./dv": 68,
+		"./dv.js": 68,
+		"./el": 69,
+		"./el.js": 69,
+		"./en-au": 70,
+		"./en-au.js": 70,
+		"./en-ca": 71,
+		"./en-ca.js": 71,
+		"./en-gb": 72,
+		"./en-gb.js": 72,
+		"./en-ie": 73,
+		"./en-ie.js": 73,
+		"./en-nz": 74,
+		"./en-nz.js": 74,
+		"./eo": 75,
+		"./eo.js": 75,
+		"./es": 76,
+		"./es-do": 77,
+		"./es-do.js": 77,
+		"./es.js": 76,
+		"./et": 78,
+		"./et.js": 78,
+		"./eu": 79,
+		"./eu.js": 79,
+		"./fa": 80,
+		"./fa.js": 80,
+		"./fi": 81,
+		"./fi.js": 81,
+		"./fo": 82,
+		"./fo.js": 82,
+		"./fr": 83,
+		"./fr-ca": 84,
+		"./fr-ca.js": 84,
+		"./fr-ch": 85,
+		"./fr-ch.js": 85,
+		"./fr.js": 83,
+		"./fy": 86,
+		"./fy.js": 86,
+		"./gd": 87,
+		"./gd.js": 87,
+		"./gl": 88,
+		"./gl.js": 88,
+		"./he": 89,
+		"./he.js": 89,
+		"./hi": 90,
+		"./hi.js": 90,
+		"./hr": 91,
+		"./hr.js": 91,
+		"./hu": 92,
+		"./hu.js": 92,
+		"./hy-am": 93,
+		"./hy-am.js": 93,
+		"./id": 94,
+		"./id.js": 94,
+		"./is": 95,
+		"./is.js": 95,
+		"./it": 96,
+		"./it.js": 96,
+		"./ja": 97,
+		"./ja.js": 97,
+		"./jv": 98,
+		"./jv.js": 98,
+		"./ka": 99,
+		"./ka.js": 99,
+		"./kk": 100,
+		"./kk.js": 100,
+		"./km": 101,
+		"./km.js": 101,
+		"./ko": 102,
+		"./ko.js": 102,
+		"./ky": 103,
+		"./ky.js": 103,
+		"./lb": 104,
+		"./lb.js": 104,
+		"./lo": 105,
+		"./lo.js": 105,
+		"./lt": 106,
+		"./lt.js": 106,
+		"./lv": 107,
+		"./lv.js": 107,
+		"./me": 108,
+		"./me.js": 108,
+		"./mi": 109,
+		"./mi.js": 109,
+		"./mk": 110,
+		"./mk.js": 110,
+		"./ml": 111,
+		"./ml.js": 111,
+		"./mr": 112,
+		"./mr.js": 112,
+		"./ms": 113,
+		"./ms-my": 114,
+		"./ms-my.js": 114,
+		"./ms.js": 113,
+		"./my": 115,
+		"./my.js": 115,
+		"./nb": 116,
+		"./nb.js": 116,
+		"./ne": 117,
+		"./ne.js": 117,
+		"./nl": 118,
+		"./nl.js": 118,
+		"./nn": 119,
+		"./nn.js": 119,
+		"./pa-in": 120,
+		"./pa-in.js": 120,
+		"./pl": 121,
+		"./pl.js": 121,
+		"./pt": 122,
+		"./pt-br": 123,
+		"./pt-br.js": 123,
+		"./pt.js": 122,
+		"./ro": 124,
+		"./ro.js": 124,
+		"./ru": 125,
+		"./ru.js": 125,
+		"./se": 126,
+		"./se.js": 126,
+		"./si": 127,
+		"./si.js": 127,
+		"./sk": 128,
+		"./sk.js": 128,
+		"./sl": 129,
+		"./sl.js": 129,
+		"./sq": 130,
+		"./sq.js": 130,
+		"./sr": 131,
+		"./sr-cyrl": 132,
+		"./sr-cyrl.js": 132,
+		"./sr.js": 131,
+		"./ss": 133,
+		"./ss.js": 133,
+		"./sv": 134,
+		"./sv.js": 134,
+		"./sw": 135,
+		"./sw.js": 135,
+		"./ta": 136,
+		"./ta.js": 136,
+		"./te": 137,
+		"./te.js": 137,
+		"./th": 138,
+		"./th.js": 138,
+		"./tl-ph": 139,
+		"./tl-ph.js": 139,
+		"./tlh": 140,
+		"./tlh.js": 140,
+		"./tr": 141,
+		"./tr.js": 141,
+		"./tzl": 142,
+		"./tzl.js": 142,
+		"./tzm": 143,
+		"./tzm-latn": 144,
+		"./tzm-latn.js": 144,
+		"./tzm.js": 143,
+		"./uk": 145,
+		"./uk.js": 145,
+		"./uz": 146,
+		"./uz.js": 146,
+		"./vi": 147,
+		"./vi.js": 147,
+		"./x-pseudo": 148,
+		"./x-pseudo.js": 148,
+		"./zh-cn": 149,
+		"./zh-cn.js": 149,
+		"./zh-hk": 150,
+		"./zh-hk.js": 150,
+		"./zh-tw": 151,
+		"./zh-tw.js": 151
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -42518,11 +42563,11 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 46;
+	webpackContext.id = 47;
 
 
 /***/ },
-/* 47 */
+/* 48 */
 /*!*******************************!*\
   !*** ./~/moment/locale/af.js ***!
   \*******************************/
@@ -42533,7 +42578,7 @@
 	//! author : Werner Mollentze : https://github.com/wernerm
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42602,7 +42647,7 @@
 	}));
 
 /***/ },
-/* 48 */
+/* 49 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ar.js ***!
   \*******************************/
@@ -42615,7 +42660,7 @@
 	//! author : forabi https://github.com/forabi
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42746,7 +42791,7 @@
 	}));
 
 /***/ },
-/* 49 */
+/* 50 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-ly.js ***!
   \**********************************/
@@ -42757,7 +42802,7 @@
 	//! author : Ali Hmer: https://github.com/kikoanis
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42875,7 +42920,7 @@
 	}));
 
 /***/ },
-/* 50 */
+/* 51 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-ma.js ***!
   \**********************************/
@@ -42887,7 +42932,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42942,7 +42987,7 @@
 	}));
 
 /***/ },
-/* 51 */
+/* 52 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-sa.js ***!
   \**********************************/
@@ -42953,7 +42998,7 @@
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43053,7 +43098,7 @@
 	}));
 
 /***/ },
-/* 52 */
+/* 53 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-tn.js ***!
   \**********************************/
@@ -43064,7 +43109,7 @@
 	//! author : Nader Toukabri : https://github.com/naderio
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43119,7 +43164,7 @@
 	}));
 
 /***/ },
-/* 53 */
+/* 54 */
 /*!*******************************!*\
   !*** ./~/moment/locale/az.js ***!
   \*******************************/
@@ -43130,7 +43175,7 @@
 	//! author : topchiyev : https://github.com/topchiyev
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43231,7 +43276,7 @@
 	}));
 
 /***/ },
-/* 54 */
+/* 55 */
 /*!*******************************!*\
   !*** ./~/moment/locale/be.js ***!
   \*******************************/
@@ -43244,7 +43289,7 @@
 	//! Author : Menelion Elensúle : https://github.com/Oire
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43372,7 +43417,7 @@
 	}));
 
 /***/ },
-/* 55 */
+/* 56 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bg.js ***!
   \*******************************/
@@ -43383,7 +43428,7 @@
 	//! author : Krasen Borisov : https://github.com/kraz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43469,7 +43514,7 @@
 	}));
 
 /***/ },
-/* 56 */
+/* 57 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bn.js ***!
   \*******************************/
@@ -43480,7 +43525,7 @@
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43595,7 +43640,7 @@
 	}));
 
 /***/ },
-/* 57 */
+/* 58 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bo.js ***!
   \*******************************/
@@ -43606,7 +43651,7 @@
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43721,7 +43766,7 @@
 	}));
 
 /***/ },
-/* 58 */
+/* 59 */
 /*!*******************************!*\
   !*** ./~/moment/locale/br.js ***!
   \*******************************/
@@ -43732,7 +43777,7 @@
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43836,7 +43881,7 @@
 	}));
 
 /***/ },
-/* 59 */
+/* 60 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bs.js ***!
   \*******************************/
@@ -43848,7 +43893,7 @@
 	//! based on (hr) translation by Bojan Marković
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43986,7 +44031,7 @@
 	}));
 
 /***/ },
-/* 60 */
+/* 61 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ca.js ***!
   \*******************************/
@@ -43997,7 +44042,7 @@
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44074,7 +44119,7 @@
 	}));
 
 /***/ },
-/* 61 */
+/* 62 */
 /*!*******************************!*\
   !*** ./~/moment/locale/cs.js ***!
   \*******************************/
@@ -44085,7 +44130,7 @@
 	//! author : petrbela : https://github.com/petrbela
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44253,7 +44298,7 @@
 	}));
 
 /***/ },
-/* 62 */
+/* 63 */
 /*!*******************************!*\
   !*** ./~/moment/locale/cv.js ***!
   \*******************************/
@@ -44264,7 +44309,7 @@
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44323,7 +44368,7 @@
 	}));
 
 /***/ },
-/* 63 */
+/* 64 */
 /*!*******************************!*\
   !*** ./~/moment/locale/cy.js ***!
   \*******************************/
@@ -44335,7 +44380,7 @@
 	//! author : https://github.com/ryangreaves
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44411,7 +44456,7 @@
 	}));
 
 /***/ },
-/* 64 */
+/* 65 */
 /*!*******************************!*\
   !*** ./~/moment/locale/da.js ***!
   \*******************************/
@@ -44422,7 +44467,7 @@
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44478,7 +44523,7 @@
 	}));
 
 /***/ },
-/* 65 */
+/* 66 */
 /*!*******************************!*\
   !*** ./~/moment/locale/de.js ***!
   \*******************************/
@@ -44491,7 +44536,7 @@
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44563,7 +44608,7 @@
 	}));
 
 /***/ },
-/* 66 */
+/* 67 */
 /*!**********************************!*\
   !*** ./~/moment/locale/de-at.js ***!
   \**********************************/
@@ -44577,7 +44622,7 @@
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44649,7 +44694,7 @@
 	}));
 
 /***/ },
-/* 67 */
+/* 68 */
 /*!*******************************!*\
   !*** ./~/moment/locale/dv.js ***!
   \*******************************/
@@ -44660,7 +44705,7 @@
 	//! author : Jawish Hameed : https://github.com/jawish
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44755,7 +44800,7 @@
 	}));
 
 /***/ },
-/* 68 */
+/* 69 */
 /*!*******************************!*\
   !*** ./~/moment/locale/el.js ***!
   \*******************************/
@@ -44766,7 +44811,7 @@
 	//! author : Aggelos Karalias : https://github.com/mehiel
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44860,7 +44905,7 @@
 	}));
 
 /***/ },
-/* 69 */
+/* 70 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-au.js ***!
   \**********************************/
@@ -44871,7 +44916,7 @@
 	//! author : Jared Morse : https://github.com/jarcoal
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44934,7 +44979,7 @@
 	}));
 
 /***/ },
-/* 70 */
+/* 71 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-ca.js ***!
   \**********************************/
@@ -44945,7 +44990,7 @@
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45004,7 +45049,7 @@
 	}));
 
 /***/ },
-/* 71 */
+/* 72 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-gb.js ***!
   \**********************************/
@@ -45015,7 +45060,7 @@
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45078,7 +45123,7 @@
 	}));
 
 /***/ },
-/* 72 */
+/* 73 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-ie.js ***!
   \**********************************/
@@ -45089,7 +45134,7 @@
 	//! author : Chris Cartlidge : https://github.com/chriscartlidge
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45152,7 +45197,7 @@
 	}));
 
 /***/ },
-/* 73 */
+/* 74 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-nz.js ***!
   \**********************************/
@@ -45163,7 +45208,7 @@
 	//! author : Luke McGregor : https://github.com/lukemcgregor
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45226,7 +45271,7 @@
 	}));
 
 /***/ },
-/* 74 */
+/* 75 */
 /*!*******************************!*\
   !*** ./~/moment/locale/eo.js ***!
   \*******************************/
@@ -45239,7 +45284,7 @@
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45306,7 +45351,7 @@
 	}));
 
 /***/ },
-/* 75 */
+/* 76 */
 /*!*******************************!*\
   !*** ./~/moment/locale/es.js ***!
   \*******************************/
@@ -45317,7 +45362,7 @@
 	//! author : Julio Napurí : https://github.com/julionc
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45394,7 +45439,7 @@
 	}));
 
 /***/ },
-/* 76 */
+/* 77 */
 /*!**********************************!*\
   !*** ./~/moment/locale/es-do.js ***!
   \**********************************/
@@ -45404,7 +45449,7 @@
 	//! locale : Spanish (Dominican Republic) [es-do]
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45481,7 +45526,7 @@
 	}));
 
 /***/ },
-/* 77 */
+/* 78 */
 /*!*******************************!*\
   !*** ./~/moment/locale/et.js ***!
   \*******************************/
@@ -45493,7 +45538,7 @@
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45568,7 +45613,7 @@
 	}));
 
 /***/ },
-/* 78 */
+/* 79 */
 /*!*******************************!*\
   !*** ./~/moment/locale/eu.js ***!
   \*******************************/
@@ -45579,7 +45624,7 @@
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45641,7 +45686,7 @@
 	}));
 
 /***/ },
-/* 79 */
+/* 80 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fa.js ***!
   \*******************************/
@@ -45652,7 +45697,7 @@
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45754,7 +45799,7 @@
 	}));
 
 /***/ },
-/* 80 */
+/* 81 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fi.js ***!
   \*******************************/
@@ -45765,7 +45810,7 @@
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45868,7 +45913,7 @@
 	}));
 
 /***/ },
-/* 81 */
+/* 82 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fo.js ***!
   \*******************************/
@@ -45879,7 +45924,7 @@
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45935,7 +45980,7 @@
 	}));
 
 /***/ },
-/* 82 */
+/* 83 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fr.js ***!
   \*******************************/
@@ -45946,7 +45991,7 @@
 	//! author : John Fischer : https://github.com/jfroffice
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46006,7 +46051,7 @@
 	}));
 
 /***/ },
-/* 83 */
+/* 84 */
 /*!**********************************!*\
   !*** ./~/moment/locale/fr-ca.js ***!
   \**********************************/
@@ -46017,7 +46062,7 @@
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46073,7 +46118,7 @@
 	}));
 
 /***/ },
-/* 84 */
+/* 85 */
 /*!**********************************!*\
   !*** ./~/moment/locale/fr-ch.js ***!
   \**********************************/
@@ -46084,7 +46129,7 @@
 	//! author : Gaspard Bucher : https://github.com/gaspard
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46144,7 +46189,7 @@
 	}));
 
 /***/ },
-/* 85 */
+/* 86 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fy.js ***!
   \*******************************/
@@ -46155,7 +46200,7 @@
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46224,7 +46269,7 @@
 	}));
 
 /***/ },
-/* 86 */
+/* 87 */
 /*!*******************************!*\
   !*** ./~/moment/locale/gd.js ***!
   \*******************************/
@@ -46235,7 +46280,7 @@
 	//! author : Jon Ashdown : https://github.com/jonashdown
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46307,7 +46352,7 @@
 	}));
 
 /***/ },
-/* 87 */
+/* 88 */
 /*!*******************************!*\
   !*** ./~/moment/locale/gl.js ***!
   \*******************************/
@@ -46318,7 +46363,7 @@
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46391,7 +46436,7 @@
 	}));
 
 /***/ },
-/* 88 */
+/* 89 */
 /*!*******************************!*\
   !*** ./~/moment/locale/he.js ***!
   \*******************************/
@@ -46404,7 +46449,7 @@
 	//! author : Tal Ater : https://github.com/TalAter
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46497,7 +46542,7 @@
 	}));
 
 /***/ },
-/* 89 */
+/* 90 */
 /*!*******************************!*\
   !*** ./~/moment/locale/hi.js ***!
   \*******************************/
@@ -46508,7 +46553,7 @@
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46628,7 +46673,7 @@
 	}));
 
 /***/ },
-/* 90 */
+/* 91 */
 /*!*******************************!*\
   !*** ./~/moment/locale/hr.js ***!
   \*******************************/
@@ -46639,7 +46684,7 @@
 	//! author : Bojan Marković : https://github.com/bmarkovic
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46780,7 +46825,7 @@
 	}));
 
 /***/ },
-/* 91 */
+/* 92 */
 /*!*******************************!*\
   !*** ./~/moment/locale/hu.js ***!
   \*******************************/
@@ -46791,7 +46836,7 @@
 	//! author : Adam Brunner : https://github.com/adambrunner
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46896,7 +46941,7 @@
 	}));
 
 /***/ },
-/* 92 */
+/* 93 */
 /*!**********************************!*\
   !*** ./~/moment/locale/hy-am.js ***!
   \**********************************/
@@ -46907,7 +46952,7 @@
 	//! author : Armendarabyan : https://github.com/armendarabyan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46998,7 +47043,7 @@
 	}));
 
 /***/ },
-/* 93 */
+/* 94 */
 /*!*******************************!*\
   !*** ./~/moment/locale/id.js ***!
   \*******************************/
@@ -47010,7 +47055,7 @@
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47088,7 +47133,7 @@
 	}));
 
 /***/ },
-/* 94 */
+/* 95 */
 /*!*******************************!*\
   !*** ./~/moment/locale/is.js ***!
   \*******************************/
@@ -47099,7 +47144,7 @@
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47222,7 +47267,7 @@
 	}));
 
 /***/ },
-/* 95 */
+/* 96 */
 /*!*******************************!*\
   !*** ./~/moment/locale/it.js ***!
   \*******************************/
@@ -47234,7 +47279,7 @@
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47299,7 +47344,7 @@
 	}));
 
 /***/ },
-/* 96 */
+/* 97 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ja.js ***!
   \*******************************/
@@ -47310,7 +47355,7 @@
 	//! author : LI Long : https://github.com/baryon
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47382,7 +47427,7 @@
 	}));
 
 /***/ },
-/* 97 */
+/* 98 */
 /*!*******************************!*\
   !*** ./~/moment/locale/jv.js ***!
   \*******************************/
@@ -47394,7 +47439,7 @@
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47472,7 +47517,7 @@
 	}));
 
 /***/ },
-/* 98 */
+/* 99 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ka.js ***!
   \*******************************/
@@ -47483,7 +47528,7 @@
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47568,7 +47613,7 @@
 	}));
 
 /***/ },
-/* 99 */
+/* 100 */
 /*!*******************************!*\
   !*** ./~/moment/locale/kk.js ***!
   \*******************************/
@@ -47579,7 +47624,7 @@
 	//! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47662,7 +47707,7 @@
 	}));
 
 /***/ },
-/* 100 */
+/* 101 */
 /*!*******************************!*\
   !*** ./~/moment/locale/km.js ***!
   \*******************************/
@@ -47673,7 +47718,7 @@
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47727,7 +47772,7 @@
 	}));
 
 /***/ },
-/* 101 */
+/* 102 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ko.js ***!
   \*******************************/
@@ -47739,7 +47784,7 @@
 	//! author : Jeeeyul Lee <jeeeyul@gmail.com>
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47799,7 +47844,7 @@
 	}));
 
 /***/ },
-/* 102 */
+/* 103 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ky.js ***!
   \*******************************/
@@ -47810,7 +47855,7 @@
 	//! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47894,7 +47939,7 @@
 	}));
 
 /***/ },
-/* 103 */
+/* 104 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lb.js ***!
   \*******************************/
@@ -47906,7 +47951,7 @@
 	//! author : David Raison : https://github.com/kwisatz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48038,7 +48083,7 @@
 	}));
 
 /***/ },
-/* 104 */
+/* 105 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lo.js ***!
   \*******************************/
@@ -48049,7 +48094,7 @@
 	//! author : Ryan Hart : https://github.com/ryanhart2
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48115,7 +48160,7 @@
 	}));
 
 /***/ },
-/* 105 */
+/* 106 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lt.js ***!
   \*******************************/
@@ -48126,7 +48171,7 @@
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48239,7 +48284,7 @@
 	}));
 
 /***/ },
-/* 106 */
+/* 107 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lv.js ***!
   \*******************************/
@@ -48251,7 +48296,7 @@
 	//! author : Jānis Elmeris : https://github.com/JanisE
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48343,7 +48388,7 @@
 	}));
 
 /***/ },
-/* 107 */
+/* 108 */
 /*!*******************************!*\
   !*** ./~/moment/locale/me.js ***!
   \*******************************/
@@ -48354,7 +48399,7 @@
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48461,7 +48506,7 @@
 	}));
 
 /***/ },
-/* 108 */
+/* 109 */
 /*!*******************************!*\
   !*** ./~/moment/locale/mi.js ***!
   \*******************************/
@@ -48472,7 +48517,7 @@
 	//! author : John Corrigan <robbiecloset@gmail.com> : https://github.com/johnideal
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48532,7 +48577,7 @@
 	}));
 
 /***/ },
-/* 109 */
+/* 110 */
 /*!*******************************!*\
   !*** ./~/moment/locale/mk.js ***!
   \*******************************/
@@ -48543,7 +48588,7 @@
 	//! author : Borislav Mickov : https://github.com/B0k0
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48629,7 +48674,7 @@
 	}));
 
 /***/ },
-/* 110 */
+/* 111 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ml.js ***!
   \*******************************/
@@ -48640,7 +48685,7 @@
 	//! author : Floyd Pink : https://github.com/floydpink
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48717,7 +48762,7 @@
 	}));
 
 /***/ },
-/* 111 */
+/* 112 */
 /*!*******************************!*\
   !*** ./~/moment/locale/mr.js ***!
   \*******************************/
@@ -48729,7 +48774,7 @@
 	//! author : Vivek Athalye : https://github.com/vnathalye
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48883,7 +48928,7 @@
 	}));
 
 /***/ },
-/* 112 */
+/* 113 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ms.js ***!
   \*******************************/
@@ -48894,7 +48939,7 @@
 	//! author : Weldan Jamili : https://github.com/weldan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48972,7 +49017,7 @@
 	}));
 
 /***/ },
-/* 113 */
+/* 114 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ms-my.js ***!
   \**********************************/
@@ -48984,7 +49029,7 @@
 	//! author : Weldan Jamili : https://github.com/weldan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49062,7 +49107,7 @@
 	}));
 
 /***/ },
-/* 114 */
+/* 115 */
 /*!*******************************!*\
   !*** ./~/moment/locale/my.js ***!
   \*******************************/
@@ -49075,7 +49120,7 @@
 	//! author : Tin Aung Lin : https://github.com/thanyawzinmin
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49164,7 +49209,7 @@
 	}));
 
 /***/ },
-/* 115 */
+/* 116 */
 /*!*******************************!*\
   !*** ./~/moment/locale/nb.js ***!
   \*******************************/
@@ -49176,7 +49221,7 @@
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49234,7 +49279,7 @@
 	}));
 
 /***/ },
-/* 116 */
+/* 117 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ne.js ***!
   \*******************************/
@@ -49245,7 +49290,7 @@
 	//! author : suvash : https://github.com/suvash
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49364,7 +49409,7 @@
 	}));
 
 /***/ },
-/* 117 */
+/* 118 */
 /*!*******************************!*\
   !*** ./~/moment/locale/nl.js ***!
   \*******************************/
@@ -49376,7 +49421,7 @@
 	//! author : Jacob Middag : https://github.com/middagj
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49457,7 +49502,7 @@
 	}));
 
 /***/ },
-/* 118 */
+/* 119 */
 /*!*******************************!*\
   !*** ./~/moment/locale/nn.js ***!
   \*******************************/
@@ -49468,7 +49513,7 @@
 	//! author : https://github.com/mechuwind
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49524,7 +49569,7 @@
 	}));
 
 /***/ },
-/* 119 */
+/* 120 */
 /*!**********************************!*\
   !*** ./~/moment/locale/pa-in.js ***!
   \**********************************/
@@ -49535,7 +49580,7 @@
 	//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49655,7 +49700,7 @@
 	}));
 
 /***/ },
-/* 120 */
+/* 121 */
 /*!*******************************!*\
   !*** ./~/moment/locale/pl.js ***!
   \*******************************/
@@ -49666,7 +49711,7 @@
 	//! author : Rafal Hirsz : https://github.com/evoL
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49767,7 +49812,7 @@
 	}));
 
 /***/ },
-/* 121 */
+/* 122 */
 /*!*******************************!*\
   !*** ./~/moment/locale/pt.js ***!
   \*******************************/
@@ -49778,7 +49823,7 @@
 	//! author : Jefferson : https://github.com/jalex79
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49839,7 +49884,7 @@
 	}));
 
 /***/ },
-/* 122 */
+/* 123 */
 /*!**********************************!*\
   !*** ./~/moment/locale/pt-br.js ***!
   \**********************************/
@@ -49850,7 +49895,7 @@
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49907,7 +49952,7 @@
 	}));
 
 /***/ },
-/* 123 */
+/* 124 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ro.js ***!
   \*******************************/
@@ -49919,7 +49964,7 @@
 	//! author : Valentin Agachi : https://github.com/avaly
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49989,7 +50034,7 @@
 	}));
 
 /***/ },
-/* 124 */
+/* 125 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ru.js ***!
   \*******************************/
@@ -50002,7 +50047,7 @@
 	//! author : Коренберг Марк : https://github.com/socketpair
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50179,7 +50224,7 @@
 	}));
 
 /***/ },
-/* 125 */
+/* 126 */
 /*!*******************************!*\
   !*** ./~/moment/locale/se.js ***!
   \*******************************/
@@ -50190,7 +50235,7 @@
 	//! authors : Bård Rolstad Henriksen : https://github.com/karamell
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50247,7 +50292,7 @@
 	}));
 
 /***/ },
-/* 126 */
+/* 127 */
 /*!*******************************!*\
   !*** ./~/moment/locale/si.js ***!
   \*******************************/
@@ -50258,7 +50303,7 @@
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50325,7 +50370,7 @@
 	}));
 
 /***/ },
-/* 127 */
+/* 128 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sk.js ***!
   \*******************************/
@@ -50337,7 +50382,7 @@
 	//! based on work of petrbela : https://github.com/petrbela
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50482,7 +50527,7 @@
 	}));
 
 /***/ },
-/* 128 */
+/* 129 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sl.js ***!
   \*******************************/
@@ -50493,7 +50538,7 @@
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50651,7 +50696,7 @@
 	}));
 
 /***/ },
-/* 129 */
+/* 130 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sq.js ***!
   \*******************************/
@@ -50664,7 +50709,7 @@
 	//! author : Oerd Cukalla : https://github.com/oerd
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50728,7 +50773,7 @@
 	}));
 
 /***/ },
-/* 130 */
+/* 131 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sr.js ***!
   \*******************************/
@@ -50739,7 +50784,7 @@
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50845,7 +50890,7 @@
 	}));
 
 /***/ },
-/* 131 */
+/* 132 */
 /*!************************************!*\
   !*** ./~/moment/locale/sr-cyrl.js ***!
   \************************************/
@@ -50856,7 +50901,7 @@
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50962,7 +51007,7 @@
 	}));
 
 /***/ },
-/* 132 */
+/* 133 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ss.js ***!
   \*******************************/
@@ -50973,7 +51018,7 @@
 	//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51058,7 +51103,7 @@
 	}));
 
 /***/ },
-/* 133 */
+/* 134 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sv.js ***!
   \*******************************/
@@ -51069,7 +51114,7 @@
 	//! author : Jens Alm : https://github.com/ulmus
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51134,7 +51179,7 @@
 	}));
 
 /***/ },
-/* 134 */
+/* 135 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sw.js ***!
   \*******************************/
@@ -51145,7 +51190,7 @@
 	//! author : Fahad Kassim : https://github.com/fadsel
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51200,7 +51245,7 @@
 	}));
 
 /***/ },
-/* 135 */
+/* 136 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ta.js ***!
   \*******************************/
@@ -51211,7 +51256,7 @@
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51336,7 +51381,7 @@
 	}));
 
 /***/ },
-/* 136 */
+/* 137 */
 /*!*******************************!*\
   !*** ./~/moment/locale/te.js ***!
   \*******************************/
@@ -51347,7 +51392,7 @@
 	//! author : Krishna Chaitanya Thota : https://github.com/kcthota
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51432,7 +51477,7 @@
 	}));
 
 /***/ },
-/* 137 */
+/* 138 */
 /*!*******************************!*\
   !*** ./~/moment/locale/th.js ***!
   \*******************************/
@@ -51443,7 +51488,7 @@
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51506,7 +51551,7 @@
 	}));
 
 /***/ },
-/* 138 */
+/* 139 */
 /*!**********************************!*\
   !*** ./~/moment/locale/tl-ph.js ***!
   \**********************************/
@@ -51517,7 +51562,7 @@
 	//! author : Dan Hagman : https://github.com/hagmandan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51575,7 +51620,7 @@
 	}));
 
 /***/ },
-/* 139 */
+/* 140 */
 /*!********************************!*\
   !*** ./~/moment/locale/tlh.js ***!
   \********************************/
@@ -51586,7 +51631,7 @@
 	//! author : Dominika Kruk : https://github.com/amaranthrose
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51702,7 +51747,7 @@
 	}));
 
 /***/ },
-/* 140 */
+/* 141 */
 /*!*******************************!*\
   !*** ./~/moment/locale/tr.js ***!
   \*******************************/
@@ -51714,7 +51759,7 @@
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51799,7 +51844,7 @@
 	}));
 
 /***/ },
-/* 141 */
+/* 142 */
 /*!********************************!*\
   !*** ./~/moment/locale/tzl.js ***!
   \********************************/
@@ -51811,7 +51856,7 @@
 	//! author : Iustì Canun
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51897,7 +51942,7 @@
 	}));
 
 /***/ },
-/* 142 */
+/* 143 */
 /*!********************************!*\
   !*** ./~/moment/locale/tzm.js ***!
   \********************************/
@@ -51908,7 +51953,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51962,7 +52007,7 @@
 	}));
 
 /***/ },
-/* 143 */
+/* 144 */
 /*!*************************************!*\
   !*** ./~/moment/locale/tzm-latn.js ***!
   \*************************************/
@@ -51973,7 +52018,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52027,7 +52072,7 @@
 	}));
 
 /***/ },
-/* 144 */
+/* 145 */
 /*!*******************************!*\
   !*** ./~/moment/locale/uk.js ***!
   \*******************************/
@@ -52039,7 +52084,7 @@
 	//! Author : Menelion Elensúle : https://github.com/Oire
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52180,7 +52225,7 @@
 	}));
 
 /***/ },
-/* 145 */
+/* 146 */
 /*!*******************************!*\
   !*** ./~/moment/locale/uz.js ***!
   \*******************************/
@@ -52191,7 +52236,7 @@
 	//! author : Sardor Muminov : https://github.com/muminoff
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52245,7 +52290,7 @@
 	}));
 
 /***/ },
-/* 146 */
+/* 147 */
 /*!*******************************!*\
   !*** ./~/moment/locale/vi.js ***!
   \*******************************/
@@ -52256,7 +52301,7 @@
 	//! author : Bang Nguyen : https://github.com/bangnk
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52331,7 +52376,7 @@
 	}));
 
 /***/ },
-/* 147 */
+/* 148 */
 /*!*************************************!*\
   !*** ./~/moment/locale/x-pseudo.js ***!
   \*************************************/
@@ -52342,7 +52387,7 @@
 	//! author : Andrew Hood : https://github.com/andrewhood125
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52406,7 +52451,7 @@
 	}));
 
 /***/ },
-/* 148 */
+/* 149 */
 /*!**********************************!*\
   !*** ./~/moment/locale/zh-cn.js ***!
   \**********************************/
@@ -52418,7 +52463,7 @@
 	//! author : Zeno Zeng : https://github.com/zenozeng
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52540,7 +52585,7 @@
 	}));
 
 /***/ },
-/* 149 */
+/* 150 */
 /*!**********************************!*\
   !*** ./~/moment/locale/zh-hk.js ***!
   \**********************************/
@@ -52553,7 +52598,7 @@
 	//! author : Konstantin : https://github.com/skfd
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52652,7 +52697,7 @@
 	}));
 
 /***/ },
-/* 150 */
+/* 151 */
 /*!**********************************!*\
   !*** ./~/moment/locale/zh-tw.js ***!
   \**********************************/
@@ -52664,7 +52709,7 @@
 	//! author : Chris Lam : https://github.com/hehachris
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 44)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52763,13 +52808,22 @@
 	}));
 
 /***/ },
-/* 151 */
-/*!************************************!*\
-  !*** ./src/assets/images/exit.png ***!
-  \************************************/
+/* 152 */
+/*!******************************************!*\
+  !*** ./src/assets/images/minus_sign.png ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "./assets/images/exit.png";
+	module.exports = __webpack_require__.p + "./assets/images/minus_sign.png";
+
+/***/ },
+/* 153 */
+/*!*****************************************!*\
+  !*** ./src/assets/images/plus_sign.png ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "./assets/images/plus_sign.png";
 
 /***/ }
 /******/ ]);

@@ -6,7 +6,6 @@ export default {
   },
   template,
   controller(){
-    console.log(this.timeLimit);
     this.stopwatch = new Stopwatch(
       document.querySelector('.stopwatch'),
       this.timeLimit
@@ -25,7 +24,6 @@ constructor(display, limit) {
 }
 
 start() {
-    console.log( this.limit );
     if (!this.time) this.time = performance.now();
     if (!this.running) {
         this.running = true;

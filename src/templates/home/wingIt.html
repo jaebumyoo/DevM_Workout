@@ -1,47 +1,56 @@
-<h1>wing it</h1>
-
-<section ng-show="selectedRoutine">
-  <div>
-    <stopwatch set-timer="setTimer" ng-show="setTimer"></stopwatch>
+<div class="wingit">
+  <div class="wingit-timer">
+    <div>
+      <stopwatch class="wingit-timer-watch" set-timer="setTimer" ng-show="setTimer"></stopwatch>
+    </div>
+    <div ng-click="startRoutine()" ng-hide="setTimer||!selectedRoutine">
+      <img class="wingit-timer-justdoit" src="../../assets/images/just_do_it_timer.png">
+      Click To Start!
+    </div>
+    <img class="exit" src="../../assets/images/exit.png" ng-click="back2Home()">
   </div>
-  <button ng-click="startRoutine();" ng-hide="setTimer">Just Do It!</button>
-  <ul ng-repeat="set in selectedRoutine.sets">
-    Name: {{set.name}}
-    Type: {{set.type}}
-    Weight: {{set.weight}}
-    Reps: {{set.numOfReps}}
-    Workout Duration: {{set.duration}}
-    Resting Period: {{set.restPeriod}}
-  </ul>
-</section>
 
-<section>
-  <h3 ng-show="program.date">Today's Workout {{program.date}}</h3>
+  <div class="wingit-program-routines">
+    <div class="wingit-program-routine" ng-repeat="routine in program.routines" ng-style="{'background-color': onColors[$index % onColors.length]}" ng-click="selectRoutine( routine, $index );">
+      <div class="wingit-program-routine-info">
+        <h1 class="wingit-program-routine-name">{{routine.name}}</h1>
+        <p class="wingit-program-routine-set-number"> Sets: {{routine.sets.length}}</p>
+        <div class="wingit-program-routine-set-remove">
+          <img src="../../assets/images/minus_sign.png" alt="OutOfWorkout" ng-click="removeRoutine( $index )">
+        </div>
+      </div>
+      <div class="wingit-program-routine-sets" ng-repeat="set in routine.sets" ng-style="{'display': routine === selectedRoutine ? 'block' : null}">
+        <div class="wingit-program-routine-set-wrapper">
+          <span class="wingit-program-routine-set-name">{{set.name}}</span><br>
+          Type: {{setInfoPrinter(set.type)}}<br>
+          Weight: {{setInfoPrinter(set.weight)}}<br>
+          Reps: {{setInfoPrinter(set.numOfReps)}}<br>
+          <span class="wingit-program-routine-set-workout-duration">Workout Duration: {{setInfoPrinter(set.duration)}}</span><br>
+          <span class="wingit-program-routine-set-resting-period">Resting Period: {{setInfoPrinter(set.restPeriod)}}min</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <ul ng-repeat="routine in program.routines" ng-click="selectRoutine( routine )">
-    {{routine.name}}
-    {{routine.sets}}
-    <button ng-click="removeRoutine( $index )">Remove Routine</button>
-  </ul>
-</section>
-
-<section>
-  <h3>Available Routines</h3>
-  <ul ng-repeat="routine in routines">
-    <li>
-      <h3>Name of Routine: {{ routine.name }}</h3>
-      <ul ng-repeat="set in routine.sets">
-        <li>Set Name: {{ set.name }}</li>
-        <li>Number of Reps: {{ set.numOfReps }}</li>
-        <li>Rest Timer: {{ set.restPeriod }}</li>
-        <li>Type of Workout: {{ set.type }}</li>
-        <li>Weight: {{ set.weight }}</li>
-        <br>
-      </ul>
-    </li>
-
-    <button ng-click="add2program( routine )">Add To Workout</button>
-  </ul>
-</section>
-
-<button ng-click="back2Home()">Back to Home</button>
+  <div class="available-routines">
+    <div class="available-routine-tag" ng-click="showRoutines()">
+      <img class="available-routine-tag-image" src="../../assets/images/routines_icon.png" alt="Routines">
+    </div>
+    <div class="available-routines-list" ng-show="showList">
+      <div class="available-routines-list-item" ng-repeat="routine in routines">
+        <h2 class="available-routines-list-item-title" ng-click="selectViewRoutine(routine)">{{routine.name}}</h2>
+        <div class="available-routines-list-item-add">
+          <img src="../../assets/images/plus_sign.png" alt="Add2Workout" ng-click="add2program( routine )">
+        </div>
+        <div class="available-routines-set-info" ng-repeat="viewSet in routine.sets" ng-style="{'display': routine === viewRoutine ? 'block' : null}">
+          <span class="available-routines-set-name">{{viewSet.name}}</span><br>
+          Type: {{setInfoPrinter(viewSet.type)}}<br>
+          Weight: {{setInfoPrinter(viewSet.weight)}}<br>
+          Reps: {{setInfoPrinter(viewSet.numOfReps)}}<br>
+          <span class="available-routines-set-workout-duration">Workout Duration: {{setInfoPrinter(viewSet.duration)}}</span><br>
+          <span class="available-routines-set-resting-period">Resting Period: {{setInfoPrinter(viewSet.restPeriod)}}min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
