@@ -1,59 +1,71 @@
-<h1>Schedule</h1>
-
-<calendar selected="day"></calendar>
-
-<section ng-hide="programToEdit">
-  <h3>Available Programs</h3>
-  <div ng-repeat="program in programs" ng-click="selectProgram( program )">
-    {{program.date}}
+<main class="schedule">
+  <div class="schedule-nav">
+    <h1>Schedule</h1>
+    <img class="exit" src="../../assets/images/exit.png" ng-click="back2Home()">
   </div>
 
-  <button ng-click="addProgram()">Add Program</button>
-</section>
+  <div class="schedule-body">
+    <div class="schedule-body-calendar-wrapper">
+      <calendar selected="day"></calendar>
+    </div>
 
-<section ng-show="programToEdit">
-  <h3>Available Routines</h3>
-  <div ng-repeat="routine in routines">
-    {{routine.name}}
-    <button ng-click="addRoutine( routine )">Add To Program</button>
-    <button ng-click="editRoutine( routine )">Edit</button>
+    <section class="schedule-body-available-programs" ng-hide="programToEdit">
+      <h3>Available Programs: </h3>{{programs.length}}
+      <div ng-repeat="program in programs" ng-click="selectProgram( program )">
+        {{program.date | date: 'MMM-dd-yyyy'}}
+      </div>
+
+      <button ng-click="addProgram()">Add Program</button>
+    </section>
+
+    <section class="schedule-body-available-routines" ng-show="programToEdit">
+      <h3>Available Routines</h3>
+      <div ng-repeat="routine in routines">
+        {{routine.name}}
+        <button ng-click="addRoutine( routine )">Add To Program</button>
+        <button ng-click="editRoutine( routine )">Edit</button>
+      </div>
+    </section>
+
+    <section class="schedule-body-selected-program" ng-show="selectedProgram && !programToEdit">
+      <h3>Selected Program {{selectedProgram.date | date: 'MMM-dd-yyyy'}}</h3>
+
+      <ul ng-repeat="routine in selectedProgram.routines">
+        {{routine.name}}
+        <ul ng-repeat="set in routine.sets" ng-click="selectSet( this )">
+          {{set.name}} /
+          Weight: {{set.weight}} /
+          Reps: {{set.numOfReps}}
+        </ul>
+        {{selectedSet.name}} /
+        Tyep: {{selectedSet.type}} /
+        Weight: {{selectedSet.weight}} /
+        Reps: {{selectedSet.numOfReps}} /
+        Workout Timer: {{selectedSet.duration}} /
+        Rest Timer: {{selectedSet.restPeriod}} /
+      </ul>
+
+      <button ng-click="editProgram()">Edit Program</button>
+      <button ng-click="deleteProgram()">Remove Program</button>
+    </section>
+
+    <section ng-show="programToEdit">
+      <h3>Program To Edit {{programToEdit.date}}</h3>
+
+      <ul ng-repeat="routine in programToEdit.routines">
+        {{routine.name}}
+        <ul ng-repeat="set in routine.sets" ng-click="selectSet( this )">
+          {{set.name}}
+          {{set.weight}}
+          {{set.numOfReps}}
+        </ul>
+        {{selectedSet}}
+        <button ng-show="programToEdit" ng-click="removeRoutine( $index )">Remove Routine</button>
+      </ul>
+
+      <button ng-show="selectedProgram && programToEdit" ng-click="putProgram()">Update</button>
+      <button ng-hide="selectedProgram" ng-click="postProgram()">Add</button>
+      <button ng-show="programToEdit" ng-click="cancelEdit()">Cancel</button>
+    </section>
   </div>
-</section>
-
-<section ng-show="selectedProgram && !programToEdit">
-  <h3>Selected Program {{selectedProgram.date}}</h3>
-
-  <ul ng-repeat="routine in selectedProgram.routines">
-    {{routine.name}}
-    <ul ng-repeat="set in routine.sets" ng-click="selectSet( this )">
-      {{set.name}}
-      {{set.weight}}
-      {{set.numOfReps}}
-    </ul>
-    {{selectedSet}}
-  </ul>
-
-  <button ng-click="editProgram()">Edit Program</button>
-  <button ng-click="deleteProgram()">Remove Program</button>
-</section>
-
-<section ng-show="programToEdit">
-  <h3>Program To Edit {{programToEdit.date}}</h3>
-
-  <ul ng-repeat="routine in programToEdit.routines">
-    {{routine.name}}
-    <ul ng-repeat="set in routine.sets" ng-click="selectSet( this )">
-      {{set.name}}
-      {{set.weight}}
-      {{set.numOfReps}}
-    </ul>
-    {{selectedSet}}
-    <button ng-show="programToEdit" ng-click="removeRoutine( $index )">Remove Routine</button>
-  </ul>
-
-  <button ng-show="selectedProgram && programToEdit" ng-click="putProgram()">Update</button>
-  <button ng-hide="selectedProgram" ng-click="postProgram()">Add</button>
-  <button ng-show="programToEdit" ng-click="cancelEdit()">Cancel</button>
-</section>
-
-<button ng-click="back2Home()">Back to Home</button>
+</main>

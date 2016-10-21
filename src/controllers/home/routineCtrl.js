@@ -11,18 +11,22 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
 
   $scope.getRoutines();
 
-  $scope.selectRoutine = routine => {
-    $scope.selectedRoutine = routine;
-  }
-
   $scope.addRoutine = () => {
     $scope.newRoutine = {
-      name: "Routine Name",
+      name: "Routine Title",
       sets: []
     };
   };
 
-  $scope.editSet = ( set ) => {
+  $scope.editSetAndRoutine = ( routine, set ) => {
+    if( routine !== undefined ) {
+      $scope.newRoutine = {
+        _id: routine._id,
+        name: routine.name,
+        sets: routine.sets.slice()
+      };
+    }
+
     $scope.name = set.name;
     $scope.type = set.type;
     $scope.weight = set.weight;
@@ -90,13 +94,23 @@ function routineCtrl( $scope, $state, $stateParams, mainSvc ) {
   }
 
   $scope.showSets = ( index, inOut ) => {
+    var routineOfInterest = document.getElementsByClassName( "routine-routines" )[ index ];
+    var sizeOfRoutine = -6;
+
     if ( !inOut ) {
-      document.getElementsByClassName( "routine-routines" )[ index ].style.paddingTop = "0px";
-      document.getElementsByClassName( "routine-routines" )[ index ].children[ 1 ].style.display = "block";
+      routineOfInterest.style.paddingTop = "0";
+      routineOfInterest.children[ 0 ].children[ 3 ].style.display = "block";
+
+      for ( let i = 0; i < routineOfInterest.children[ 0 ].children.length; i++ ) {
+        sizeOfRoutine += routineOfInterest.children[ 0 ].children[ i ].offsetHeight;
+      }
+
+      routineOfInterest.style.height = sizeOfRoutine + "px";
     }
     else {
-      document.getElementsByClassName( "routine-routines" )[ index ].style.paddingTop = "18%";
-      document.getElementsByClassName( "routine-routines" )[ index ].children[ 1 ].style.display = "none";
+      routineOfInterest.children[ 0 ].children[ 3 ].style.display = "none";
+      routineOfInterest.style.paddingTop = "18%";
+      routineOfInterest.style.height = "0";
     }
   }
 

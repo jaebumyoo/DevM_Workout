@@ -69,33 +69,33 @@
 	
 	__webpack_require__(/*! ./stylesheet.css */ 5);
 	
-	__webpack_require__(/*! ./calendar.css */ 11);
+	__webpack_require__(/*! ./calendar.css */ 10);
 	
-	var _login = __webpack_require__(/*! ./templates/login.html */ 13);
+	var _login = __webpack_require__(/*! ./templates/login.html */ 12);
 	
 	var _login2 = _interopRequireDefault(_login);
 	
-	var _loginCtrl = __webpack_require__(/*! ./controllers/loginCtrl */ 15);
+	var _loginCtrl = __webpack_require__(/*! ./controllers/loginCtrl */ 14);
 	
 	var _loginCtrl2 = _interopRequireDefault(_loginCtrl);
 	
-	var _home = __webpack_require__(/*! ./templates/home.html */ 16);
+	var _home = __webpack_require__(/*! ./templates/home.html */ 15);
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _homeCtrl = __webpack_require__(/*! ./controllers/homeCtrl */ 26);
+	var _homeCtrl = __webpack_require__(/*! ./controllers/homeCtrl */ 25);
 	
 	var _homeCtrl2 = _interopRequireDefault(_homeCtrl);
 	
-	var _workout = __webpack_require__(/*! ./templates/home/workout.html */ 27);
+	var _workout = __webpack_require__(/*! ./templates/home/workout.html */ 26);
 	
 	var _workout2 = _interopRequireDefault(_workout);
 	
-	var _workoutCtrl = __webpack_require__(/*! ./controllers/home/workoutCtrl */ 30);
+	var _workoutCtrl = __webpack_require__(/*! ./controllers/home/workoutCtrl */ 29);
 	
 	var _workoutCtrl2 = _interopRequireDefault(_workoutCtrl);
 	
-	var _routine = __webpack_require__(/*! ./templates/home/routine.html */ 31);
+	var _routine = __webpack_require__(/*! ./templates/home/routine.html */ 30);
 	
 	var _routine2 = _interopRequireDefault(_routine);
 	
@@ -115,27 +115,27 @@
 	
 	var _wingIt2 = _interopRequireDefault(_wingIt);
 	
-	var _wingItCtrl = __webpack_require__(/*! ./controllers/home/wingItCtrl */ 37);
+	var _wingItCtrl = __webpack_require__(/*! ./controllers/home/wingItCtrl */ 38);
 	
 	var _wingItCtrl2 = _interopRequireDefault(_wingItCtrl);
 	
-	var _sample = __webpack_require__(/*! ./templates/home/sample.html */ 38);
+	var _sample = __webpack_require__(/*! ./templates/home/sample.html */ 39);
 	
 	var _sample2 = _interopRequireDefault(_sample);
 	
-	var _sampleCtrl = __webpack_require__(/*! ./controllers/home/sampleCtrl */ 39);
+	var _sampleCtrl = __webpack_require__(/*! ./controllers/home/sampleCtrl */ 40);
 	
 	var _sampleCtrl2 = _interopRequireDefault(_sampleCtrl);
 	
-	var _mainSvc = __webpack_require__(/*! ./services/mainSvc */ 40);
+	var _mainSvc = __webpack_require__(/*! ./services/mainSvc */ 41);
 	
 	var _mainSvc2 = _interopRequireDefault(_mainSvc);
 	
-	var _stopwatch = __webpack_require__(/*! ./directives/stopwatch */ 41);
+	var _stopwatch = __webpack_require__(/*! ./directives/stopwatch */ 42);
 	
 	var _stopwatch2 = _interopRequireDefault(_stopwatch);
 	
-	var _calendar = __webpack_require__(/*! ./directives/calendar */ 43);
+	var _calendar = __webpack_require__(/*! ./directives/calendar */ 44);
 	
 	var _calendar2 = _interopRequireDefault(_calendar);
 	
@@ -36564,7 +36564,7 @@
 	var content = __webpack_require__(/*! !./../~/css-loader!./stylesheet.css */ 6);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 10)(content, {});
+	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 9)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -36592,7 +36592,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.login-page {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    left: 0px;\n    right: 0px;\n\n  color: white;\n  background-color: black;\n  background-image: url(" + __webpack_require__(/*! ./assets/images/login_background.jpg */ 8) + ");\n  background-position: -30%;\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 100%;\n}\n\n@media (max-width: 1440px) {\n  .login-page {\n    background-position: 50%;\n    background-size: cover;\n  }\n}\n\n.login-page-right-half {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    right:0px;\n\n  width: 40%;\n  background-color: black;\n}\n\n.login-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n\n.login-wrapper > a > img {\n  position:absolute;\n    top:45%;\n    right: 10%;\n\n  width: 300px;\n}\n\n@media (max-width: 937px) {\n  .login-page-right-half {\n    width: 376px;\n  }\n}\n\n/*                                     Home                                   */\n\n.home {\n  background-color: #333333;\n  position: absolute;\n}\n\n.front-door {\n  position: relative;\n  margin: 15px;\n}\n\n.front-door-image {\n  width: 100%;\n}\n\n.front-door-message-wrapper {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 3vw;\n  color: #F2EDD8;\n  text-align: center;\n  white-space: nowrap;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 45%;\n\n  padding: 0 10px;\n}\n\n.front-door-message {\n  display: inline-block;\n  overflow: hidden;\n  animation: type 4s steps(60, end);\n}\n\n.front-door-message2 {\n  display: inline-block;\n  overflow: hidden;\n  animation: type2 8s steps(60, end);\n}\n\n.front-door-message2 > span {\n  animation: blink 1s infinite;\n}\n\n@keyframes type{\n  from { width: 0; }\n  100%{ width: 100%; }\n}\n\n@keyframes type2{\n  0%{width: 0;}\n  50%{width: 0;}\n  100%{ width: 100%; }\n}\n\n@keyframes blink{\n  to{opacity: .0;}\n}\n\n.row {\n  margin: 0 15px;\n  margin-bottom: -4.5px;\n}\n\n.row2 {\n  margin: 0 15px;\n  margin-bottom: 10px;\n}\n\n.selection {\n  position: relative;\n  width: 50%;\n  display: inline-block;\n  margin-right: -4px;\n}\n\n.selection-hover {\n  display: none;\n  background-color: rgba(0, 0, 0, 0.7);\n\n  position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n}\n\n.selection-image {\n  width: 100%;\n}\n\n.selection-image-hover {\n  width: 20%;\n}\n\n.selection-message-wrapper {\n  font-size: 5vw;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover {\n  font-family: Sans-serif;\n  color: white;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 40%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover > h4 {\n  font-weight: bold;\n  font-size: 2vw;\n}\n\n.selection-message-wrapper-hover > p {\n  font-size: 1.5vw;\n}\n\n/*                                   Workout                                  */\n.workout {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.workout-timer {\n  color: white;\n\n  text-align: center;\n\n  height: 16vh;\n  padding-top: 15px;\n}\n\n.workout-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n}\n\n.workout-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.workout-selected-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.workout-selected-program-routine {\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  max-width: 300px;\n\n  overflow: scroll;\n}\n\n.workout-selected-program-routine:hover {\n  width: 110%;\n  max-width: 330px;\n}\n\n.workout-selected-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n\n  margin: 40px 40px 0 40px;\n}\n\n.workout-selected-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.workout-selected-program-routine-set-number {\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine-sets {\n  display: none;\n}\n\n.workout-selected-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.workout-selected-program-routine-set-wrapper {\n  border-bottom: 1px solid;\n  margin: 0 40px 0 40px;\n  padding: 15px 8px 15px 8px;\n}\n\n.workout-selected-program-routine-set-name{\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine:hover .workout-selected-program-routine-sets {\n  display:block;\n}\n\n.available-programs {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-program-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-program-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-programs-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-programs-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-programs-list-item:hover {\n  background-color: #F2F2F2;\n}\n\n.available-programs-list-item span {\n  padding-left: 5px;\n  color: #787878;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Wint It                                  */\n\n.wingit {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.wingit-timer {\n  height: 16vh;\n  padding-top: 15px;\n\n  text-align: center;\n\n  color: white;\n}\n\n.wingit-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n}\n\n.wingit-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.wingit-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.wingit-program-routine {\n  display: inline-block;\n  width: 100%;\n  max-width: 300px;\n\n  overflow: scroll;\n}\n\n.wingit-program-routine:hover {\n  width: 110%;\n  max-width: 330px;\n}\n\n.wingit-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n\n  margin: 40px 40px 0 40px;\n}\n\n.wingit-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.wingit-program-routine-set-number {\n  font-size: 1.5em;\n  display: inline-block;\n}\n\n.wingit-program-routine-sets {\n  display: none;\n}\n\n.wingit-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.wingit-program-routine-set-wrapper {\n  border-bottom: 1px solid;\n  margin: 0 40px 0 40px;\n  padding: 15px 8px 15px 8px;\n}\n\n.wingit-program-routine-set-name {\n  font-size: 1.5em;\n}\n\n.wingit-program-routine-set-remove {\n  width: 35px;\n  float: right;\n}\n\n.wingit-program-routine-set-remove>img {\n  width: 100%;\n}\n\n.wingit-program-routine-set-remove>img:hover {\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n\n.wingit-program-routine:hover .wingit-program-routine-sets {\n  display:block;\n}\n\n.available-routines {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-routine-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-routine-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-routines-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-routines-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-routines-list-item-title {\n  display: inline-block;\n  width: calc(100% - 25px);\n}\n\n.available-routines-list-item-add {\n  float: right;\n  width: 25px;\n  margin-top: 5px;\n}\n\n.available-routines-list-item-add>img {\n  width: 100%;\n}\n\n.available-routines-list-item-add>img:hover {\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}\n\n.available-routines-set-info {\n  display: none;\n  padding: 10px;\n}\n\n.available-routines-list-item:hover {\n  background-color: #F2F2F2;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Routine                                  */\n.routine {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n    bottom: 0px;\n}\n\n.routine-nav {\n  color: white;\n  font-size: 4vh;\n\n  padding: 10px 20px;\n\n  height: 14vh;\n  width: 100%;\n}\n\n.routine-nav h1 {\n  display: inline-block;\n  text-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-nav > img {\n  position:  absolute;\n    top: 10px;\n    right: 10px;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.exit:hover {\n  opacity: 0.8;\n}\n\n.routine-body {\n  display: flex;\n  flex-flow: row wrap;\n\n  width: 85%;\n\n  margin: 0 auto;\n}\n\n.routine-routines {\n  width: 18%;\n  height: 1%;\n  padding-top: 18%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n}\n\n.routine-routines:hover {\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-routine {\n  padding: 10px;\n  position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-routine > h1 {\n  font-size: 1.8vw;\n\n  padding: 0 8px;\n}\n\n.routine-routine > span {\n  font-size: 1.3vw;\n\n  padding: 0px 15px 5px 15px;\n}\n\n.routine-routine-sets {\n  display: none;\n\n  font-size: 1vw;\n  float:left;\n\n  margin: calc( 5vw ) 30px 15px 30px;\n}\n\n.routine-routines-add {\n  width: 18%;\n  height: 0px;\n  padding-top: 18%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n}\n\n.routine-routines-add > img{\n  width: 30%;\n\n  position: absolute;\n    top: 35%;\n    left: 35%;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-routines-add:hover{\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}*/\n\n/*                                  Stop Watch                                */\n.button:hover {\n  text-shadow: 0 0 7px #FFF;\n}\n", ""]);
+	exports.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.login-page {\n  position:fixed;\n    top:0px;\n    bottom:0px;\n    left: 0px;\n    right: 0px;\n\n  color: white;\n  background-color: black;\n  background-image: url(" + __webpack_require__(/*! ./assets/images/login_background.jpg */ 8) + ");\n  background-position: -30%;\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 100%;\n}\n\n@media (max-width: 1440px) {\n  .login-page {\n    background-position: 50%;\n    background-size: cover;\n  }\n}\n\n.login-page-right-half {\n  position:absolute;\n    top:0px;\n    bottom:0px;\n    /*right:0px;*/\n\n  /*width: 40%;*/\n  width: 100%;\n  background-color: black;\n\n  -moz-animation-name: slideRight;\n  -moz-animation-iteration-count: 1;\n  -moz-animation-timing-function: ease-out;\n  -moz-animation-duration: 1s;\n  -moz-animation-fill-mode:forwards;\n\n  -webkit-animation-name: slideRight;\n  -webkit-animation-iteration-count: 1;\n  -webkit-animation-timing-function: ease-out;\n  -webkit-animation-duration: 1s;\n  -webkit-animation-fill-mode:forwards;\n\n  animation-name: slideRight;\n  animation-iteration-count: 1;\n  animation-timing-function: ease-out;\n  animation-duration: 1s;\n  animation-fill-mode:forwards;\n}\n\n@-moz-keyframes slideRight {\n    0% {\n        -moz-transform: translateX(0);\n    }\n    100% {\n        -moz-transform: translateX(60%);\n    }\n}\n@-webkit-keyframes slideRight {\n    0% {\n        -webkit-transform: translateX(0);\n    }\n    100% {\n        -webkit-transform: translateX(60%);\n    }\n}\n@keyframes slideRight {\n    0% {\n        transform: translateX(0);\n    }\n    100% {\n        transform: translateX(60%);\n    }\n}\n\n/*.login-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}*/\n\n.login-wrapper > a > img {\n  position:absolute;\n    top:45%;\n    right: 15%;\n\n  width: 300px;\n}\n\n@media (max-width: 937px) {\n  .login-page-right-half {\n    width: 376px;\n  }\n}\n\n/*                                     Home                                   */\n\n.home {\n  background-color: #333333;\n  position: absolute;\n}\n\n.front-door {\n  position: relative;\n  margin: 15px;\n}\n\n.front-door-image {\n  width: 100%;\n}\n\n.front-door-message-wrapper {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 3vw;\n  color: #F2EDD8;\n  text-align: center;\n  white-space: nowrap;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 45%;\n\n  padding: 0 10px;\n}\n\n.front-door-message {\n  display: inline-block;\n  overflow: hidden;\n  animation: type 4s steps(60, end);\n}\n\n.front-door-message2 {\n  display: inline-block;\n  overflow: hidden;\n  animation: type2 8s steps(60, end);\n}\n\n.front-door-message2 > span {\n  animation: blink 1s infinite;\n}\n\n@keyframes type{\n  from { width: 0; }\n  100%{ width: 100%; }\n}\n\n@keyframes type2{\n  0%{width: 0;}\n  50%{width: 0;}\n  100%{ width: 100%; }\n}\n\n@keyframes blink{\n  to{opacity: .0;}\n}\n\n.row {\n  margin: 0 15px;\n  margin-bottom: -4.5px;\n}\n\n.row2 {\n  margin: 0 15px;\n  margin-bottom: 10px;\n}\n\n.selection {\n  position: relative;\n  width: 50%;\n  display: inline-block;\n  margin-right: -4px;\n}\n\n.selection-hover {\n  display: none;\n  background-color: rgba(0, 0, 0, 0.7);\n\n  position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n}\n\n.selection-image {\n  width: 100%;\n}\n\n.selection-image-hover {\n  width: 20%;\n}\n\n.selection-message-wrapper {\n  font-size: 5vw;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 20%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover {\n  font-family: Sans-serif;\n  color: white;\n  text-align: center;\n\n  display: block;\n\n  position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 40%;\n\n  padding: 0 10px;\n}\n\n.selection-message-wrapper-hover > h4 {\n  font-weight: bold;\n  font-size: 2vw;\n}\n\n.selection-message-wrapper-hover > p {\n  font-size: 1.5vw;\n}\n\n/*                                   Workout                                  */\n.workout {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.workout-timer {\n  color: white;\n\n  text-align: center;\n\n  height: 16vh;\n  padding-top: 15px;\n}\n\n.workout-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n}\n\n.workout-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.workout-selected-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.workout-selected-program-routine {\n  display: inline-block;\n  width: 100%;\n  height: 100%;\n  max-width: 300px;\n\n  overflow: scroll;\n}\n\n.workout-selected-program-routine:hover {\n  width: 110%;\n  max-width: 330px;\n}\n\n.workout-selected-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n\n  margin: 40px 40px 0 40px;\n}\n\n.workout-selected-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.workout-selected-program-routine-set-number {\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine-sets {\n  display: none;\n}\n\n.workout-selected-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.workout-selected-program-routine-set-wrapper {\n  border-bottom: 1px solid;\n  margin: 0 40px 0 40px;\n  padding: 15px 8px 15px 8px;\n}\n\n.workout-selected-program-routine-set-name{\n  font-size: 1.5em;\n}\n\n.workout-selected-program-routine:hover .workout-selected-program-routine-sets {\n  display:block;\n}\n\n.available-programs {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-program-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-program-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-programs-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-programs-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-programs-list-item:hover {\n  background-color: #F2F2F2;\n}\n\n.available-programs-list-item span {\n  padding-left: 5px;\n  color: #787878;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Wint It                                  */\n\n.wingit {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    bottom: 0px;\n    right: 0px;\n    left: 0px;\n}\n\n.wingit-timer {\n  height: 16vh;\n  padding-top: 15px;\n\n  text-align: center;\n\n  color: white;\n}\n\n.wingit-timer-watch {\n  font-family: 'Orbitron', sans-serif;\n  font-size: 3.5em;\n}\n\n.wingit-timer > .exit {\n  position:  absolute;\n    top: 1vw;\n    right: 2vw;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.wingit-program-routines {\n  color: white;\n\n  display: flex;\n  justify-content: center;\n\n  width: 85vw;\n  height: 84vh;\n\n  margin: 0 auto;\n}\n\n.wingit-program-routine {\n  display: inline-block;\n  width: 100%;\n  max-width: 300px;\n\n  overflow: scroll;\n}\n\n.wingit-program-routine:hover {\n  width: 110%;\n  max-width: 330px;\n}\n\n.wingit-program-routine-info {\n  padding-bottom: 15px;\n  border-bottom: 1px solid;\n\n  margin: 40px 40px 0 40px;\n}\n\n.wingit-program-routine-name {\n  overflow: hidden;\n  white-space: nowrap;\n\n  font-size: 3em;\n}\n\n.wingit-program-routine-set-number {\n  font-size: 1.5em;\n  display: inline-block;\n}\n\n.wingit-program-routine-sets {\n  display: none;\n}\n\n.wingit-program-routine-sets:last-child {\n  border-bottom: none;\n}\n\n.wingit-program-routine-set-wrapper {\n  border-bottom: 1px solid;\n  margin: 0 40px 0 40px;\n  padding: 15px 8px 15px 8px;\n}\n\n.wingit-program-routine-set-name {\n  font-size: 1.5em;\n}\n\n.wingit-program-routine-set-remove {\n  width: 35px;\n  float: right;\n}\n\n.wingit-program-routine-set-remove>img {\n  width: 100%;\n}\n\n.wingit-program-routine-set-remove>img:hover {\n  -webkit-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n\n.wingit-program-routine:hover .wingit-program-routine-sets {\n  display:block;\n}\n\n.available-routines {\n  position: absolute;\n    top: 11vh;\n    left: 0;\n\n  width: 7vw;\n}\n\n.available-routine-tag {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.available-routine-tag-image {\n  width: 100%;\n  max-width: 79px;\n}\n\n.available-routines-list {\n  width: 320%;\n  max-width: 300px;\n  max-height: 650px;\n\n  overflow: scroll;\n\n  display: inline-block;\n  background-color: white;\n\n  position: absolute;\n    left: -320%;\n\n  animation: slide 0.5s forwards;\n}\n\n.available-routines-list-item {\n  margin: 0px 10px;\n  padding: 10px 20px;\n\n  border-bottom: 1px solid;\n}\n\n.available-routines-list-item-title {\n  display: inline-block;\n  width: calc(100% - 25px);\n}\n\n.available-routines-list-item-add {\n  float: right;\n  width: 25px;\n  margin-top: 5px;\n}\n\n.available-routines-list-item-add>img {\n  width: 100%;\n}\n\n.available-routines-list-item-add>img:hover {\n  -webkit-transform: rotate(45deg);\n  transform: rotate(45deg);\n}\n\n.available-routines-set-info {\n  display: none;\n  padding: 10px;\n}\n\n.available-routines-list-item:hover {\n  background-color: #F2F2F2;\n}\n\n@keyframes slide {\n    100% { left: 10px; }\n}\n\n/*                                   Routine                                  */\n.routine {\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n}\n\n.routine-nav {\n  color: white;\n  font-size: 4vh;\n\n  padding: 10px 20px;\n\n  height: 14vh;\n  width: 100%;\n\n  position: fixed;\n    top: 0px;\n\n  background-color: #333333;\n  z-index: 999;\n}\n\n.routine-nav h1 {\n  display: inline-block;\n  text-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-nav > img {\n  position:  absolute;\n    top: 10px;\n    right: 10px;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.exit:hover {\n  opacity: 0.8;\n}\n\n.routine-body {\n  display: flex;\n  flex-flow: row wrap;\n\n  width: 85%;\n\n  margin: 14vh auto;\n\n  background-color: #333333;\n\n  overflow: scroll;\n}\n\n.routine-body-input {\n  width: 90%;\n  margin: 0 auto;\n  overflow: scroll;\n}\n\n.routine-body-input > input {\n  display: block;\n  width: 25%;\n\n  padding: 12px 20px;\n  margin: 8px 0;\n  box-sizing: border-box;\n  font-family: 'Open Sans Condensed', sans-serif;\n\n  font-size: 1.5vw;\n}\n\n.routine-body-input-sets {\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-around;\n\n  width: 100%;\n\n  margin: 0 auto;\n\n  overflow: scroll;\n}\n.routine-body-input-sets-title {\n  width: 9.4vw;\n  height: 1.5vw;\n}\n\n.routine-body-input-sets-type {\n  margin-top: 3px;\n  margin-right: 5px;\n  width: 9.4vw;\n  height: 1.5vw;\n}\n\n.routine-body-input-sets-input {\n  width: 9.4vw;\n  height: 1.5vw;\n}\n\n.routine-body-input-sets-buttons {\n  background-color: #D0D0D0;\n  color: black;\n  border: none;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 1vw;\n  width: 5vw;\n  font-family: 'Open Sans Condensed', sans-serif;\n}\n\n.routine-body-input-sets-buttons:hover {\n  box-shadow: 0 0 10px #D0D0D0;\n}\n\n.routine-body-input-set {\n  width: 16%;\n  padding-top: 16%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n  opacity: 0.8;\n\n  border-radius: 5%;\n}\n\n.routine-body-input-set:hover {\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-body-input-set-info {\n  padding: 8px 15px;\n  position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-body-input-set-info-title {\n  display: block;\n  font-size: 1.5vw;\n  border-bottom: 1px solid;\n}\n\n.routine-body-input-set-info-content {\n  margin: 5px;\n  font-size: 1vw;\n}\n\n.routine-body-input-routine-buttons {\n  text-align: center;\n  padding: 5px;\n}\n\n.routine-body-input-routine-button {\n  margin: 0 10px;\n  font-family: 'Open Sans Condensed', sans-serif;\n  background-color: #D0D0D0;\n  color: black;\n  border: none;\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n  font-size: 1.3vw;\n  width: 10vw;\n}\n\n.routine-body-input-routine-button:hover {\n  box-shadow: 0 0 10px #D0D0D0;\n}\n\n.routine-routines {\n  width: 18%;\n  height: 0;\n  padding-top: 18%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n}\n\n.routine-routines:hover {\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}\n\n.routine-routine {\n  padding: 10px;\n  position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-routine > h1 {\n  font-size: 1.8vw;\n\n  padding: 0 8px;\n  display: block;\n\n  width: calc(100% - 15%);\n}\n\n.routine-routines-remove-routine {\n  position: absolute;\n    top: 6px;\n    right: 6px;\n\n  width: 15%;\n\n  z-index: 999;\n}\n\n.routine-routines-remove-routine > img{\n  width: 100%;\n  opacity: 0.5;\n}\n\n.routine-routines-remove-routine > img:hover {\n  opacity: 0.8;\n\n  transform: rotate( 90deg )\n}\n\n.routine-routine > span {\n  font-size: 1.3vw;\n\n  padding: 0px 15px 5px 15px;\n  display: block;\n}\n\n.routine-routine-sets {\n  display: none;\n  width: 100%;\n  font-size: 1vw;\n  float:left;\n}\n\n.routine-routine-set {\n  padding: 10px;\n  border-top: 1px solid;\n}\n\n.routine-routine-set:hover {\n  background-color: #E1E1E1;\n}\n\n.routine-routines-add {\n  width: 18%;\n  height: 0px;\n  padding-top: 18%;\n\n  position: relative;\n  margin: 1% 1%;\n\n  background-color: white;\n}\n\n.routine-routines-add > img{\n  width: 30%;\n\n  position: absolute;\n    top: 35%;\n    left: 35%;\n    bottom: 0;\n    right: 0;\n}\n\n.routine-routines-add:hover{\n  background-color: #F2F2F2;\n  box-shadow: 0 0 10px #F2F2F2;\n}*/\n\n/*                                  Schedule                                  */\n.schedule {\n  background-color: #333333;\n\n  position: absolute;\n    top: 0px;\n    left: 0px;\n    right: 0px;\n}\n\n.schedule-nav {\n  font-family: 'Open Sans Condensed', sans-serif;\n  color: white;\n  font-size: 4vh;\n\n  padding: 10px 20px;\n\n  height: 14vh;\n  width: 100%;\n\n  position: fixed;\n    top: 0px;\n\n  background-color: #333333;\n  z-index: 999;\n}\n\n.schedule-nav h1 {\n  display: inline-block;\n  text-shadow: 0 0 10px #F2F2F2;\n}\n\n.schedule-nav > img {\n  position:  absolute;\n    top: 10px;\n    right: 10px;\n\n  opacity: 0.2;\n\n  width: 4vw;\n}\n\n.schedule-body {\n  width: 85%;\n\n  margin: 14vh auto;\n\n  background-color: #333333;\n\n  overflow: scroll;\n}\n\n.schedule.body {\n  font-family: 'Open Sans Condensed', sans-serif;\n  color: white;\n}\n\n.schedule-body-calendar-wrapper {\n  height: 270px;\n}\n\n.schedule-body-available-programs {\n  font-family: 'Open Sans Condensed', sans-serif;\n  color: white;\n}\n\n.schedule-body-available-routines {\n  font-family: 'Open Sans Condensed', sans-serif;\n  color: white;\n}\n\n.schedule-body-selected-program {\n  font-family: 'Open Sans Condensed', sans-serif;\n  color: white;\n}\n\n/*                                  Stop Watch                                */\n.button:hover {\n  text-shadow: 0 0 7px #FFF;\n}\n", ""]);
 	
 	// exports
 
@@ -36666,8 +36666,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/login_background.jpg";
 
 /***/ },
-/* 9 */,
-/* 10 */
+/* 9 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -36922,7 +36921,7 @@
 
 
 /***/ },
-/* 11 */
+/* 10 */
 /*!**************************!*\
   !*** ./src/calendar.css ***!
   \**************************/
@@ -36931,10 +36930,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../~/css-loader!./calendar.css */ 12);
+	var content = __webpack_require__(/*! !./../~/css-loader!./calendar.css */ 11);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 10)(content, {});
+	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 9)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -36951,7 +36950,7 @@
 	}
 
 /***/ },
-/* 12 */
+/* 11 */
 /*!*****************************************!*\
   !*** ./~/css-loader!./src/calendar.css ***!
   \*****************************************/
@@ -36968,16 +36967,16 @@
 
 
 /***/ },
-/* 13 */
+/* 12 */
 /*!**********************************!*\
   !*** ./src/templates/login.html ***!
   \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<section class=login-page>\n  <section class=\"login-page-right-half\">\n    <section class=\"login-wrapper\">\n      <a href=\"http://localhost:3000/auth/google\"><img src=\"" + __webpack_require__(/*! ../assets/images/just_do_it.jpg */ 14) + "\" alt=\"Just Do It\"></a>\n    </section>\n  </section>\n</section>\n";
+	module.exports = "<section class=login-page>\n  <section class=\"login-page-right-half\">\n\n  </section>\n  <section class=\"login-wrapper\">\n    <a href=\"http://localhost:3000/auth/google\"><img src=\"" + __webpack_require__(/*! ../assets/images/just_do_it.jpg */ 13) + "\" alt=\"Just Do It\"></a>\n  </section>\n</section>\n";
 
 /***/ },
-/* 14 */
+/* 13 */
 /*!******************************************!*\
   !*** ./src/assets/images/just_do_it.jpg ***!
   \******************************************/
@@ -36986,7 +36985,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/just_do_it.jpg";
 
 /***/ },
-/* 15 */
+/* 14 */
 /*!**************************************!*\
   !*** ./src/controllers/loginCtrl.js ***!
   \**************************************/
@@ -37002,16 +37001,16 @@
 	exports.default = loginCtrl;
 
 /***/ },
-/* 16 */
+/* 15 */
 /*!*********************************!*\
   !*** ./src/templates/home.html ***!
   \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<main class=\"home\">\n  <section class=\"front-door\">\n    <img src=\"" + __webpack_require__(/*! ../assets/images/front_door.jpg */ 17) + "\" alt=\"Front Door\" class=\"front-door-image\">\n    <div class=\"front-door-message-wrapper\">\n      <p class=\"front-door-message\">\n        It's not what we do once in a while that shapes our lives.\n      </p>\n      <br>\n      <p class=\"front-door-message2\">\n        It's what we do consistently.\n        <span>|</span>\n      </p>\n    </div>\n  </section>\n\n  <section class=\"row\">\n    <div class=\"selection\" ng-mouseover=\"hoverIn('workout')\" ng-mouseleave=\"hoverOut('workout')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/just_wing_it.jpg */ 18) + "\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Luckiest Guy', cursive; color: #8ED2C9;\">\n          Start Workout\n        </p>\n      </div>\n\n      <div id=\"workout\" class=\"selection-hover\" ng-click=\"workout()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/workout_icon.png */ 19) + "\" alt=\"Start Workout\" class=\"selection-image-hover\">\n          <h4>Start Workout</h4>\n          <p>Determination, Patience, Consistency</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"selection\" ng-mouseover=\"hoverIn('routines')\" ng-mouseleave=\"hoverOut('routines')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/setup_routine.jpg */ 20) + "\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Bubblegum Sans', cursive; color: #525564;\">\n          Routines\n        </p>\n      </div>\n\n      <div id=\"routines\" class=\"selection-hover\" ng-click=\"routine()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/routines_icon.png */ 21) + "\" alt=\"Routines\" class=\"selection-image-hover\">\n          <h4>Routines</h4>\n          <p>Make, Follow, Stick With It</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"row2\">\n    <div class=\"selection\" ng-mouseover=\"hoverIn('schedule')\" ng-mouseleave=\"hoverOut('schedule')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/setup_schedule.jpg */ 22) + "\" alt=\"Setup Schedule\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Chela One', cursive; color: #FF7A5A;\">\n          Schedule\n        </p>\n      </div>\n\n      <div id=\"schedule\" class=\"selection-hover\" ng-click=\"schedule()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/schedule_icon.png */ 23) + "\" alt=\"Schedule\" class=\"selection-image-hover\">\n          <h4>Schedule</h4>\n          <p>What A Difference A Day Makes!</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"selection\" ng-mouseover=\"hoverIn('wingIt')\" ng-mouseleave=\"hoverOut('wingIt')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/start_workout.jpg */ 24) + "\" alt=\"Just Wing It\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Flavors', cursive; color: #FFB85F;\">\n          Just Wing It\n        </p>\n      </div>\n\n      <div id=\"wingIt\" class=\"selection-hover\" ng-click=\"wingIt()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/wingIt_icon.png */ 25) + "\" alt=\"Setup Routine\" class=\"selection-image-hover\">\n          <h4>Just Wing It</h4>\n          <p>Ah What The Heck, I'll Workout Anyway</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- <section>\n    <div ng-click=\"sample()\">Sample Routines</div>\n  </section> -->\n</main>\n";
+	module.exports = "<main class=\"home\">\n  <section class=\"front-door\">\n    <img src=\"" + __webpack_require__(/*! ../assets/images/front_door.jpg */ 16) + "\" alt=\"Front Door\" class=\"front-door-image\">\n    <div class=\"front-door-message-wrapper\">\n      <p class=\"front-door-message\">\n        It's not what we do once in a while that shapes our lives.\n      </p>\n      <br>\n      <p class=\"front-door-message2\">\n        It's what we do consistently.\n        <span>|</span>\n      </p>\n    </div>\n  </section>\n\n  <section class=\"row\">\n    <div class=\"selection\" ng-mouseover=\"hoverIn('workout')\" ng-mouseleave=\"hoverOut('workout')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/just_wing_it.jpg */ 17) + "\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Luckiest Guy', cursive; color: #8ED2C9;\">\n          Start Workout\n        </p>\n      </div>\n\n      <div id=\"workout\" class=\"selection-hover\" ng-click=\"workout()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/workout_icon.png */ 18) + "\" alt=\"Start Workout\" class=\"selection-image-hover\">\n          <h4>Start Workout</h4>\n          <p>Determination, Patience, Consistency</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"selection\" ng-mouseover=\"hoverIn('routines')\" ng-mouseleave=\"hoverOut('routines')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/setup_routine.jpg */ 19) + "\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Bubblegum Sans', cursive; color: #525564;\">\n          Routines\n        </p>\n      </div>\n\n      <div id=\"routines\" class=\"selection-hover\" ng-click=\"routine()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/routines_icon.png */ 20) + "\" alt=\"Routines\" class=\"selection-image-hover\">\n          <h4>Routines</h4>\n          <p>Make, Follow, Stick With It</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section class=\"row2\">\n    <div class=\"selection\" ng-mouseover=\"hoverIn('schedule')\" ng-mouseleave=\"hoverOut('schedule')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/setup_schedule.jpg */ 21) + "\" alt=\"Setup Schedule\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Chela One', cursive; color: #FF7A5A;\">\n          Schedule\n        </p>\n      </div>\n\n      <div id=\"schedule\" class=\"selection-hover\" ng-click=\"schedule()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/schedule_icon.png */ 22) + "\" alt=\"Schedule\" class=\"selection-image-hover\">\n          <h4>Schedule</h4>\n          <p>What A Difference A Day Makes!</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"selection\" ng-mouseover=\"hoverIn('wingIt')\" ng-mouseleave=\"hoverOut('wingIt')\">\n      <img src=\"" + __webpack_require__(/*! ../assets/images/start_workout.jpg */ 23) + "\" alt=\"Just Wing It\" class=\"selection-image\">\n      <div class=\"selection-message-wrapper\">\n        <p style=\"font-family: 'Flavors', cursive; color: #FFB85F;\">\n          Just Wing It\n        </p>\n      </div>\n\n      <div id=\"wingIt\" class=\"selection-hover\" ng-click=\"wingIt()\">\n        <div class=\"selection-message-wrapper-hover\">\n          <img src=\"" + __webpack_require__(/*! ../assets/images/wingIt_icon.png */ 24) + "\" alt=\"Setup Routine\" class=\"selection-image-hover\">\n          <h4>Just Wing It</h4>\n          <p>Ah What The Heck, I'll Workout Anyway</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- <section>\n    <div ng-click=\"sample()\">Sample Routines</div>\n  </section> -->\n</main>\n";
 
 /***/ },
-/* 17 */
+/* 16 */
 /*!******************************************!*\
   !*** ./src/assets/images/front_door.jpg ***!
   \******************************************/
@@ -37020,7 +37019,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/front_door.jpg";
 
 /***/ },
-/* 18 */
+/* 17 */
 /*!********************************************!*\
   !*** ./src/assets/images/just_wing_it.jpg ***!
   \********************************************/
@@ -37029,7 +37028,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/just_wing_it.jpg";
 
 /***/ },
-/* 19 */
+/* 18 */
 /*!********************************************!*\
   !*** ./src/assets/images/workout_icon.png ***!
   \********************************************/
@@ -37038,7 +37037,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/workout_icon.png";
 
 /***/ },
-/* 20 */
+/* 19 */
 /*!*********************************************!*\
   !*** ./src/assets/images/setup_routine.jpg ***!
   \*********************************************/
@@ -37047,7 +37046,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/setup_routine.jpg";
 
 /***/ },
-/* 21 */
+/* 20 */
 /*!*********************************************!*\
   !*** ./src/assets/images/routines_icon.png ***!
   \*********************************************/
@@ -37056,7 +37055,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/routines_icon.png";
 
 /***/ },
-/* 22 */
+/* 21 */
 /*!**********************************************!*\
   !*** ./src/assets/images/setup_schedule.jpg ***!
   \**********************************************/
@@ -37065,7 +37064,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/setup_schedule.jpg";
 
 /***/ },
-/* 23 */
+/* 22 */
 /*!*********************************************!*\
   !*** ./src/assets/images/schedule_icon.png ***!
   \*********************************************/
@@ -37074,7 +37073,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/schedule_icon.png";
 
 /***/ },
-/* 24 */
+/* 23 */
 /*!*********************************************!*\
   !*** ./src/assets/images/start_workout.jpg ***!
   \*********************************************/
@@ -37083,7 +37082,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/start_workout.jpg";
 
 /***/ },
-/* 25 */
+/* 24 */
 /*!*******************************************!*\
   !*** ./src/assets/images/wingIt_icon.png ***!
   \*******************************************/
@@ -37092,7 +37091,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/wingIt_icon.png";
 
 /***/ },
-/* 26 */
+/* 25 */
 /*!*************************************!*\
   !*** ./src/controllers/homeCtrl.js ***!
   \*************************************/
@@ -37148,16 +37147,16 @@
 	exports.default = homeCtrl;
 
 /***/ },
-/* 27 */
+/* 26 */
 /*!*****************************************!*\
   !*** ./src/templates/home/workout.html ***!
   \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"workout\">\n  <div class=\"workout-timer\">\n    <div>\n      <stopwatch class=\"workout-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <div ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n      <img class=\"workout-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 28) + "\">\n      Click To Start!\n    </div>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 29) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"workout-selected-program-routines\" ng-show=\"selectedProgram\">\n    <div class=\"workout-selected-program-routine\" ng-repeat=\"routine in selectedProgram.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, $index )\" ng-mouseover=\"colorChange($index, 0)\" ng-mouseleave=\"colorChange($index, 1)\">\n      <div class=\"workout-selected-program-routine-info\">\n        <h1 class=\"workout-selected-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"workout-selected-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n      </div>\n      <div class=\"workout-selected-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"workout-selected-program-routine-set-wrapper\">\n          <span class=\"workout-selected-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          <span class=\"workout-selected-program-routine-set-workout-duration\">Workout Timer: {{setInfoPrinter(set.duration)}}</span><br>\n          <span class=\"workout-selected-program-routine-set-resting-period\">Rest Timer: {{setInfoPrinter(set.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-programs\">\n    <div class=\"available-program-tag\" ng-click=\"showPrograms()\">\n      <img class=\"available-program-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/schedule_icon.png */ 23) + "\" alt=\"Programs\">\n    </div>\n    <div class=\"available-programs-list\" ng-show=\"showList\">\n      <div class=\"available-programs-list-item\" ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n        <h2>{{convertDate(program.date) | date:'MMM dd, yyyy'}}</h2>\n        <span>Routines: {{program.routines.length}}</span>\n      </div>\n    </div>\n  </div>\n</div>\n";
+	module.exports = "<div class=\"workout\">\n  <div class=\"workout-timer\">\n    <div>\n      <stopwatch class=\"workout-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <div ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n      <img class=\"workout-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 27) + "\">\n      Click To Start!\n    </div>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 28) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"workout-selected-program-routines\" ng-show=\"selectedProgram\">\n    <div class=\"workout-selected-program-routine\" ng-repeat=\"routine in selectedProgram.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, $index )\" ng-mouseover=\"colorChange($index, 0)\" ng-mouseleave=\"colorChange($index, 1)\">\n      <div class=\"workout-selected-program-routine-info\">\n        <h1 class=\"workout-selected-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"workout-selected-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n      </div>\n      <div class=\"workout-selected-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"workout-selected-program-routine-set-wrapper\">\n          <span class=\"workout-selected-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          <span class=\"workout-selected-program-routine-set-workout-duration\">Workout Timer (min): {{setInfoPrinter(set.duration)}}</span><br>\n          <span class=\"workout-selected-program-routine-set-resting-period\">Rest Timer (min): {{setInfoPrinter(set.restPeriod)}}</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-programs\">\n    <div class=\"available-program-tag\" ng-click=\"showPrograms()\">\n      <img class=\"available-program-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/schedule_icon.png */ 22) + "\" alt=\"Programs\">\n    </div>\n    <div class=\"available-programs-list\" ng-show=\"showList\">\n      <div class=\"available-programs-list-item\" ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n        <h2>{{convertDate(program.date) | date:'MMM dd, yyyy'}}</h2>\n        <span>Routines: {{program.routines.length}}</span>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 28 */
+/* 27 */
 /*!************************************************!*\
   !*** ./src/assets/images/just_do_it_timer.png ***!
   \************************************************/
@@ -37166,7 +37165,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/just_do_it_timer.png";
 
 /***/ },
-/* 29 */
+/* 28 */
 /*!************************************!*\
   !*** ./src/assets/images/exit.png ***!
   \************************************/
@@ -37175,7 +37174,7 @@
 	module.exports = __webpack_require__.p + "./assets/images/exit.png";
 
 /***/ },
-/* 30 */
+/* 29 */
 /*!*********************************************!*\
   !*** ./src/controllers/home/workoutCtrl.js ***!
   \*********************************************/
@@ -37300,16 +37299,33 @@
 	exports.default = workoutCtrl;
 
 /***/ },
-/* 31 */
+/* 30 */
 /*!*****************************************!*\
   !*** ./src/templates/home/routine.html ***!
   \*****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<main class=\"routine\">\n  <div class=\"routine-nav\">\n    <h1>Routines</h1>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 29) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"routine-body\">\n    <div class=\"routine-routines\" ng-repeat=\"routine in routines\" ng-click=\"selectRoutine( routine )\" ng-mouseover=\"showSets($index, 0)\" ng-mouseleave=\"showSets($index, 1)\">\n      <div class=\"routine-routine\">\n        <h1 class=\"routine-routines-title\">{{ routine.name }}</h3>\n        <span class=\"routine-routines-content\">Sets: {{ routine.sets.length }}</span>\n      </div>\n      <div class=\"routine-routine-sets\">\n        <div ng-repeat=\"set in routine.sets\">\n          Set: {{ set.name }}<br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}lb<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          Workout Timer: {{setInfoPrinter(set.duration)}}<br>\n          Rest Timer: {{setInfoPrinter(set.restPeriod)}}min<br>\n        </div>\n      </div>\n    </div>\n    <div class=\"routine-routines-add\" ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">\n      <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 153) + "\" alt=\"Add\">\n    </div>\n  </div>\n\n  <!-- <section class=\"routine-body\">\n    <div class=\"routine-routines\">\n      <ul ng-repeat=\"routine in routines\">\n        <li>\n          <div ng-click=\"selectRoutine( routine )\">\n            <h1 class=\"routine-routines-title\">{{ routine.name }}</h3>\n            <hr>\n            <span class=\"routine-routines-content\">Sets: {{ routine.sets.length }}</span>\n          </div>\n        </li>\n      </ul>\n        <li>\n          <div ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">\n            <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 153) + "\" alt=\"Add\">\n          </div>\n        </li>\n    </div> -->\n\n    <section class=\"modal\" id=\"selected-routine\" ng-show=\"selectedRoutine\">\n      <h2>{{ selectedRoutine.name }}</h3>\n      <ul ng-repeat=\"set in selectedRoutine.sets\">\n        <li>Set: {{ set.name }}</li>\n        <li>Reps: {{ set.numOfReps }}</li>\n        <li>Rest Timer: {{ set.restPeriod }}min</li>\n        <li>{{ set.type }}</li>\n        <li>Weight: {{ set.weight }}lb</li>\n        <br>\n      </ul>\n      <button ng-click=\"editRoutine( selectedRoutine )\">Edit</button>\n      <button ng-click=\"deleteRoutine( selectedRoutine._id )\">Delete</button>\n    </section>\n\n    <section class=\"modal\" id=\"new-routine\" ng-show=\"newRoutine\">\n      <input type=\"text\" ng-model=\"newRoutine.name\">\n\n      <div ng-repeat=\"set in newRoutine.sets\" ng-click=\"editSet( set )\">\n        <p>{{set.name}}</p>\n        <p>{{set.type}}</p>\n        <p>{{set.weight}}</p>\n        <p>{{set.numOfReps}}</p>\n        <p>{{set.duration}}</p>\n        <p>{{set.restPeriod}}</p>\n      </div>\n\n      <div>\n        <input type=\"text\" placeholder=\"Set Name\" ng-model=\"name\">\n        <input type=\"text\" placeholder=\"Type\" ng-model=\"type\">\n        <input type=\"text\" placeholder=\"Weight\" ng-model=\"weight\">\n        <input type=\"text\" placeholder=\"Reps\" ng-model=\"numOfReps\">\n        <input type=\"text\" placeholder=\"Workout Duration\" ng-model=\"duration\">\n        <input type=\"text\" placeholder=\"Rest Duration\" ng-model=\"restPeriod\">\n\n        <button ng-click=\"addSet()\">Add Set</button>\n        <button ng-click=\"addSet( setIndex )\" ng-show=\"setIndex > -1\">Update</button>\n        <button ng-click=\"clearSet()\">Clear</button>\n      </div>\n\n      <button ng-click=\"postRoutine()\">Add Routine</button>\n      <button ng-click=\"putRoutine()\" ng-show=\"newRoutine._id\">Update Routine</button>\n      <button ng-click=\"cancelPost()\">Cancel</button>\n    </section>\n\n    <!-- <button ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">Build New Routine</button> -->\n\n  </section>\n\n  <!-- <section>\n    <h3>Available Routines</h3>\n    <ul ng-repeat=\"routine in routines\">\n      <li>\n        <h3>Name of Routine: {{ routine.name }}</h3>\n        <ul ng-repeat=\"set in routine.sets\">\n          <li>Set Name: {{ set.name }}</li>\n          <li>Number of Reps: {{ set.numOfReps }}</li>\n          <li>Rest Timer: {{ set.restPeriod }}</li>\n          <li>Type of Workout: {{ set.type }}</li>\n          <li>Weight: {{ set.weight }}</li>\n          <br>\n        </ul>\n      </li>\n      <button ng-click=\"editRoutine( routine )\">Edit</button>\n      <button ng-click=\"deleteRoutine( routine._id )\">Delete</button>\n    </ul>\n  </section> -->\n\n</main>\n";
+	module.exports = "<main class=\"routine\">\n  <div class=\"routine-nav\">\n    <h1>Routines</h1>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 28) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"routine-body\">\n    <div class=\"routine-body-input\" ng-show=\"newRoutine\">\n      <input type=\"text\" ng-model=\"newRoutine.name\">\n\n      <div class=\"routine-body-input-sets\">\n        <input class=\"routine-body-input-sets-title\" type=\"text\" placeholder=\"Set Name\" ng-model=\"name\"><br>\n        <select class=\"routine-body-input-sets-type\" name=\"Type\" ng-model=\"type\" >\n          <option  selected=\"selected\" disabled=\"disabled\">Type</option>\n          <option value=\"Machine\">Machine</option>\n          <option value=\"Barbell\">Barbell</option>\n          <option value=\"Dumbbell\">Dumbbell</option>\n          <option value=\"etc\">etc</option>\n        </select>\n        <input class=\"routine-body-input-sets-input\" type=\"number\" placeholder=\"Weight\" ng-model=\"weight\"><br>\n        <input class=\"routine-body-input-sets-input\" type=\"number\" placeholder=\"Reps\" ng-model=\"numOfReps\"><br>\n        <input class=\"routine-body-input-sets-input\" type=\"number\" placeholder=\"Workout Duration\" ng-model=\"duration\"><br>\n        <input class=\"routine-body-input-sets-input\" type=\"number\" placeholder=\"Rest Duration\" ng-model=\"restPeriod\"><br>\n\n        <button class=\"routine-body-input-sets-buttons\" ng-click=\"addSet()\">Add Set</button><br>\n        <button class=\"routine-body-input-sets-buttons\" ng-click=\"addSet( setIndex )\" ng-show=\"setIndex > -1\">Update</button><br>\n        <button class=\"routine-body-input-sets-buttons\" ng-click=\"clearSet()\">Clear</button><br>\n      </div>\n\n      <div class=\"routine-body-input-sets\">\n        <div class=\"routine-body-input-set\" ng-repeat=\"set in newRoutine.sets\" ng-click=\"editSetAndRoutine( undefined, set )\">\n          <div class=\"routine-body-input-set-info\">\n            <span class=\"routine-body-input-set-info-title\">{{ set.name }}</span>\n            <div class=\"routine-body-input-set-info-content\">\n              Type: {{setInfoPrinter(set.type)}}<br>\n              Weight: {{setInfoPrinter(set.weight)}}lb<br>\n              Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n              Workout Timer (min): {{setInfoPrinter(set.duration)}}<br>\n              Rest Timer (min): {{setInfoPrinter(set.restPeriod)}}<br>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"routine-body-input-routine-buttons\">\n        <button class=\"routine-body-input-routine-button\" ng-click=\"postRoutine()\">Add Routine</button>\n        <button class=\"routine-body-input-routine-button\" ng-click=\"putRoutine()\" ng-show=\"newRoutine._id\">Update Routine</button>\n        <button class=\"routine-body-input-routine-button\" ng-click=\"cancelPost()\">Cancel</button>\n      </div>\n    </div>\n\n    <div class=\"routine-routines\" ng-repeat=\"routine in routines\" ng-mouseover=\"showSets($index, 0)\" ng-mouseleave=\"showSets($index, 1)\">\n      <div class=\"routine-routine\">\n        <h1 class=\"routine-routines-title\">{{ routine.name }}</h3>\n        <div class=\"routine-routines-remove-routine\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/minus_sign_black.png */ 31) + "\" alt=\"DeleteRoutine\" ng-click=\"deleteRoutine( routine._id ); $event.stopPropagation()\">\n        </div>\n        <span class=\"routine-routines-content\">Sets: {{ routine.sets.length }}</span>\n        <div class=\"routine-routine-sets\">\n          <div class=\"routine-routine-set\" ng-repeat=\"set in routine.sets\" ng-click=\"editSetAndRoutine( routine, set )\">\n            Set: {{ set.name }}<br>\n            Type: {{setInfoPrinter(set.type)}}<br>\n            Weight: {{setInfoPrinter(set.weight)}}lb<br>\n            Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n            Workout Timer (min): {{setInfoPrinter(set.duration)}}<br>\n            Rest Timer (min): {{setInfoPrinter(set.restPeriod)}}<br>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"routine-routines-add\" ng-hide=\"newRoutine\" ng-click=\"addRoutine()\">\n      <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 32) + "\" alt=\"Add\">\n    </div>\n  </div>\n</main>\n";
 
 /***/ },
-/* 32 */,
+/* 31 */
+/*!************************************************!*\
+  !*** ./src/assets/images/minus_sign_black.png ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "./assets/images/minus_sign_black.png";
+
+/***/ },
+/* 32 */
+/*!*****************************************!*\
+  !*** ./src/assets/images/plus_sign.png ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "./assets/images/plus_sign.png";
+
+/***/ },
 /* 33 */
 /*!*********************************************!*\
   !*** ./src/controllers/home/routineCtrl.js ***!
@@ -37334,18 +37350,22 @@
 	
 	  $scope.getRoutines();
 	
-	  $scope.selectRoutine = function (routine) {
-	    $scope.selectedRoutine = routine;
-	  };
-	
 	  $scope.addRoutine = function () {
 	    $scope.newRoutine = {
-	      name: "Routine Name",
+	      name: "Routine Title",
 	      sets: []
 	    };
 	  };
 	
-	  $scope.editSet = function (set) {
+	  $scope.editSetAndRoutine = function (routine, set) {
+	    if (routine !== undefined) {
+	      $scope.newRoutine = {
+	        _id: routine._id,
+	        name: routine.name,
+	        sets: routine.sets.slice()
+	      };
+	    }
+	
 	    $scope.name = set.name;
 	    $scope.type = set.type;
 	    $scope.weight = set.weight;
@@ -37413,12 +37433,22 @@
 	  };
 	
 	  $scope.showSets = function (index, inOut) {
+	    var routineOfInterest = document.getElementsByClassName("routine-routines")[index];
+	    var sizeOfRoutine = -6;
+	
 	    if (!inOut) {
-	      document.getElementsByClassName("routine-routines")[index].style.paddingTop = "0px";
-	      document.getElementsByClassName("routine-routines")[index].children[1].style.display = "block";
+	      routineOfInterest.style.paddingTop = "0";
+	      routineOfInterest.children[0].children[3].style.display = "block";
+	
+	      for (var i = 0; i < routineOfInterest.children[0].children.length; i++) {
+	        sizeOfRoutine += routineOfInterest.children[0].children[i].offsetHeight;
+	      }
+	
+	      routineOfInterest.style.height = sizeOfRoutine + "px";
 	    } else {
-	      document.getElementsByClassName("routine-routines")[index].style.paddingTop = "18%";
-	      document.getElementsByClassName("routine-routines")[index].children[1].style.display = "none";
+	      routineOfInterest.children[0].children[3].style.display = "none";
+	      routineOfInterest.style.paddingTop = "18%";
+	      routineOfInterest.style.height = "0";
 	    }
 	  };
 	
@@ -37449,9 +37479,9 @@
 /*!******************************************!*\
   !*** ./src/templates/home/schedule.html ***!
   \******************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h1>Schedule</h1>\n\n<calendar selected=\"day\"></calendar>\n\n<section ng-hide=\"programToEdit\">\n  <h3>Available Programs</h3>\n  <div ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n    {{program.date}}\n  </div>\n\n  <button ng-click=\"addProgram()\">Add Program</button>\n</section>\n\n<section ng-show=\"programToEdit\">\n  <h3>Available Routines</h3>\n  <div ng-repeat=\"routine in routines\">\n    {{routine.name}}\n    <button ng-click=\"addRoutine( routine )\">Add To Program</button>\n    <button ng-click=\"editRoutine( routine )\">Edit</button>\n  </div>\n</section>\n\n<section ng-show=\"selectedProgram && !programToEdit\">\n  <h3>Selected Program {{selectedProgram.date}}</h3>\n\n  <ul ng-repeat=\"routine in selectedProgram.routines\">\n    {{routine.name}}\n    <ul ng-repeat=\"set in routine.sets\" ng-click=\"selectSet( this )\">\n      {{set.name}}\n      {{set.weight}}\n      {{set.numOfReps}}\n    </ul>\n    {{selectedSet}}\n  </ul>\n\n  <button ng-click=\"editProgram()\">Edit Program</button>\n  <button ng-click=\"deleteProgram()\">Remove Program</button>\n</section>\n\n<section ng-show=\"programToEdit\">\n  <h3>Program To Edit {{programToEdit.date}}</h3>\n\n  <ul ng-repeat=\"routine in programToEdit.routines\">\n    {{routine.name}}\n    <ul ng-repeat=\"set in routine.sets\" ng-click=\"selectSet( this )\">\n      {{set.name}}\n      {{set.weight}}\n      {{set.numOfReps}}\n    </ul>\n    {{selectedSet}}\n    <button ng-show=\"programToEdit\" ng-click=\"removeRoutine( $index )\">Remove Routine</button>\n  </ul>\n\n  <button ng-show=\"selectedProgram && programToEdit\" ng-click=\"putProgram()\">Update</button>\n  <button ng-hide=\"selectedProgram\" ng-click=\"postProgram()\">Add</button>\n  <button ng-show=\"programToEdit\" ng-click=\"cancelEdit()\">Cancel</button>\n</section>\n\n<button ng-click=\"back2Home()\">Back to Home</button>\n";
+	module.exports = "<main class=\"schedule\">\n  <div class=\"schedule-nav\">\n    <h1>Schedule</h1>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 28) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"schedule-body\">\n    <div class=\"schedule-body-calendar-wrapper\">\n      <calendar selected=\"day\"></calendar>\n    </div>\n\n    <section class=\"schedule-body-available-programs\" ng-hide=\"programToEdit\">\n      <h3>Available Programs: </h3>{{programs.length}}\n      <div ng-repeat=\"program in programs\" ng-click=\"selectProgram( program )\">\n        {{program.date | date: 'MMM-dd-yyyy'}}\n      </div>\n\n      <button ng-click=\"addProgram()\">Add Program</button>\n    </section>\n\n    <section class=\"schedule-body-available-routines\" ng-show=\"programToEdit\">\n      <h3>Available Routines</h3>\n      <div ng-repeat=\"routine in routines\">\n        {{routine.name}}\n        <button ng-click=\"addRoutine( routine )\">Add To Program</button>\n        <button ng-click=\"editRoutine( routine )\">Edit</button>\n      </div>\n    </section>\n\n    <section class=\"schedule-body-selected-program\" ng-show=\"selectedProgram && !programToEdit\">\n      <h3>Selected Program {{selectedProgram.date | date: 'MMM-dd-yyyy'}}</h3>\n\n      <ul ng-repeat=\"routine in selectedProgram.routines\">\n        {{routine.name}}\n        <ul ng-repeat=\"set in routine.sets\" ng-click=\"selectSet( this )\">\n          {{set.name}} /\n          Weight: {{set.weight}} /\n          Reps: {{set.numOfReps}}\n        </ul>\n        {{selectedSet.name}} /\n        Tyep: {{selectedSet.type}} /\n        Weight: {{selectedSet.weight}} /\n        Reps: {{selectedSet.numOfReps}} /\n        Workout Timer: {{selectedSet.duration}} /\n        Rest Timer: {{selectedSet.restPeriod}} /\n      </ul>\n\n      <button ng-click=\"editProgram()\">Edit Program</button>\n      <button ng-click=\"deleteProgram()\">Remove Program</button>\n    </section>\n\n    <section ng-show=\"programToEdit\">\n      <h3>Program To Edit {{programToEdit.date}}</h3>\n\n      <ul ng-repeat=\"routine in programToEdit.routines\">\n        {{routine.name}}\n        <ul ng-repeat=\"set in routine.sets\" ng-click=\"selectSet( this )\">\n          {{set.name}}\n          {{set.weight}}\n          {{set.numOfReps}}\n        </ul>\n        {{selectedSet}}\n        <button ng-show=\"programToEdit\" ng-click=\"removeRoutine( $index )\">Remove Routine</button>\n      </ul>\n\n      <button ng-show=\"selectedProgram && programToEdit\" ng-click=\"putProgram()\">Update</button>\n      <button ng-hide=\"selectedProgram\" ng-click=\"postProgram()\">Add</button>\n      <button ng-show=\"programToEdit\" ng-click=\"cancelEdit()\">Cancel</button>\n    </section>\n  </div>\n</main>\n";
 
 /***/ },
 /* 35 */
@@ -37588,10 +37618,19 @@
   \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"wingit\">\n  <div class=\"wingit-timer\">\n    <div>\n      <stopwatch class=\"wingit-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <div ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n      <img class=\"wingit-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 28) + "\">\n      Click To Start!\n    </div>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 29) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"wingit-program-routines\">\n    <div class=\"wingit-program-routine\" ng-repeat=\"routine in program.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, $index );\">\n      <div class=\"wingit-program-routine-info\">\n        <h1 class=\"wingit-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"wingit-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n        <div class=\"wingit-program-routine-set-remove\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/minus_sign.png */ 152) + "\" alt=\"OutOfWorkout\" ng-click=\"removeRoutine( $index )\">\n        </div>\n      </div>\n      <div class=\"wingit-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"wingit-program-routine-set-wrapper\">\n          <span class=\"wingit-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          <span class=\"wingit-program-routine-set-workout-duration\">Workout Duration: {{setInfoPrinter(set.duration)}}</span><br>\n          <span class=\"wingit-program-routine-set-resting-period\">Resting Period: {{setInfoPrinter(set.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-routines\">\n    <div class=\"available-routine-tag\" ng-click=\"showRoutines()\">\n      <img class=\"available-routine-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/routines_icon.png */ 21) + "\" alt=\"Routines\">\n    </div>\n    <div class=\"available-routines-list\" ng-show=\"showList\">\n      <div class=\"available-routines-list-item\" ng-repeat=\"routine in routines\">\n        <h2 class=\"available-routines-list-item-title\" ng-click=\"selectViewRoutine(routine)\">{{routine.name}}</h2>\n        <div class=\"available-routines-list-item-add\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 153) + "\" alt=\"Add2Workout\" ng-click=\"add2program( routine )\">\n        </div>\n        <div class=\"available-routines-set-info\" ng-repeat=\"viewSet in routine.sets\" ng-style=\"{'display': routine === viewRoutine ? 'block' : null}\">\n          <span class=\"available-routines-set-name\">{{viewSet.name}}</span><br>\n          Type: {{setInfoPrinter(viewSet.type)}}<br>\n          Weight: {{setInfoPrinter(viewSet.weight)}}<br>\n          Reps: {{setInfoPrinter(viewSet.numOfReps)}}<br>\n          <span class=\"available-routines-set-workout-duration\">Workout Duration: {{setInfoPrinter(viewSet.duration)}}</span><br>\n          <span class=\"available-routines-set-resting-period\">Resting Period: {{setInfoPrinter(viewSet.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
+	module.exports = "<div class=\"wingit\">\n  <div class=\"wingit-timer\">\n    <div>\n      <stopwatch class=\"wingit-timer-watch\" set-timer=\"setTimer\" ng-show=\"setTimer\"></stopwatch>\n    </div>\n    <div ng-click=\"startRoutine()\" ng-hide=\"setTimer||!selectedRoutine\">\n      <img class=\"wingit-timer-justdoit\" src=\"" + __webpack_require__(/*! ../../assets/images/just_do_it_timer.png */ 27) + "\">\n      Click To Start!\n    </div>\n    <img class=\"exit\" src=\"" + __webpack_require__(/*! ../../assets/images/exit.png */ 28) + "\" ng-click=\"back2Home()\">\n  </div>\n\n  <div class=\"wingit-program-routines\">\n    <div class=\"wingit-program-routine\" ng-repeat=\"routine in program.routines\" ng-style=\"{'background-color': onColors[$index % onColors.length]}\" ng-click=\"selectRoutine( routine, $index );\">\n      <div class=\"wingit-program-routine-info\">\n        <h1 class=\"wingit-program-routine-name\">{{routine.name}}</h1>\n        <p class=\"wingit-program-routine-set-number\"> Sets: {{routine.sets.length}}</p>\n        <div class=\"wingit-program-routine-set-remove\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/minus_sign.png */ 37) + "\" alt=\"OutOfWorkout\" ng-click=\"removeRoutine( $index )\">\n        </div>\n      </div>\n      <div class=\"wingit-program-routine-sets\" ng-repeat=\"set in routine.sets\" ng-style=\"{'display': routine === selectedRoutine ? 'block' : null}\">\n        <div class=\"wingit-program-routine-set-wrapper\">\n          <span class=\"wingit-program-routine-set-name\">{{set.name}}</span><br>\n          Type: {{setInfoPrinter(set.type)}}<br>\n          Weight: {{setInfoPrinter(set.weight)}}<br>\n          Reps: {{setInfoPrinter(set.numOfReps)}}<br>\n          <span class=\"wingit-program-routine-set-workout-duration\">Workout Duration (min): {{setInfoPrinter(set.duration)}}</span><br>\n          <span class=\"wingit-program-routine-set-resting-period\">Resting Period (min): {{setInfoPrinter(set.restPeriod)}}</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"available-routines\">\n    <div class=\"available-routine-tag\" ng-click=\"showRoutines()\">\n      <img class=\"available-routine-tag-image\" src=\"" + __webpack_require__(/*! ../../assets/images/routines_icon.png */ 20) + "\" alt=\"Routines\">\n    </div>\n    <div class=\"available-routines-list\" ng-show=\"showList\">\n      <div class=\"available-routines-list-item\" ng-repeat=\"routine in routines\">\n        <h2 class=\"available-routines-list-item-title\" ng-click=\"selectViewRoutine(routine)\">{{routine.name}}</h2>\n        <div class=\"available-routines-list-item-add\">\n          <img src=\"" + __webpack_require__(/*! ../../assets/images/plus_sign.png */ 32) + "\" alt=\"Add2Workout\" ng-click=\"add2program( routine )\">\n        </div>\n        <div class=\"available-routines-set-info\" ng-repeat=\"viewSet in routine.sets\" ng-style=\"{'display': routine === viewRoutine ? 'block' : null}\">\n          <span class=\"available-routines-set-name\">{{viewSet.name}}</span><br>\n          Type: {{setInfoPrinter(viewSet.type)}}<br>\n          Weight: {{setInfoPrinter(viewSet.weight)}}<br>\n          Reps: {{setInfoPrinter(viewSet.numOfReps)}}<br>\n          <span class=\"available-routines-set-workout-duration\">Workout Duration: {{setInfoPrinter(viewSet.duration)}}</span><br>\n          <span class=\"available-routines-set-resting-period\">Resting Period: {{setInfoPrinter(viewSet.restPeriod)}}min</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
 /* 37 */
+/*!******************************************!*\
+  !*** ./src/assets/images/minus_sign.png ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "./assets/images/minus_sign.png";
+
+/***/ },
+/* 38 */
 /*!********************************************!*\
   !*** ./src/controllers/home/wingItCtrl.js ***!
   \********************************************/
@@ -37725,7 +37764,7 @@
 	exports.default = wingItCtrl;
 
 /***/ },
-/* 38 */
+/* 39 */
 /*!****************************************!*\
   !*** ./src/templates/home/sample.html ***!
   \****************************************/
@@ -37734,7 +37773,7 @@
 	module.exports = "sample\n";
 
 /***/ },
-/* 39 */
+/* 40 */
 /*!********************************************!*\
   !*** ./src/controllers/home/sampleCtrl.js ***!
   \********************************************/
@@ -37750,7 +37789,7 @@
 	exports.default = sampleCtrl;
 
 /***/ },
-/* 40 */
+/* 41 */
 /*!*********************************!*\
   !*** ./src/services/mainSvc.js ***!
   \*********************************/
@@ -37814,7 +37853,7 @@
 	exports.default = mainSvc;
 
 /***/ },
-/* 41 */
+/* 42 */
 /*!*************************************!*\
   !*** ./src/directives/stopwatch.js ***!
   \*************************************/
@@ -37828,7 +37867,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _stopwatch = __webpack_require__(/*! ./stopwatch.html */ 42);
+	var _stopwatch = __webpack_require__(/*! ./stopwatch.html */ 43);
 	
 	var _stopwatch2 = _interopRequireDefault(_stopwatch);
 	
@@ -37960,7 +37999,7 @@
 	exports.default = stopWatch;
 
 /***/ },
-/* 42 */
+/* 43 */
 /*!***************************************!*\
   !*** ./src/directives/stopwatch.html ***!
   \***************************************/
@@ -37969,7 +38008,7 @@
 	module.exports = "<nav class=\"controls\">\n  <a class=\"button\" ng-click=\"stopwatch.start();\">Start</a>\n  <a class=\"button\" ng-click=\"stopwatch.stop();\">Stop</a>\n  <a class=\"button\" ng-click=\"stopwatch.reset();\">Reset</a>\n  <a class=\"button\" ng-click=\"stopwatch.complete();\">Complete</a>\n</nav>\n<div class=\"stopwatch\"></div>\n";
 
 /***/ },
-/* 43 */
+/* 44 */
 /*!************************************!*\
   !*** ./src/directives/calendar.js ***!
   \************************************/
@@ -37981,13 +38020,13 @@
 	  value: true
 	});
 	
-	var _calendar = __webpack_require__(/*! ./calendar.html */ 44);
+	var _calendar = __webpack_require__(/*! ./calendar.html */ 45);
 	
 	var _calendar2 = _interopRequireDefault(_calendar);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var moment = __webpack_require__(/*! moment */ 45);
+	var moment = __webpack_require__(/*! moment */ 46);
 	
 	function calendar() {
 	  return {
@@ -38065,7 +38104,7 @@
 	exports.default = calendar;
 
 /***/ },
-/* 44 */
+/* 45 */
 /*!**************************************!*\
   !*** ./src/directives/calendar.html ***!
   \**************************************/
@@ -38074,7 +38113,7 @@
 	module.exports = "<div class=\"header\">\n  <i class=\"fa fa-angle-left\" ng-click=\"previous()\"><</i>\n  <span>{{month.format(\"MMMM, YYYY\")}}</span>\n  <i class=\"fa fa-angle-right\" ng-click=\"next()\">></i>\n</div>\n<div class=\"week names\">\n  <span class=\"day\">Sun</span>\n  <span class=\"day\">Mon</span>\n  <span class=\"day\">Tue</span>\n  <span class=\"day\">Wed</span>\n  <span class=\"day\">Thu</span>\n  <span class=\"day\">Fri</span>\n  <span class=\"day\">Sat</span>\n</div>\n<div class=\"week\" ng-repeat=\"week in weeks\">\n  <span class=\"day\" ng-class=\"{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }\" ng-click=\"select(day)\" ng-repeat=\"day in week.days\">{{day.number}}</span>\n</div>\n";
 
 /***/ },
-/* 45 */
+/* 46 */
 /*!****************************!*\
   !*** ./~/moment/moment.js ***!
   \****************************/
@@ -39876,7 +39915,7 @@
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(/*! ./locale */ 47)("./" + name);
+	                __webpack_require__(/*! ./locale */ 48)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -42314,10 +42353,10 @@
 	    return _moment;
 	
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 46)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 47)(module)))
 
 /***/ },
-/* 46 */
+/* 47 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -42336,221 +42375,221 @@
 
 
 /***/ },
-/* 47 */
+/* 48 */
 /*!**********************************!*\
   !*** ./~/moment/locale ^\.\/.*$ ***!
   \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 48,
-		"./af.js": 48,
-		"./ar": 49,
-		"./ar-ly": 50,
-		"./ar-ly.js": 50,
-		"./ar-ma": 51,
-		"./ar-ma.js": 51,
-		"./ar-sa": 52,
-		"./ar-sa.js": 52,
-		"./ar-tn": 53,
-		"./ar-tn.js": 53,
-		"./ar.js": 49,
-		"./az": 54,
-		"./az.js": 54,
-		"./be": 55,
-		"./be.js": 55,
-		"./bg": 56,
-		"./bg.js": 56,
-		"./bn": 57,
-		"./bn.js": 57,
-		"./bo": 58,
-		"./bo.js": 58,
-		"./br": 59,
-		"./br.js": 59,
-		"./bs": 60,
-		"./bs.js": 60,
-		"./ca": 61,
-		"./ca.js": 61,
-		"./cs": 62,
-		"./cs.js": 62,
-		"./cv": 63,
-		"./cv.js": 63,
-		"./cy": 64,
-		"./cy.js": 64,
-		"./da": 65,
-		"./da.js": 65,
-		"./de": 66,
-		"./de-at": 67,
-		"./de-at.js": 67,
-		"./de.js": 66,
-		"./dv": 68,
-		"./dv.js": 68,
-		"./el": 69,
-		"./el.js": 69,
-		"./en-au": 70,
-		"./en-au.js": 70,
-		"./en-ca": 71,
-		"./en-ca.js": 71,
-		"./en-gb": 72,
-		"./en-gb.js": 72,
-		"./en-ie": 73,
-		"./en-ie.js": 73,
-		"./en-nz": 74,
-		"./en-nz.js": 74,
-		"./eo": 75,
-		"./eo.js": 75,
-		"./es": 76,
-		"./es-do": 77,
-		"./es-do.js": 77,
-		"./es.js": 76,
-		"./et": 78,
-		"./et.js": 78,
-		"./eu": 79,
-		"./eu.js": 79,
-		"./fa": 80,
-		"./fa.js": 80,
-		"./fi": 81,
-		"./fi.js": 81,
-		"./fo": 82,
-		"./fo.js": 82,
-		"./fr": 83,
-		"./fr-ca": 84,
-		"./fr-ca.js": 84,
-		"./fr-ch": 85,
-		"./fr-ch.js": 85,
-		"./fr.js": 83,
-		"./fy": 86,
-		"./fy.js": 86,
-		"./gd": 87,
-		"./gd.js": 87,
-		"./gl": 88,
-		"./gl.js": 88,
-		"./he": 89,
-		"./he.js": 89,
-		"./hi": 90,
-		"./hi.js": 90,
-		"./hr": 91,
-		"./hr.js": 91,
-		"./hu": 92,
-		"./hu.js": 92,
-		"./hy-am": 93,
-		"./hy-am.js": 93,
-		"./id": 94,
-		"./id.js": 94,
-		"./is": 95,
-		"./is.js": 95,
-		"./it": 96,
-		"./it.js": 96,
-		"./ja": 97,
-		"./ja.js": 97,
-		"./jv": 98,
-		"./jv.js": 98,
-		"./ka": 99,
-		"./ka.js": 99,
-		"./kk": 100,
-		"./kk.js": 100,
-		"./km": 101,
-		"./km.js": 101,
-		"./ko": 102,
-		"./ko.js": 102,
-		"./ky": 103,
-		"./ky.js": 103,
-		"./lb": 104,
-		"./lb.js": 104,
-		"./lo": 105,
-		"./lo.js": 105,
-		"./lt": 106,
-		"./lt.js": 106,
-		"./lv": 107,
-		"./lv.js": 107,
-		"./me": 108,
-		"./me.js": 108,
-		"./mi": 109,
-		"./mi.js": 109,
-		"./mk": 110,
-		"./mk.js": 110,
-		"./ml": 111,
-		"./ml.js": 111,
-		"./mr": 112,
-		"./mr.js": 112,
-		"./ms": 113,
-		"./ms-my": 114,
-		"./ms-my.js": 114,
-		"./ms.js": 113,
-		"./my": 115,
-		"./my.js": 115,
-		"./nb": 116,
-		"./nb.js": 116,
-		"./ne": 117,
-		"./ne.js": 117,
-		"./nl": 118,
-		"./nl.js": 118,
-		"./nn": 119,
-		"./nn.js": 119,
-		"./pa-in": 120,
-		"./pa-in.js": 120,
-		"./pl": 121,
-		"./pl.js": 121,
-		"./pt": 122,
-		"./pt-br": 123,
-		"./pt-br.js": 123,
-		"./pt.js": 122,
-		"./ro": 124,
-		"./ro.js": 124,
-		"./ru": 125,
-		"./ru.js": 125,
-		"./se": 126,
-		"./se.js": 126,
-		"./si": 127,
-		"./si.js": 127,
-		"./sk": 128,
-		"./sk.js": 128,
-		"./sl": 129,
-		"./sl.js": 129,
-		"./sq": 130,
-		"./sq.js": 130,
-		"./sr": 131,
-		"./sr-cyrl": 132,
-		"./sr-cyrl.js": 132,
-		"./sr.js": 131,
-		"./ss": 133,
-		"./ss.js": 133,
-		"./sv": 134,
-		"./sv.js": 134,
-		"./sw": 135,
-		"./sw.js": 135,
-		"./ta": 136,
-		"./ta.js": 136,
-		"./te": 137,
-		"./te.js": 137,
-		"./th": 138,
-		"./th.js": 138,
-		"./tl-ph": 139,
-		"./tl-ph.js": 139,
-		"./tlh": 140,
-		"./tlh.js": 140,
-		"./tr": 141,
-		"./tr.js": 141,
-		"./tzl": 142,
-		"./tzl.js": 142,
-		"./tzm": 143,
-		"./tzm-latn": 144,
-		"./tzm-latn.js": 144,
-		"./tzm.js": 143,
-		"./uk": 145,
-		"./uk.js": 145,
-		"./uz": 146,
-		"./uz.js": 146,
-		"./vi": 147,
-		"./vi.js": 147,
-		"./x-pseudo": 148,
-		"./x-pseudo.js": 148,
-		"./zh-cn": 149,
-		"./zh-cn.js": 149,
-		"./zh-hk": 150,
-		"./zh-hk.js": 150,
-		"./zh-tw": 151,
-		"./zh-tw.js": 151
+		"./af": 49,
+		"./af.js": 49,
+		"./ar": 50,
+		"./ar-ly": 51,
+		"./ar-ly.js": 51,
+		"./ar-ma": 52,
+		"./ar-ma.js": 52,
+		"./ar-sa": 53,
+		"./ar-sa.js": 53,
+		"./ar-tn": 54,
+		"./ar-tn.js": 54,
+		"./ar.js": 50,
+		"./az": 55,
+		"./az.js": 55,
+		"./be": 56,
+		"./be.js": 56,
+		"./bg": 57,
+		"./bg.js": 57,
+		"./bn": 58,
+		"./bn.js": 58,
+		"./bo": 59,
+		"./bo.js": 59,
+		"./br": 60,
+		"./br.js": 60,
+		"./bs": 61,
+		"./bs.js": 61,
+		"./ca": 62,
+		"./ca.js": 62,
+		"./cs": 63,
+		"./cs.js": 63,
+		"./cv": 64,
+		"./cv.js": 64,
+		"./cy": 65,
+		"./cy.js": 65,
+		"./da": 66,
+		"./da.js": 66,
+		"./de": 67,
+		"./de-at": 68,
+		"./de-at.js": 68,
+		"./de.js": 67,
+		"./dv": 69,
+		"./dv.js": 69,
+		"./el": 70,
+		"./el.js": 70,
+		"./en-au": 71,
+		"./en-au.js": 71,
+		"./en-ca": 72,
+		"./en-ca.js": 72,
+		"./en-gb": 73,
+		"./en-gb.js": 73,
+		"./en-ie": 74,
+		"./en-ie.js": 74,
+		"./en-nz": 75,
+		"./en-nz.js": 75,
+		"./eo": 76,
+		"./eo.js": 76,
+		"./es": 77,
+		"./es-do": 78,
+		"./es-do.js": 78,
+		"./es.js": 77,
+		"./et": 79,
+		"./et.js": 79,
+		"./eu": 80,
+		"./eu.js": 80,
+		"./fa": 81,
+		"./fa.js": 81,
+		"./fi": 82,
+		"./fi.js": 82,
+		"./fo": 83,
+		"./fo.js": 83,
+		"./fr": 84,
+		"./fr-ca": 85,
+		"./fr-ca.js": 85,
+		"./fr-ch": 86,
+		"./fr-ch.js": 86,
+		"./fr.js": 84,
+		"./fy": 87,
+		"./fy.js": 87,
+		"./gd": 88,
+		"./gd.js": 88,
+		"./gl": 89,
+		"./gl.js": 89,
+		"./he": 90,
+		"./he.js": 90,
+		"./hi": 91,
+		"./hi.js": 91,
+		"./hr": 92,
+		"./hr.js": 92,
+		"./hu": 93,
+		"./hu.js": 93,
+		"./hy-am": 94,
+		"./hy-am.js": 94,
+		"./id": 95,
+		"./id.js": 95,
+		"./is": 96,
+		"./is.js": 96,
+		"./it": 97,
+		"./it.js": 97,
+		"./ja": 98,
+		"./ja.js": 98,
+		"./jv": 99,
+		"./jv.js": 99,
+		"./ka": 100,
+		"./ka.js": 100,
+		"./kk": 101,
+		"./kk.js": 101,
+		"./km": 102,
+		"./km.js": 102,
+		"./ko": 103,
+		"./ko.js": 103,
+		"./ky": 104,
+		"./ky.js": 104,
+		"./lb": 105,
+		"./lb.js": 105,
+		"./lo": 106,
+		"./lo.js": 106,
+		"./lt": 107,
+		"./lt.js": 107,
+		"./lv": 108,
+		"./lv.js": 108,
+		"./me": 109,
+		"./me.js": 109,
+		"./mi": 110,
+		"./mi.js": 110,
+		"./mk": 111,
+		"./mk.js": 111,
+		"./ml": 112,
+		"./ml.js": 112,
+		"./mr": 113,
+		"./mr.js": 113,
+		"./ms": 114,
+		"./ms-my": 115,
+		"./ms-my.js": 115,
+		"./ms.js": 114,
+		"./my": 116,
+		"./my.js": 116,
+		"./nb": 117,
+		"./nb.js": 117,
+		"./ne": 118,
+		"./ne.js": 118,
+		"./nl": 119,
+		"./nl.js": 119,
+		"./nn": 120,
+		"./nn.js": 120,
+		"./pa-in": 121,
+		"./pa-in.js": 121,
+		"./pl": 122,
+		"./pl.js": 122,
+		"./pt": 123,
+		"./pt-br": 124,
+		"./pt-br.js": 124,
+		"./pt.js": 123,
+		"./ro": 125,
+		"./ro.js": 125,
+		"./ru": 126,
+		"./ru.js": 126,
+		"./se": 127,
+		"./se.js": 127,
+		"./si": 128,
+		"./si.js": 128,
+		"./sk": 129,
+		"./sk.js": 129,
+		"./sl": 130,
+		"./sl.js": 130,
+		"./sq": 131,
+		"./sq.js": 131,
+		"./sr": 132,
+		"./sr-cyrl": 133,
+		"./sr-cyrl.js": 133,
+		"./sr.js": 132,
+		"./ss": 134,
+		"./ss.js": 134,
+		"./sv": 135,
+		"./sv.js": 135,
+		"./sw": 136,
+		"./sw.js": 136,
+		"./ta": 137,
+		"./ta.js": 137,
+		"./te": 138,
+		"./te.js": 138,
+		"./th": 139,
+		"./th.js": 139,
+		"./tl-ph": 140,
+		"./tl-ph.js": 140,
+		"./tlh": 141,
+		"./tlh.js": 141,
+		"./tr": 142,
+		"./tr.js": 142,
+		"./tzl": 143,
+		"./tzl.js": 143,
+		"./tzm": 144,
+		"./tzm-latn": 145,
+		"./tzm-latn.js": 145,
+		"./tzm.js": 144,
+		"./uk": 146,
+		"./uk.js": 146,
+		"./uz": 147,
+		"./uz.js": 147,
+		"./vi": 148,
+		"./vi.js": 148,
+		"./x-pseudo": 149,
+		"./x-pseudo.js": 149,
+		"./zh-cn": 150,
+		"./zh-cn.js": 150,
+		"./zh-hk": 151,
+		"./zh-hk.js": 151,
+		"./zh-tw": 152,
+		"./zh-tw.js": 152
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -42563,11 +42602,11 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 47;
+	webpackContext.id = 48;
 
 
 /***/ },
-/* 48 */
+/* 49 */
 /*!*******************************!*\
   !*** ./~/moment/locale/af.js ***!
   \*******************************/
@@ -42578,7 +42617,7 @@
 	//! author : Werner Mollentze : https://github.com/wernerm
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42647,7 +42686,7 @@
 	}));
 
 /***/ },
-/* 49 */
+/* 50 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ar.js ***!
   \*******************************/
@@ -42660,7 +42699,7 @@
 	//! author : forabi https://github.com/forabi
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42791,7 +42830,7 @@
 	}));
 
 /***/ },
-/* 50 */
+/* 51 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-ly.js ***!
   \**********************************/
@@ -42802,7 +42841,7 @@
 	//! author : Ali Hmer: https://github.com/kikoanis
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42920,7 +42959,7 @@
 	}));
 
 /***/ },
-/* 51 */
+/* 52 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-ma.js ***!
   \**********************************/
@@ -42932,7 +42971,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42987,7 +43026,7 @@
 	}));
 
 /***/ },
-/* 52 */
+/* 53 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-sa.js ***!
   \**********************************/
@@ -42998,7 +43037,7 @@
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43098,7 +43137,7 @@
 	}));
 
 /***/ },
-/* 53 */
+/* 54 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ar-tn.js ***!
   \**********************************/
@@ -43109,7 +43148,7 @@
 	//! author : Nader Toukabri : https://github.com/naderio
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43164,7 +43203,7 @@
 	}));
 
 /***/ },
-/* 54 */
+/* 55 */
 /*!*******************************!*\
   !*** ./~/moment/locale/az.js ***!
   \*******************************/
@@ -43175,7 +43214,7 @@
 	//! author : topchiyev : https://github.com/topchiyev
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43276,7 +43315,7 @@
 	}));
 
 /***/ },
-/* 55 */
+/* 56 */
 /*!*******************************!*\
   !*** ./~/moment/locale/be.js ***!
   \*******************************/
@@ -43289,7 +43328,7 @@
 	//! Author : Menelion Elensúle : https://github.com/Oire
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43417,7 +43456,7 @@
 	}));
 
 /***/ },
-/* 56 */
+/* 57 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bg.js ***!
   \*******************************/
@@ -43428,7 +43467,7 @@
 	//! author : Krasen Borisov : https://github.com/kraz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43514,7 +43553,7 @@
 	}));
 
 /***/ },
-/* 57 */
+/* 58 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bn.js ***!
   \*******************************/
@@ -43525,7 +43564,7 @@
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43640,7 +43679,7 @@
 	}));
 
 /***/ },
-/* 58 */
+/* 59 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bo.js ***!
   \*******************************/
@@ -43651,7 +43690,7 @@
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43766,7 +43805,7 @@
 	}));
 
 /***/ },
-/* 59 */
+/* 60 */
 /*!*******************************!*\
   !*** ./~/moment/locale/br.js ***!
   \*******************************/
@@ -43777,7 +43816,7 @@
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43881,7 +43920,7 @@
 	}));
 
 /***/ },
-/* 60 */
+/* 61 */
 /*!*******************************!*\
   !*** ./~/moment/locale/bs.js ***!
   \*******************************/
@@ -43893,7 +43932,7 @@
 	//! based on (hr) translation by Bojan Marković
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44031,7 +44070,7 @@
 	}));
 
 /***/ },
-/* 61 */
+/* 62 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ca.js ***!
   \*******************************/
@@ -44042,7 +44081,7 @@
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44119,7 +44158,7 @@
 	}));
 
 /***/ },
-/* 62 */
+/* 63 */
 /*!*******************************!*\
   !*** ./~/moment/locale/cs.js ***!
   \*******************************/
@@ -44130,7 +44169,7 @@
 	//! author : petrbela : https://github.com/petrbela
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44298,7 +44337,7 @@
 	}));
 
 /***/ },
-/* 63 */
+/* 64 */
 /*!*******************************!*\
   !*** ./~/moment/locale/cv.js ***!
   \*******************************/
@@ -44309,7 +44348,7 @@
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44368,7 +44407,7 @@
 	}));
 
 /***/ },
-/* 64 */
+/* 65 */
 /*!*******************************!*\
   !*** ./~/moment/locale/cy.js ***!
   \*******************************/
@@ -44380,7 +44419,7 @@
 	//! author : https://github.com/ryangreaves
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44456,7 +44495,7 @@
 	}));
 
 /***/ },
-/* 65 */
+/* 66 */
 /*!*******************************!*\
   !*** ./~/moment/locale/da.js ***!
   \*******************************/
@@ -44467,7 +44506,7 @@
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44523,7 +44562,7 @@
 	}));
 
 /***/ },
-/* 66 */
+/* 67 */
 /*!*******************************!*\
   !*** ./~/moment/locale/de.js ***!
   \*******************************/
@@ -44536,7 +44575,7 @@
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44608,7 +44647,7 @@
 	}));
 
 /***/ },
-/* 67 */
+/* 68 */
 /*!**********************************!*\
   !*** ./~/moment/locale/de-at.js ***!
   \**********************************/
@@ -44622,7 +44661,7 @@
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44694,7 +44733,7 @@
 	}));
 
 /***/ },
-/* 68 */
+/* 69 */
 /*!*******************************!*\
   !*** ./~/moment/locale/dv.js ***!
   \*******************************/
@@ -44705,7 +44744,7 @@
 	//! author : Jawish Hameed : https://github.com/jawish
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44800,7 +44839,7 @@
 	}));
 
 /***/ },
-/* 69 */
+/* 70 */
 /*!*******************************!*\
   !*** ./~/moment/locale/el.js ***!
   \*******************************/
@@ -44811,7 +44850,7 @@
 	//! author : Aggelos Karalias : https://github.com/mehiel
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44905,7 +44944,7 @@
 	}));
 
 /***/ },
-/* 70 */
+/* 71 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-au.js ***!
   \**********************************/
@@ -44916,7 +44955,7 @@
 	//! author : Jared Morse : https://github.com/jarcoal
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44979,7 +45018,7 @@
 	}));
 
 /***/ },
-/* 71 */
+/* 72 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-ca.js ***!
   \**********************************/
@@ -44990,7 +45029,7 @@
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45049,7 +45088,7 @@
 	}));
 
 /***/ },
-/* 72 */
+/* 73 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-gb.js ***!
   \**********************************/
@@ -45060,7 +45099,7 @@
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45123,7 +45162,7 @@
 	}));
 
 /***/ },
-/* 73 */
+/* 74 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-ie.js ***!
   \**********************************/
@@ -45134,7 +45173,7 @@
 	//! author : Chris Cartlidge : https://github.com/chriscartlidge
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45197,7 +45236,7 @@
 	}));
 
 /***/ },
-/* 74 */
+/* 75 */
 /*!**********************************!*\
   !*** ./~/moment/locale/en-nz.js ***!
   \**********************************/
@@ -45208,7 +45247,7 @@
 	//! author : Luke McGregor : https://github.com/lukemcgregor
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45271,7 +45310,7 @@
 	}));
 
 /***/ },
-/* 75 */
+/* 76 */
 /*!*******************************!*\
   !*** ./~/moment/locale/eo.js ***!
   \*******************************/
@@ -45284,7 +45323,7 @@
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45351,7 +45390,7 @@
 	}));
 
 /***/ },
-/* 76 */
+/* 77 */
 /*!*******************************!*\
   !*** ./~/moment/locale/es.js ***!
   \*******************************/
@@ -45362,7 +45401,7 @@
 	//! author : Julio Napurí : https://github.com/julionc
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45439,7 +45478,7 @@
 	}));
 
 /***/ },
-/* 77 */
+/* 78 */
 /*!**********************************!*\
   !*** ./~/moment/locale/es-do.js ***!
   \**********************************/
@@ -45449,7 +45488,7 @@
 	//! locale : Spanish (Dominican Republic) [es-do]
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45526,7 +45565,7 @@
 	}));
 
 /***/ },
-/* 78 */
+/* 79 */
 /*!*******************************!*\
   !*** ./~/moment/locale/et.js ***!
   \*******************************/
@@ -45538,7 +45577,7 @@
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45613,7 +45652,7 @@
 	}));
 
 /***/ },
-/* 79 */
+/* 80 */
 /*!*******************************!*\
   !*** ./~/moment/locale/eu.js ***!
   \*******************************/
@@ -45624,7 +45663,7 @@
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45686,7 +45725,7 @@
 	}));
 
 /***/ },
-/* 80 */
+/* 81 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fa.js ***!
   \*******************************/
@@ -45697,7 +45736,7 @@
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45799,7 +45838,7 @@
 	}));
 
 /***/ },
-/* 81 */
+/* 82 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fi.js ***!
   \*******************************/
@@ -45810,7 +45849,7 @@
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45913,7 +45952,7 @@
 	}));
 
 /***/ },
-/* 82 */
+/* 83 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fo.js ***!
   \*******************************/
@@ -45924,7 +45963,7 @@
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45980,7 +46019,7 @@
 	}));
 
 /***/ },
-/* 83 */
+/* 84 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fr.js ***!
   \*******************************/
@@ -45991,7 +46030,7 @@
 	//! author : John Fischer : https://github.com/jfroffice
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46051,7 +46090,7 @@
 	}));
 
 /***/ },
-/* 84 */
+/* 85 */
 /*!**********************************!*\
   !*** ./~/moment/locale/fr-ca.js ***!
   \**********************************/
@@ -46062,7 +46101,7 @@
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46118,7 +46157,7 @@
 	}));
 
 /***/ },
-/* 85 */
+/* 86 */
 /*!**********************************!*\
   !*** ./~/moment/locale/fr-ch.js ***!
   \**********************************/
@@ -46129,7 +46168,7 @@
 	//! author : Gaspard Bucher : https://github.com/gaspard
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46189,7 +46228,7 @@
 	}));
 
 /***/ },
-/* 86 */
+/* 87 */
 /*!*******************************!*\
   !*** ./~/moment/locale/fy.js ***!
   \*******************************/
@@ -46200,7 +46239,7 @@
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46269,7 +46308,7 @@
 	}));
 
 /***/ },
-/* 87 */
+/* 88 */
 /*!*******************************!*\
   !*** ./~/moment/locale/gd.js ***!
   \*******************************/
@@ -46280,7 +46319,7 @@
 	//! author : Jon Ashdown : https://github.com/jonashdown
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46352,7 +46391,7 @@
 	}));
 
 /***/ },
-/* 88 */
+/* 89 */
 /*!*******************************!*\
   !*** ./~/moment/locale/gl.js ***!
   \*******************************/
@@ -46363,7 +46402,7 @@
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46436,7 +46475,7 @@
 	}));
 
 /***/ },
-/* 89 */
+/* 90 */
 /*!*******************************!*\
   !*** ./~/moment/locale/he.js ***!
   \*******************************/
@@ -46449,7 +46488,7 @@
 	//! author : Tal Ater : https://github.com/TalAter
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46542,7 +46581,7 @@
 	}));
 
 /***/ },
-/* 90 */
+/* 91 */
 /*!*******************************!*\
   !*** ./~/moment/locale/hi.js ***!
   \*******************************/
@@ -46553,7 +46592,7 @@
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46673,7 +46712,7 @@
 	}));
 
 /***/ },
-/* 91 */
+/* 92 */
 /*!*******************************!*\
   !*** ./~/moment/locale/hr.js ***!
   \*******************************/
@@ -46684,7 +46723,7 @@
 	//! author : Bojan Marković : https://github.com/bmarkovic
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46825,7 +46864,7 @@
 	}));
 
 /***/ },
-/* 92 */
+/* 93 */
 /*!*******************************!*\
   !*** ./~/moment/locale/hu.js ***!
   \*******************************/
@@ -46836,7 +46875,7 @@
 	//! author : Adam Brunner : https://github.com/adambrunner
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46941,7 +46980,7 @@
 	}));
 
 /***/ },
-/* 93 */
+/* 94 */
 /*!**********************************!*\
   !*** ./~/moment/locale/hy-am.js ***!
   \**********************************/
@@ -46952,7 +46991,7 @@
 	//! author : Armendarabyan : https://github.com/armendarabyan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47043,7 +47082,7 @@
 	}));
 
 /***/ },
-/* 94 */
+/* 95 */
 /*!*******************************!*\
   !*** ./~/moment/locale/id.js ***!
   \*******************************/
@@ -47055,7 +47094,7 @@
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47133,7 +47172,7 @@
 	}));
 
 /***/ },
-/* 95 */
+/* 96 */
 /*!*******************************!*\
   !*** ./~/moment/locale/is.js ***!
   \*******************************/
@@ -47144,7 +47183,7 @@
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47267,7 +47306,7 @@
 	}));
 
 /***/ },
-/* 96 */
+/* 97 */
 /*!*******************************!*\
   !*** ./~/moment/locale/it.js ***!
   \*******************************/
@@ -47279,7 +47318,7 @@
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47344,7 +47383,7 @@
 	}));
 
 /***/ },
-/* 97 */
+/* 98 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ja.js ***!
   \*******************************/
@@ -47355,7 +47394,7 @@
 	//! author : LI Long : https://github.com/baryon
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47427,7 +47466,7 @@
 	}));
 
 /***/ },
-/* 98 */
+/* 99 */
 /*!*******************************!*\
   !*** ./~/moment/locale/jv.js ***!
   \*******************************/
@@ -47439,7 +47478,7 @@
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47517,7 +47556,7 @@
 	}));
 
 /***/ },
-/* 99 */
+/* 100 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ka.js ***!
   \*******************************/
@@ -47528,7 +47567,7 @@
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47613,7 +47652,7 @@
 	}));
 
 /***/ },
-/* 100 */
+/* 101 */
 /*!*******************************!*\
   !*** ./~/moment/locale/kk.js ***!
   \*******************************/
@@ -47624,7 +47663,7 @@
 	//! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47707,7 +47746,7 @@
 	}));
 
 /***/ },
-/* 101 */
+/* 102 */
 /*!*******************************!*\
   !*** ./~/moment/locale/km.js ***!
   \*******************************/
@@ -47718,7 +47757,7 @@
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47772,7 +47811,7 @@
 	}));
 
 /***/ },
-/* 102 */
+/* 103 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ko.js ***!
   \*******************************/
@@ -47784,7 +47823,7 @@
 	//! author : Jeeeyul Lee <jeeeyul@gmail.com>
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47844,7 +47883,7 @@
 	}));
 
 /***/ },
-/* 103 */
+/* 104 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ky.js ***!
   \*******************************/
@@ -47855,7 +47894,7 @@
 	//! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47939,7 +47978,7 @@
 	}));
 
 /***/ },
-/* 104 */
+/* 105 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lb.js ***!
   \*******************************/
@@ -47951,7 +47990,7 @@
 	//! author : David Raison : https://github.com/kwisatz
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48083,7 +48122,7 @@
 	}));
 
 /***/ },
-/* 105 */
+/* 106 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lo.js ***!
   \*******************************/
@@ -48094,7 +48133,7 @@
 	//! author : Ryan Hart : https://github.com/ryanhart2
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48160,7 +48199,7 @@
 	}));
 
 /***/ },
-/* 106 */
+/* 107 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lt.js ***!
   \*******************************/
@@ -48171,7 +48210,7 @@
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48284,7 +48323,7 @@
 	}));
 
 /***/ },
-/* 107 */
+/* 108 */
 /*!*******************************!*\
   !*** ./~/moment/locale/lv.js ***!
   \*******************************/
@@ -48296,7 +48335,7 @@
 	//! author : Jānis Elmeris : https://github.com/JanisE
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48388,7 +48427,7 @@
 	}));
 
 /***/ },
-/* 108 */
+/* 109 */
 /*!*******************************!*\
   !*** ./~/moment/locale/me.js ***!
   \*******************************/
@@ -48399,7 +48438,7 @@
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48506,7 +48545,7 @@
 	}));
 
 /***/ },
-/* 109 */
+/* 110 */
 /*!*******************************!*\
   !*** ./~/moment/locale/mi.js ***!
   \*******************************/
@@ -48517,7 +48556,7 @@
 	//! author : John Corrigan <robbiecloset@gmail.com> : https://github.com/johnideal
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48577,7 +48616,7 @@
 	}));
 
 /***/ },
-/* 110 */
+/* 111 */
 /*!*******************************!*\
   !*** ./~/moment/locale/mk.js ***!
   \*******************************/
@@ -48588,7 +48627,7 @@
 	//! author : Borislav Mickov : https://github.com/B0k0
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48674,7 +48713,7 @@
 	}));
 
 /***/ },
-/* 111 */
+/* 112 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ml.js ***!
   \*******************************/
@@ -48685,7 +48724,7 @@
 	//! author : Floyd Pink : https://github.com/floydpink
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48762,7 +48801,7 @@
 	}));
 
 /***/ },
-/* 112 */
+/* 113 */
 /*!*******************************!*\
   !*** ./~/moment/locale/mr.js ***!
   \*******************************/
@@ -48774,7 +48813,7 @@
 	//! author : Vivek Athalye : https://github.com/vnathalye
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48928,7 +48967,7 @@
 	}));
 
 /***/ },
-/* 113 */
+/* 114 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ms.js ***!
   \*******************************/
@@ -48939,7 +48978,7 @@
 	//! author : Weldan Jamili : https://github.com/weldan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49017,7 +49056,7 @@
 	}));
 
 /***/ },
-/* 114 */
+/* 115 */
 /*!**********************************!*\
   !*** ./~/moment/locale/ms-my.js ***!
   \**********************************/
@@ -49029,7 +49068,7 @@
 	//! author : Weldan Jamili : https://github.com/weldan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49107,7 +49146,7 @@
 	}));
 
 /***/ },
-/* 115 */
+/* 116 */
 /*!*******************************!*\
   !*** ./~/moment/locale/my.js ***!
   \*******************************/
@@ -49120,7 +49159,7 @@
 	//! author : Tin Aung Lin : https://github.com/thanyawzinmin
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49209,7 +49248,7 @@
 	}));
 
 /***/ },
-/* 116 */
+/* 117 */
 /*!*******************************!*\
   !*** ./~/moment/locale/nb.js ***!
   \*******************************/
@@ -49221,7 +49260,7 @@
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49279,7 +49318,7 @@
 	}));
 
 /***/ },
-/* 117 */
+/* 118 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ne.js ***!
   \*******************************/
@@ -49290,7 +49329,7 @@
 	//! author : suvash : https://github.com/suvash
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49409,7 +49448,7 @@
 	}));
 
 /***/ },
-/* 118 */
+/* 119 */
 /*!*******************************!*\
   !*** ./~/moment/locale/nl.js ***!
   \*******************************/
@@ -49421,7 +49460,7 @@
 	//! author : Jacob Middag : https://github.com/middagj
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49502,7 +49541,7 @@
 	}));
 
 /***/ },
-/* 119 */
+/* 120 */
 /*!*******************************!*\
   !*** ./~/moment/locale/nn.js ***!
   \*******************************/
@@ -49513,7 +49552,7 @@
 	//! author : https://github.com/mechuwind
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49569,7 +49608,7 @@
 	}));
 
 /***/ },
-/* 120 */
+/* 121 */
 /*!**********************************!*\
   !*** ./~/moment/locale/pa-in.js ***!
   \**********************************/
@@ -49580,7 +49619,7 @@
 	//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49700,7 +49739,7 @@
 	}));
 
 /***/ },
-/* 121 */
+/* 122 */
 /*!*******************************!*\
   !*** ./~/moment/locale/pl.js ***!
   \*******************************/
@@ -49711,7 +49750,7 @@
 	//! author : Rafal Hirsz : https://github.com/evoL
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49812,7 +49851,7 @@
 	}));
 
 /***/ },
-/* 122 */
+/* 123 */
 /*!*******************************!*\
   !*** ./~/moment/locale/pt.js ***!
   \*******************************/
@@ -49823,7 +49862,7 @@
 	//! author : Jefferson : https://github.com/jalex79
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49884,7 +49923,7 @@
 	}));
 
 /***/ },
-/* 123 */
+/* 124 */
 /*!**********************************!*\
   !*** ./~/moment/locale/pt-br.js ***!
   \**********************************/
@@ -49895,7 +49934,7 @@
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49952,7 +49991,7 @@
 	}));
 
 /***/ },
-/* 124 */
+/* 125 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ro.js ***!
   \*******************************/
@@ -49964,7 +50003,7 @@
 	//! author : Valentin Agachi : https://github.com/avaly
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50034,7 +50073,7 @@
 	}));
 
 /***/ },
-/* 125 */
+/* 126 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ru.js ***!
   \*******************************/
@@ -50047,7 +50086,7 @@
 	//! author : Коренберг Марк : https://github.com/socketpair
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50224,7 +50263,7 @@
 	}));
 
 /***/ },
-/* 126 */
+/* 127 */
 /*!*******************************!*\
   !*** ./~/moment/locale/se.js ***!
   \*******************************/
@@ -50235,7 +50274,7 @@
 	//! authors : Bård Rolstad Henriksen : https://github.com/karamell
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50292,7 +50331,7 @@
 	}));
 
 /***/ },
-/* 127 */
+/* 128 */
 /*!*******************************!*\
   !*** ./~/moment/locale/si.js ***!
   \*******************************/
@@ -50303,7 +50342,7 @@
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50370,7 +50409,7 @@
 	}));
 
 /***/ },
-/* 128 */
+/* 129 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sk.js ***!
   \*******************************/
@@ -50382,7 +50421,7 @@
 	//! based on work of petrbela : https://github.com/petrbela
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50527,7 +50566,7 @@
 	}));
 
 /***/ },
-/* 129 */
+/* 130 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sl.js ***!
   \*******************************/
@@ -50538,7 +50577,7 @@
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50696,7 +50735,7 @@
 	}));
 
 /***/ },
-/* 130 */
+/* 131 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sq.js ***!
   \*******************************/
@@ -50709,7 +50748,7 @@
 	//! author : Oerd Cukalla : https://github.com/oerd
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50773,7 +50812,7 @@
 	}));
 
 /***/ },
-/* 131 */
+/* 132 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sr.js ***!
   \*******************************/
@@ -50784,7 +50823,7 @@
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50890,7 +50929,7 @@
 	}));
 
 /***/ },
-/* 132 */
+/* 133 */
 /*!************************************!*\
   !*** ./~/moment/locale/sr-cyrl.js ***!
   \************************************/
@@ -50901,7 +50940,7 @@
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51007,7 +51046,7 @@
 	}));
 
 /***/ },
-/* 133 */
+/* 134 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ss.js ***!
   \*******************************/
@@ -51018,7 +51057,7 @@
 	//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51103,7 +51142,7 @@
 	}));
 
 /***/ },
-/* 134 */
+/* 135 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sv.js ***!
   \*******************************/
@@ -51114,7 +51153,7 @@
 	//! author : Jens Alm : https://github.com/ulmus
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51179,7 +51218,7 @@
 	}));
 
 /***/ },
-/* 135 */
+/* 136 */
 /*!*******************************!*\
   !*** ./~/moment/locale/sw.js ***!
   \*******************************/
@@ -51190,7 +51229,7 @@
 	//! author : Fahad Kassim : https://github.com/fadsel
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51245,7 +51284,7 @@
 	}));
 
 /***/ },
-/* 136 */
+/* 137 */
 /*!*******************************!*\
   !*** ./~/moment/locale/ta.js ***!
   \*******************************/
@@ -51256,7 +51295,7 @@
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51381,7 +51420,7 @@
 	}));
 
 /***/ },
-/* 137 */
+/* 138 */
 /*!*******************************!*\
   !*** ./~/moment/locale/te.js ***!
   \*******************************/
@@ -51392,7 +51431,7 @@
 	//! author : Krishna Chaitanya Thota : https://github.com/kcthota
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51477,7 +51516,7 @@
 	}));
 
 /***/ },
-/* 138 */
+/* 139 */
 /*!*******************************!*\
   !*** ./~/moment/locale/th.js ***!
   \*******************************/
@@ -51488,7 +51527,7 @@
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51551,7 +51590,7 @@
 	}));
 
 /***/ },
-/* 139 */
+/* 140 */
 /*!**********************************!*\
   !*** ./~/moment/locale/tl-ph.js ***!
   \**********************************/
@@ -51562,7 +51601,7 @@
 	//! author : Dan Hagman : https://github.com/hagmandan
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51620,7 +51659,7 @@
 	}));
 
 /***/ },
-/* 140 */
+/* 141 */
 /*!********************************!*\
   !*** ./~/moment/locale/tlh.js ***!
   \********************************/
@@ -51631,7 +51670,7 @@
 	//! author : Dominika Kruk : https://github.com/amaranthrose
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51747,7 +51786,7 @@
 	}));
 
 /***/ },
-/* 141 */
+/* 142 */
 /*!*******************************!*\
   !*** ./~/moment/locale/tr.js ***!
   \*******************************/
@@ -51759,7 +51798,7 @@
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51844,7 +51883,7 @@
 	}));
 
 /***/ },
-/* 142 */
+/* 143 */
 /*!********************************!*\
   !*** ./~/moment/locale/tzl.js ***!
   \********************************/
@@ -51856,7 +51895,7 @@
 	//! author : Iustì Canun
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -51942,7 +51981,7 @@
 	}));
 
 /***/ },
-/* 143 */
+/* 144 */
 /*!********************************!*\
   !*** ./~/moment/locale/tzm.js ***!
   \********************************/
@@ -51953,7 +51992,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52007,7 +52046,7 @@
 	}));
 
 /***/ },
-/* 144 */
+/* 145 */
 /*!*************************************!*\
   !*** ./~/moment/locale/tzm-latn.js ***!
   \*************************************/
@@ -52018,7 +52057,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52072,7 +52111,7 @@
 	}));
 
 /***/ },
-/* 145 */
+/* 146 */
 /*!*******************************!*\
   !*** ./~/moment/locale/uk.js ***!
   \*******************************/
@@ -52084,7 +52123,7 @@
 	//! Author : Menelion Elensúle : https://github.com/Oire
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52225,7 +52264,7 @@
 	}));
 
 /***/ },
-/* 146 */
+/* 147 */
 /*!*******************************!*\
   !*** ./~/moment/locale/uz.js ***!
   \*******************************/
@@ -52236,7 +52275,7 @@
 	//! author : Sardor Muminov : https://github.com/muminoff
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52290,7 +52329,7 @@
 	}));
 
 /***/ },
-/* 147 */
+/* 148 */
 /*!*******************************!*\
   !*** ./~/moment/locale/vi.js ***!
   \*******************************/
@@ -52301,7 +52340,7 @@
 	//! author : Bang Nguyen : https://github.com/bangnk
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52376,7 +52415,7 @@
 	}));
 
 /***/ },
-/* 148 */
+/* 149 */
 /*!*************************************!*\
   !*** ./~/moment/locale/x-pseudo.js ***!
   \*************************************/
@@ -52387,7 +52426,7 @@
 	//! author : Andrew Hood : https://github.com/andrewhood125
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52451,7 +52490,7 @@
 	}));
 
 /***/ },
-/* 149 */
+/* 150 */
 /*!**********************************!*\
   !*** ./~/moment/locale/zh-cn.js ***!
   \**********************************/
@@ -52463,7 +52502,7 @@
 	//! author : Zeno Zeng : https://github.com/zenozeng
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52585,7 +52624,7 @@
 	}));
 
 /***/ },
-/* 150 */
+/* 151 */
 /*!**********************************!*\
   !*** ./~/moment/locale/zh-hk.js ***!
   \**********************************/
@@ -52598,7 +52637,7 @@
 	//! author : Konstantin : https://github.com/skfd
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52697,7 +52736,7 @@
 	}));
 
 /***/ },
-/* 151 */
+/* 152 */
 /*!**********************************!*\
   !*** ./~/moment/locale/zh-tw.js ***!
   \**********************************/
@@ -52709,7 +52748,7 @@
 	//! author : Chris Lam : https://github.com/hehachris
 	
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(/*! ../moment */ 45)) :
+	    true ? factory(__webpack_require__(/*! ../moment */ 46)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -52806,24 +52845,6 @@
 	    return zh_tw;
 	
 	}));
-
-/***/ },
-/* 152 */
-/*!******************************************!*\
-  !*** ./src/assets/images/minus_sign.png ***!
-  \******************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "./assets/images/minus_sign.png";
-
-/***/ },
-/* 153 */
-/*!*****************************************!*\
-  !*** ./src/assets/images/plus_sign.png ***!
-  \*****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "./assets/images/plus_sign.png";
 
 /***/ }
 /******/ ]);
